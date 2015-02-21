@@ -1,0 +1,18 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dockerfile Syntax Highlighting",
+		"Git",
+		"Jade",
+		"Markdown Preview",
+		"Package Control",
+		"ReactJS",
+		"Rust",
+		"Sass",
+		"SideBarEnhancements",
+		"TOML"
+	]
+}
