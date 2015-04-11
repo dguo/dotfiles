@@ -518,9 +518,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1356 993 445 103 1280 800 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1317 1092 924 485 1280 800 1920 1057 </string>
+	<string>197 260 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1485 967 697 485 1280 800 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>152 329 585 448 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1064,7 +1066,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.51333332061767578</real>
+			<real>0.081406250596046448</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
