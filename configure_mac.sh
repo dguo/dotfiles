@@ -1,0 +1,13 @@
+#!/bin/sh
+
+brew install ruby python python3 node git tmux
+
+# Symlink configurations
+ln -s ~/Code/dotfiles/sublime_text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+ln -s ~/Code/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
+ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
+
+# Make holding down a key work in Sublime Text vintage mode
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+
