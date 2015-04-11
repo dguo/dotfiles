@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew install ruby python python3 node git tmux
+brew install ruby python python3 node git tmux vim
 
 # Symlink configurations
 ln -s ~/Code/dotfiles/sublime_text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings

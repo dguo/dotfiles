@@ -516,7 +516,7 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>236 161 445 103 0 0 1280 777 </string>
+	<string>236 161 445 434 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>197 260 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1072,11 +1072,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-Regular 11</string>
+			<string>SauceCodePowerline-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 11</string>
+			<string>SauceCodePowerline-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1242,7 +1242,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.0594594478607178</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
