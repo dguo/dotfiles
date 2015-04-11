@@ -1,0 +1,17 @@
+[user]
+	name = Danny Guo
+	email = dannyguo91@gmail.com
+[push]
+	default = simple
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	s = status
+	d = diff
+	b = branch
+	pl = pull
+	ph = push
+	a = add
+	au = add -u
+	c = commit -m
