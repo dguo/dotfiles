@@ -15,3 +15,5 @@
 	a = add
 	au = add -u
 	c = commit -m
+[credential]
+	helper = cache --timeout=86400
