@@ -516,7 +516,7 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1356 993 445 103 1280 800 1920 1057 </string>
+	<string>236 161 445 103 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>197 260 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1072,11 +1072,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-Regular 12</string>
+			<string>SourceCodePro-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 12</string>
+			<string>SourceCodePro-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1313,7 +1313,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-10T04:37:46Z</date>
+	<date>2015-04-11T14:10:18Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
