@@ -11,3 +11,6 @@ ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 # Make holding down a key work in Sublime Text vintage mode
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
+# Open Sublime Text from the command line
+sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
+
