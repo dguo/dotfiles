@@ -5,12 +5,12 @@
 # custom prompt:
 # user@host[time]:pwd (branch)
 # $ 
-RED="\e[0;31m\]"
-GREEN="\e[0;32m\]"
-BLUE="\e[0;34m\]"
-WHITE="\e[0;37m\]"
-GREY="\e[0m\]"
-YELLOW="\e[00;33m\]"
+RED="\[\e[0;31m\]"
+GREEN="\[\e[0;32m\]"
+BLUE="\[\e[0;34m\]"
+WHITE="\[\e[0;37m\]"
+GREY="\[\e[0m\]"
+YELLOW="\[\e[00;33m\]"
 USERNAME="\u"
 SHORT_HOST="\h"
 MILITARY_TIME="\t"
