@@ -1,6 +1,15 @@
 #!/bin/sh
 
-brew install ruby python python3 node git tmux vim
+brew tap caskroom/cask
+brew install brew-cask
+brew cask install virtualbox
+brew install ruby python python3 node git tmux vim boot2docker gettext
+
+# Version of pip that comes with brew is outdated
+pip install --upgrade pip setuptools
+pip3 install --upgrade pip setuptools
+
+npm install -g bower gulp jshint
 
 # Symlink configurations
 ln -s ~/Code/dotfiles/sublime_text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
