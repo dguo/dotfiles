@@ -520,7 +520,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>197 260 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1485 967 697 485 1280 800 1920 1057 </string>
+	<string>1339 765 1915 1056 1337 764 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 329 585 448 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -1313,7 +1313,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-11T14:10:18Z</date>
+	<date>2015-04-22T03:54:30Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1354,7 +1354,11 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.0.0.20150412</string>
 </dict>
 </plist>
