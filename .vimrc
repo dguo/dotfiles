@@ -47,10 +47,8 @@ let g:airline#extensions#syntastic#enabled=1
 let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=0
-" PEP 8
 let g:syntastic_python_checkers=['pylint']
-" jslint is too aggressive
-let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['eslint', 'jshint']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
