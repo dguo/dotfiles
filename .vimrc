@@ -169,3 +169,17 @@ nnoremap <silent> gm :call <SID>Gm()<CR>
 onoremap <silent> gm :call <SID>Gm()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Trim whitespace on save without losing cursor position
+" http://stackoverflow.com/a/1618401
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
