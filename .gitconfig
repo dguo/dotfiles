@@ -12,6 +12,7 @@
 	c = commit -m
 	co = checkout
 	d = diff
+    dt = difftool
     l = log
     m = merge
 	s = status
@@ -20,4 +21,11 @@
 	pl = pull
 [credential]
 	helper = cache --timeout=86400
+[diff]
+	tool = meld # Install this port for Mac: https://github.com/yousseb/meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    trustExitCode = true
+    cmd = /Applications/Meld.app/Contents/MacOS/Meld \"$LOCAL\" \"$PWD/$REMOTE\"
 
