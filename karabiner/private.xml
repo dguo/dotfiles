@@ -6,11 +6,11 @@
         <url type="file">/Applications/iTerm.app</url>
     </vkopenurldef>
     <item>
-        <name>Change left-command + 1 to launch iTerm</name>
-        <identifier>private.left_command_1</identifier>
+        <name>Change left-command + shift + 1 to launch iTerm</name>
+        <identifier>private.left_command_shift_1</identifier>
         <autogen>
             __KeyToKey__
-            KeyCode::1, ModifierFlag::COMMAND_L,
+            KeyCode::1, ModifierFlag::COMMAND_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
             KeyCode::VK_OPEN_URL_APP_iTerm,
         </autogen>
     </item>
@@ -20,11 +20,11 @@
         <url type="file">/Applications/Safari.app</url>
     </vkopenurldef>
     <item>
-        <name>Change left-command + 2 to launch Safari</name>
-        <identifier>private.left_command_2</identifier>
+        <name>Change left-command + shift + 2 to launch Safari</name>
+        <identifier>private.left_command_shift_2</identifier>
         <autogen>
             __KeyToKey__
-            KeyCode::2, ModifierFlag::COMMAND_L,
+            KeyCode::2, ModifierFlag::COMMAND_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
             KeyCode::VK_OPEN_URL_APP_Safari,
         </autogen>
     </item>
@@ -34,11 +34,11 @@
         <url type="file">/Applications/Google Chrome.app</url>
     </vkopenurldef>
     <item>
-        <name>Change left-command + 3 to launch Chrome</name>
-        <identifier>private.left_command_3</identifier>
+        <name>Change left-command + shift + 3 to launch Chrome</name>
+        <identifier>private.left_command_shift_3</identifier>
         <autogen>
             __KeyToKey__
-            KeyCode::3, ModifierFlag::COMMAND_L,
+            KeyCode::3, ModifierFlag::COMMAND_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
             KeyCode::VK_OPEN_URL_APP_Chrome,
         </autogen>
     </item>
@@ -48,11 +48,11 @@
         <url type="file">/Applications/Evernote.app</url>
     </vkopenurldef>
     <item>
-        <name>Change left-command + 4 to launch Evernote</name>
-        <identifier>private.left_command_4</identifier>
+        <name>Change left-command + shift + 4 to launch Evernote</name>
+        <identifier>private.left_command_shift_4</identifier>
         <autogen>
             __KeyToKey__
-            KeyCode::4, ModifierFlag::COMMAND_L,
+            KeyCode::4, ModifierFlag::COMMAND_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
             KeyCode::VK_OPEN_URL_APP_Evernote,
         </autogen>
     </item>
