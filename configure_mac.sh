@@ -11,6 +11,7 @@ brew install python3
 brew install ruby
 brew install rust
 # tools
+brew install autoenv
 brew install autojump
 brew install cloc
 brew install git
