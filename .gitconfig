@@ -1,31 +1,30 @@
 [user]
-	name = Danny Guo
-	email = dannyguo91@gmail.com
+    name = Danny Guo
+    email = dannyguo91@gmail.com
 [push]
-	default = simple
+    default = simple
 [core]
-	editor = vim
+    editor = vim
 [alias]
-	a = add
-	au = add -u
-	b = branch
-	c = commit -m
-	co = checkout
-	d = diff
+    a = add
+    au = add -u
+    b = branch
+    c = commit -m
+    co = checkout
+    d = diff
     dt = difftool
     l = log
     m = merge
-	s = status
+    s = status
     t = tag
-	ph = push
-	pl = pull
+    ph = push
+    pl = pull
 [credential]
-	helper = cache --timeout=86400
+    helper = cache --timeout=86400
 [diff]
-	tool = meld # Install this port for Mac: https://github.com/yousseb/meld
+    tool = meld # Install this port for Mac: https://github.com/yousseb/meld
 [difftool]
     prompt = false
 [difftool "meld"]
     trustExitCode = true
     cmd = /Applications/Meld.app/Contents/MacOS/Meld \"$LOCAL\" \"$PWD/$REMOTE\"
-
