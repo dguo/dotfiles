@@ -12,24 +12,33 @@ set nocompatible      " Vi IMproved
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" Let Vundle manage Vundle; required
+" let Vundle manage Vundle (required)
 Plugin 'gmarik/Vundle.vim'
-" Actual plugins
+" light as air status line
 Plugin 'bling/vim-airline'
+" A foolish consistency is the hobgoblin of little minds
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
+Plugin 'pmsorhaindo/syntastic-local-eslint.vim'
+Plugin 'suan/vim-instant-markdown'
+" faster editing
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'thinca/vim-quickrun'
-Plugin 'wting/rust.vim'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'mxw/vim-jsx'
+Plugin 'tpope/vim-surround'
+" languages
+Plugin 'rust-lang/rust.vim'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
+Plugin 'mxw/vim-jsx'
+" precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
+" git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+" directory navigation
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -48,7 +57,7 @@ let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=0
 let g:syntastic_python_checkers=['pylint']
-let g:syntastic_javascript_checkers=['eslint', 'jshint']
+let g:syntastic_javascript_checkers=['eslint']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,6 +97,13 @@ let g:vim_json_syntax_conceal=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_realtime=0
 let g:gitgutter_eager=0
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown preview in browser
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:instant_markdown_autostart = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -139,8 +155,8 @@ set encoding=utf-8
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" enter to clear search highlight
-nnoremap <CR> :noh<CR>
+" escape clears search highlight
+nnoremap <Leader>/ :noh<CR>
 " move vertically by physical lines rather than logical lines
 map j gj
 map k gk

@@ -2,9 +2,11 @@
 # Author: Danny Guo
 ###############################################################################
 
+###############################################################################
 # custom prompt:
-# user@host[time]:pwd (branch)
-# $ 
+# user@host[time]:pwd (git info if applicable)
+# $
+###############################################################################
 RED="\[\e[0;31m\]"
 GREEN="\[\e[0;32m\]"
 BLUE="\[\e[0;34m\]"
@@ -52,13 +54,10 @@ bind "set show-all-if-ambiguous on"
 ###############################################################################
 
 ###############################################################################
-# ls            
+# ls
 ###############################################################################
-alias ls="ls -G"
+alias ls="ls -G" # colors
 alias l="ls"
-alias la="l -a"
-alias ll="l -lh"
-alias lal="l -lah"
 ###############################################################################
 
 ###############################################################################
@@ -73,17 +72,13 @@ cl() {
 alias c-="cd -"
 alias c-l="c- && ls"
 # move up a directory
-alias c.="cd ../"
-alias c.l="c. && ls"
+alias ..="cd .."
+alias ..l=".. && ls"
 # move up several directories
-alias c2="c1; c1"
-alias c2l="c2 && ls"
-alias c3="c2; c1"
-alias c3l="c3 && ls"
-alias c4="c3; c1"
-alias c4l="c4 && ls"
-alias c5="c4; c1"
-alias c5l="c5 && ls"
+alias ...="cd ../.."
+alias ...l="... && ls"
+alias ....="cd ../../.."
+alias ....l=".... && ls"
 ###############################################################################
 
 ###############################################################################
@@ -97,16 +92,17 @@ alias lessr="\less"
 ###############################################################################
 # single character changes
 ###############################################################################
-# a for again; run last command
-alias a="fc -s"
 # <C-k>/<C-j> instead up/down for command history
 bind '"\C-k":previous-history'
 bind '"\C-j":next-history'
+# the stupid content tracker
+alias g="git"
+# turtles all the way down
+alias m="mkdir"
 # print working directory
 alias p="pwd"
-# safe delete
+# you better check yo self before you wreck yo self
 alias r="rm -i"
-# text editors
+# text editor of choice
 alias v="vim"
-alias s="subl"
 
