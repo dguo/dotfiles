@@ -2,6 +2,8 @@
 
 # Install homebrew first!
 
+# shells
+brew install bash
 # languages
 brew install haskell-stack
 brew install n # node version manager
