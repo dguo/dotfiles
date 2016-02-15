@@ -24,11 +24,13 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
+Plugin 'easymotion/vim-easymotion'
 " languages
 Plugin 'rust-lang/rust.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
+Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 " precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
@@ -76,7 +78,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " don't add another comment to an already commented line
 let NERDDefaultNesting=0
-" // var x = y; rather than //var x = 3;
+" // var x = y; rather than //var x = y;
 let NERDSpaceDelims=1
 let NERDCommentWholeLinesInVMode=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,9 +90,39 @@ let g:ycm_autoclose_preview_window_after_completion=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" EasyMotion
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_startofline = 1
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+map <Leader>s <Plug>(easymotion-f)
+map <Leader>S <Plug>(easymotion-F)
+map <Leader>w <Plug>(easymotion-w)
+map <Leader>W <Plug>(easymotion-W)
+map <Leader>b <Plug>(easymotion-b)
+map <Leader>B <Plug>(easymotion-B)
+map <Leader>e <Plug>(easymotion-e)
+map <Leader>E <Plug>(easymotion-E)
+map <Leader>gE <Plug>(easymotion-gE)
+map <Leader>ge <Plug>(easymotion-ge)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSON
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:vim_json_syntax_conceal=0
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" JS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let javascript_enable_domhtmlcss = 1
+let b:javascript_fold = 0
+let g:jsx_ext_required = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -99,7 +131,6 @@ let g:vim_json_syntax_conceal=0
 let g:gitgutter_realtime=0
 let g:gitgutter_eager=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Markdown preview in browser
