@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'tpope/vim-speeddating'
 " languages
 Plugin 'rust-lang/rust.vim'
 Plugin 'cakebaker/scss-syntax.vim'
