@@ -193,6 +193,9 @@ set colorcolumn=80    " vertical stripe for line limit
 set showmatch         " highlight matching parenthesis, bracket, or brace
 syntax on
 set encoding=utf-8
+" Syntax highlighting for unique files
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
