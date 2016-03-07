@@ -33,6 +33,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'mrk21/yaml-vim'
 " precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 " git
