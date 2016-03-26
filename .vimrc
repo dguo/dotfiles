@@ -34,6 +34,7 @@ Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'mrk21/yaml-vim'
+Plugin 'mustache/vim-mustache-handlebars'
 " precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 " git
