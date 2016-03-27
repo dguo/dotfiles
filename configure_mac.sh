@@ -55,6 +55,7 @@ npm install -g instant-markdown-d
 ln -s ~/Code/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
+ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
 # Suppress the new window message
 ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
 
