@@ -52,15 +52,9 @@ npm install -g eslint-plugin-react
 npm install -g instant-markdown-d
 
 # Symlink configurations
-ln -s ~/Code/dotfiles/sublime_text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-ln -s ~/Code/dotfiles/sublime_text/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
-ln -s ~/Code/dotfiles/sublime_text/Default\ \(Linux\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
 ln -s ~/Code/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 # Suppress the new window message
 ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
-
-# Make holding down a key work in Sublime Text vintage mode
-defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
