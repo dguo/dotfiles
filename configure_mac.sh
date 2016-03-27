@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Install homebrew first!
+# Install homebrew first! http://brew.sh
 
 # shells
 brew install bash
@@ -58,4 +58,9 @@ ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
 # Suppress the new window message
 ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
+
+# Set up Vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 

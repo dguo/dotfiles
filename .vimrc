@@ -2,50 +2,47 @@
 " Author: Danny Guo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Vi IMproved
+set nocompatible
 " space is easier to reach than backslash
 let mapleader=" "
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vundle set-up
+" Vim Plug set-up
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible      " Vi IMproved
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle (required)
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 " light as air status line
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 " A foolish consistency is the hobgoblin of little minds
-Plugin 'scrooloose/syntastic'
-Plugin 'pmsorhaindo/syntastic-local-eslint.vim'
-Plugin 'suan/vim-instant-markdown'
+Plug 'scrooloose/syntastic'
+Plug 'pmsorhaindo/syntastic-local-eslint.vim'
+Plug 'suan/vim-instant-markdown'
 " faster editing
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-surround'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'tpope/vim-speeddating'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-speeddating'
 " languages
-Plugin 'rust-lang/rust.vim'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'elzr/vim-json'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'mrk21/yaml-vim'
-Plugin 'mustache/vim-mustache-handlebars'
+Plug 'rust-lang/rust.vim'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'digitaltoad/vim-jade'
+Plug 'elzr/vim-json'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'mrk21/yaml-vim'
+Plug 'mustache/vim-mustache-handlebars'
 " precision colors for machines and people
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 " git
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 " directory navigation
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ryanoasis/vim-devicons'
-call vundle#end()
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
