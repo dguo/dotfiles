@@ -16,7 +16,7 @@ Plug 'bling/vim-airline'
 " A foolish consistency is the hobgoblin of little minds
 Plug 'scrooloose/syntastic'
 Plug 'pmsorhaindo/syntastic-local-eslint.vim'
-Plug 'suan/vim-instant-markdown'
+Plug 'editorconfig/editorconfig-vim'
 " faster editing
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
@@ -32,6 +32,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mrk21/yaml-vim'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'suan/vim-instant-markdown'
 " precision colors for machines and people
 Plug 'altercation/vim-colors-solarized'
 " git
