@@ -19,6 +19,7 @@ MILITARY_TIME="\t"
 SHORT_PWD="\W"
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
+__git_complete g __git_main
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUPSTREAM="auto verbose git"
 export GIT_PS1_SHOWUNTRACKEDFILES=1
@@ -95,6 +96,10 @@ alias lessr="\less"
 # <C-k>/<C-j> instead up/down for command history
 bind '"\C-k":previous-history'
 bind '"\C-j":next-history'
+# Build, Ship, Run
+alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
 # the stupid content tracker
 alias g="git"
 # turtles all the way down
