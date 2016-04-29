@@ -499,6 +499,8 @@
 	<integer>4</integer>
 	<key>JobName</key>
 	<true/>
+	<key>KillJobsInServersOnQuit</key>
+	<false/>
 	<key>LeftCommand</key>
 	<integer>7</integer>
 	<key>LeftOption</key>
@@ -546,7 +548,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 302 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 83 1297 687 0 0 1280 777 </string>
+	<string>1 57 1277 717 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_18123AC0-FE8B-4E84-951C-FB2CA942E2A1</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_18123AC0-FE8B-4E84-951C-FB2CA942E2A1_selection</key>
@@ -2017,7 +2019,7 @@
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncSuppressAnnyoingBellOffer</key>
@@ -2115,7 +2117,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-23T18:06:10Z</date>
+	<date>2016-04-10T01:03:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
