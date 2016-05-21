@@ -16,6 +16,7 @@ brew install rust
 brew install autoenv
 brew install autojump
 brew install cloc
+brew install fzf
 brew install git
 brew install git-extras
 brew install pandoc

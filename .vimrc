@@ -39,7 +39,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 " directory navigation
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
@@ -62,15 +63,6 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=0
 let g:syntastic_python_checkers=['pylint']
 let g:syntastic_javascript_checkers=['eslint']
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ctrlp (file opener)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ignore files in .gitignore
-let g:ctrlp_user_command = [
-    \ '.git/',
-    \ 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -218,6 +210,8 @@ nnoremap Q :q<CR>
 " don't need to use shift to enter command
 noremap : ;
 noremap ; :
+" Ctrl-P for fzf (assume we're in a git repo)
+noremap <silent> <C-p> :GitFiles<CR>
 " gm moves to middle of current physical line
 " http://www.vim.wikia.com/wiki/A_better_gm_command
 function! s:Gm()

@@ -78,8 +78,6 @@ alias ..l=".. && ls"
 # move up several directories
 alias ...="cd ../.."
 alias ...l="... && ls"
-alias ....="cd ../../.."
-alias ....l=".... && ls"
 ###############################################################################
 
 ###############################################################################
@@ -110,4 +108,90 @@ alias p="pwd"
 alias r="rm -i"
 # text editor of choice
 alias v="vim"
+###############################################################################
+
+###############################################################################
+# Fuzzy finder
+# Functions are adapted from https://github.com/junegunn/fzf/wiki/Examples
+###############################################################################
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Make fuzzy completion work with the vim alias
+complete -F _fzf_file_completion -o default -o bashdefault v
+
+# use ag instead of find
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+_fzf_compgen_path() {
+    ag -g "" "$1"
+}
+
+# fe [FUZZY PATTERN] - Open the selected file with the default editor
+#     - Bypass fuzzy finder if there's only one match (--select-1)
+#     - Exit if there's no match (--exit-0)
+fe() {
+    local files
+    IFS='
+    '
+    # If we're in a git repo, search all of the files in the repo,
+    # even if we're in a subdirectory
+    if git rev-parse > /dev/null 2>&1; then
+        cd $(git rev-parse --show-toplevel)
+        files=($(git ls-files | fzf-tmux --query="$1" --select-1 --exit-0))
+    else
+        files=($(fzf-tmux --query="$1" --select-1 --exit-0))
+    fi
+    [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+    unset IFS
+}
+
+# Modified version where you can press
+#   - CTRL-O to open with `open` command,
+#   - CTRL-E or Enter key to open with the $EDITOR
+fo() {
+    local out file key
+    if git rev-parse > /dev/null 2>&1; then
+        cd $(git rev-parse --show-toplevel)
+        out=$(git ls-files | fzf-tmux --query="$1" \
+              --exit-0 --expect=ctrl-o,ctrl-e)
+    else
+        out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
+    fi
+    key=$(head -1 <<< "$out")
+    file=$(head -2 <<< "$out" | tail -1)
+    if [ -n "$file" ]; then
+        [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
+    fi
+}
+
+# cd to selected directory
+#     - Bypass fuzzy finder if there's only one match (--select-1)
+#     - "." represents the top level of a git repo
+fc() {
+    local dir
+    if git rev-parse > /dev/null 2>&1; then
+        cd $(git rev-parse --show-toplevel)
+        dir=$(git ls-files | xargs -n1 dirname | sort | uniq | \
+              fzf --select-1 -q "$1")
+    else
+        dir=$(find ${1:-*} -path '*/\.*' -prune \
+            -o -type d -print 2> /dev/null | fzf +m)
+    fi
+    cd "$dir"
+}
+
+# cd into the directory of the selected file
+fcf() {
+    local file
+    local dir
+    if git rev-parse > /dev/null 2>&1; then
+        cd $(git rev-parse --show-toplevel)
+        file=$(git ls-files | fzf +m -q "$1" --select-1)
+    else
+        file=$(fzf +m -q "$1" --select-1)
+    fi
+    dir=$(dirname "$file")
+    cd "$dir"
+}
+###############################################################################
 
