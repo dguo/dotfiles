@@ -21,6 +21,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 __git_complete g __git_main
 export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUPSTREAM="auto verbose git"
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export PS1="\n$RED$USERNAME@$SHORT_HOST$GREEN[$MILITARY_TIME]$BLUE:$SHORT_PWD$YELLOW\$(__git_ps1 ' (%s)')\n$WHITE\$ $GREY"
