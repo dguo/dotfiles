@@ -211,7 +211,7 @@ nnoremap Q :q<CR>
 noremap : ;
 noremap ; :
 " Ctrl-P for fzf (assume we're in a git repo)
-noremap <silent> <C-p> :GitFiles<CR>
+noremap <silent> <C-p> :GitFiles -co --exclude-standard<CR>
 " gm moves to middle of current physical line
 " http://www.vim.wikia.com/wiki/A_better_gm_command
 function! s:Gm()
