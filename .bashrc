@@ -138,7 +138,8 @@ fe() {
     # even if we're in a subdirectory
     if git rev-parse > /dev/null 2>&1; then
         cd $(git rev-parse --show-toplevel)
-        files=($(git ls-files | fzf-tmux --query="$1" --select-1 --exit-0))
+        files=($(git ls-files -co --exclude-standard | \
+                 fzf-tmux --query="$1" --select-1 --exit-0))
     else
         files=($(fzf-tmux --query="$1" --select-1 --exit-0))
     fi
@@ -153,7 +154,7 @@ fo() {
     local out file key
     if git rev-parse > /dev/null 2>&1; then
         cd $(git rev-parse --show-toplevel)
-        out=$(git ls-files | fzf-tmux --query="$1" \
+        out=$(git ls-files -co --exclude-standard | fzf-tmux --query="$1" \
               --exit-0 --expect=ctrl-o,ctrl-e)
     else
         out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
@@ -172,8 +173,8 @@ fc() {
     local dir
     if git rev-parse > /dev/null 2>&1; then
         cd $(git rev-parse --show-toplevel)
-        dir=$(git ls-files | xargs -n1 dirname | sort | uniq | \
-              fzf --select-1 -q "$1")
+        dir=$(git ls-files -co --exclude-standard | xargs -n1 dirname | sort | \
+              uniq | fzf --select-1 -q "$1")
     else
         dir=$(find ${1:-*} -path '*/\.*' -prune \
             -o -type d -print 2> /dev/null | fzf +m)
@@ -187,7 +188,7 @@ fcf() {
     local dir
     if git rev-parse > /dev/null 2>&1; then
         cd $(git rev-parse --show-toplevel)
-        file=$(git ls-files | fzf +m -q "$1" --select-1)
+        file=$(git ls-files -co --exclude-standard | fzf +m -q "$1" --select-1)
     else
         file=$(fzf +m -q "$1" --select-1)
     fi
