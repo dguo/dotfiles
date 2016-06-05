@@ -180,7 +180,15 @@ set shiftwidth=4      " number of spaces for indentation
 set softtabstop=4     " number of spaces for tab in insert mode
 " Visuals
 set background=dark
-colorscheme solarized " precision colors for machines and people
+" Precision colors for machines and people
+" Use silent so that Vim doesn't spew if it's not installed yet
+silent! colorscheme solarized
+" Fix incorrect background colors with Solarized in Terminator
+" https://github.com/Anthony25/gnome-terminal-colors-solarized
+" #conflicting-background-colors-in-vim
+if system("uname") == "Linux\n"
+    set t_Co=16
+endif
 set colorcolumn=80    " vertical stripe for line limit
 set showmatch         " highlight matching parenthesis, bracket, or brace
 syntax on

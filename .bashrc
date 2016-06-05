@@ -17,13 +17,37 @@ USERNAME="\u"
 SHORT_HOST="\h"
 MILITARY_TIME="\t"
 SHORT_PWD="\W"
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-__git_complete g __git_main
+
+# Ubuntu
+if [ -f /etc/bash_completion.d/git-prompt ]; then
+    source /etc/bash_completion.d/git-prompt
+fi
+if [ -f /usr/share/bash-completion/completions/git ]; then
+    source /usr/share/bash-completion/completions/git
+    __git_complete g __git_main
+fi
+
+# Mac
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    source /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
+    __git_complete g __git_main
+fi
+
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUPSTREAM="auto verbose git"
 export GIT_PS1_SHOWUNTRACKEDFILES=1
+
+if [ "$(type -t __git_ps1)" != function ]; then
+    # Make it a no-op
+    function __git_ps1 {
+        :
+    }
+fi
+
 export PS1="\n$RED$USERNAME@$SHORT_HOST$GREEN[$MILITARY_TIME]$BLUE:$SHORT_PWD$YELLOW\$(__git_ps1 ' (%s)')\n$WHITE\$ $GREY"
 
 # vi instead of emacs
@@ -139,9 +163,9 @@ fe() {
     if git rev-parse > /dev/null 2>&1; then
         cd $(git rev-parse --show-toplevel)
         files=($(git ls-files -co --exclude-standard | \
-                 fzf-tmux --query="$1" --select-1 --exit-0))
+                 fzf --query="$1" --select-1 --exit-0))
     else
-        files=($(fzf-tmux --query="$1" --select-1 --exit-0))
+        files=($(fzf --query="$1" --select-1 --exit-0))
     fi
     [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
     unset IFS
@@ -154,10 +178,10 @@ fo() {
     local out file key
     if git rev-parse > /dev/null 2>&1; then
         cd $(git rev-parse --show-toplevel)
-        out=$(git ls-files -co --exclude-standard | fzf-tmux --query="$1" \
+        out=$(git ls-files -co --exclude-standard | fzf --query="$1" \
               --exit-0 --expect=ctrl-o,ctrl-e)
     else
-        out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
+        out=$(fzf --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
     fi
     key=$(head -1 <<< "$out")
     file=$(head -2 <<< "$out" | tail -1)
