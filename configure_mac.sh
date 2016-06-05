@@ -22,6 +22,7 @@ brew install git-extras
 brew install pandoc
 brew install Caskroom/cask/mactex
 brew install postgresql
+brew install shellcheck
 brew install the_silver_searcher
 brew install tmux
 brew install vim

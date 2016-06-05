@@ -15,6 +15,7 @@ sudo apt-get -y install autojump
 sudo apt-get -y install bash
 sudo apt-get -y install git
 sudo apt-get -y install silversearcher-ag
+sudo apt-get -y install shellcheck
 sudo apt-get -y install tmux
 
 if cd ~/.autoenv; then
@@ -25,7 +26,7 @@ fi
 
 # Docker
 sudo apt-get -y install apt-transport-https ca-certificate
-sudo apt-get -y install linux-image-extra-$(uname -r)
+sudo apt-get -y install linux-image-extra-"$(uname -r)"
 sudo apt-get -y install apparmor
 sudo apt-get -y install docker-engine
 
@@ -43,6 +44,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # Can't do the following because it's not obvious when YouCompleteMe is done
 # vim +PlugInstall +qall
+echo "############################################################"
 echo
 echo "Now open Vim and run :PlugInstall or :PlugUpdate"
 echo
