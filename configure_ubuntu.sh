@@ -24,6 +24,9 @@ else
     git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
 fi
 
+# Java
+sudo apt-get -y install default-jre
+
 # Docker
 sudo apt-get -y install apt-transport-https ca-certificate
 sudo apt-get -y install linux-image-extra-"$(uname -r)"
