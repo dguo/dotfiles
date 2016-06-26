@@ -28,3 +28,6 @@
 [difftool "meld"]
     trustExitCode = true
     cmd = /Applications/Meld.app/Contents/MacOS/Meld \"$LOCAL\" \"$PWD/$REMOTE\"
+[rebase]
+	autosquash = true
+
