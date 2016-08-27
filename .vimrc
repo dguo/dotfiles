@@ -189,6 +189,7 @@ silent! colorscheme solarized
 if system("uname") == "Linux\n"
     set t_Co=16
 endif
+set cursorline        " highlight the line that the cursor is in
 set colorcolumn=80    " vertical stripe for line limit
 set showmatch         " highlight matching parenthesis, bracket, or brace
 syntax on
