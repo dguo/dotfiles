@@ -26,15 +26,17 @@
           <do task="middleclick"/>
         </mousefunction>
       </button>
-      <button number="4" name="Back">
-        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
-          <do task="back"/>
-        </mousefunction>
+      <button number="4" name="Left Cmd + [">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="LBRACKET"/>
+          <modifier value="LGUI"/>
+        </keystroke>
       </button>
-      <button number="5" name="Forward">
-        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
-          <do task="forward"/>
-        </mousefunction>
+      <button number="5" name="Left Cmd + ]">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="RBRACKET"/>
+          <modifier value="LGUI"/>
+        </keystroke>
       </button>
       <button number="6" name="Left Cmd + C">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
