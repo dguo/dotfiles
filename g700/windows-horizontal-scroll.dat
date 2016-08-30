@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<obprofiles xmlns="http://www.logitech.com/Cassandra/2013.1/OnboardProfile">
+  <profile name="Windows (scroll)">
+    <device model="Logitech.Gaming.Mouse.G700" reportrate="200" buttoncount="13" anglesnapping="0" powermode="1">
+      <dpitable defaultindex="0" currentindex="0">
+        <dpi x="1150" y="1150"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+      </dpitable>
+    </device>
+    <buttons>
+      <button number="1" name="Left Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="leftclick"/>
+        </mousefunction>
+      </button>
+      <button number="2" name="Right Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="rightclick"/>
+        </mousefunction>
+      </button>
+      <button number="3" name="Middle Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="middleclick"/>
+        </mousefunction>
+      </button>
+      <button number="4" name="Back">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="back"/>
+        </mousefunction>
+      </button>
+      <button number="5" name="Forward">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="forward"/>
+        </mousefunction>
+      </button>
+      <button number="6" name="Ctrl + C">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="C"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </button>
+      <button number="7" name="Ctrl + V">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="V"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </button>
+      <button number="8" name="Ctrl + W">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="W"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </button>
+      <button number="9" name="Return">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="ENTER"/>
+        </keystroke>
+      </button>
+      <button number="10" name="Left Cmd + Tab">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="TAB"/>
+          <modifier value="LGUI"/>
+        </keystroke>
+      </button>
+      <button number="11" name="Switch Profile">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="switchprofile"/>
+        </mousefunction>
+      </button>
+      <button number="12" name="Scroll Left">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="scrollleft"/>
+        </mousefunction>
+      </button>
+      <button number="13" name="Scroll Right">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="scrollright"/>
+        </mousefunction>
+      </button>
+    </buttons>
+  </profile>
+</obprofiles>
