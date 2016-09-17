@@ -15,6 +15,7 @@ brew install rust
 # tools
 brew install autoenv
 brew install autojump
+brew install awscli
 brew install cloc
 brew install fzf
 brew install git
