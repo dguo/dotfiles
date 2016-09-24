@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <obprofiles xmlns="http://www.logitech.com/Cassandra/2013.1/OnboardProfile">
-  <profile name="Mac">
-    <device model="Logitech.Gaming.Mouse.G700" reportrate="200" buttoncount="13" anglesnapping="0" powermode="1">
-      <dpitable defaultindex="0" currentindex="0">
+  <profile name="Windows">
+    <device anglesnapping="0" powermode="1" buttoncount="13" reportrate="200" model="Logitech.Gaming.Mouse.G700">
+      <dpitable currentindex="0" defaultindex="0">
         <dpi x="1150" y="1150"/>
         <dpi x="0" y="0"/>
         <dpi x="0" y="0"/>
@@ -21,10 +21,11 @@
           <do task="rightclick"/>
         </mousefunction>
       </button>
-      <button number="3" name="Middle Click">
-        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
-          <do task="middleclick"/>
-        </mousefunction>
+      <button number="3" name="Ctrl + T">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="T"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
       </button>
       <button number="4" name="Left Cmd + [">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
@@ -38,22 +39,22 @@
           <modifier value="LGUI"/>
         </keystroke>
       </button>
-      <button number="6" name="Left Cmd + C">
+      <button number="6" name="Ctrl + C">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
           <key value="C"/>
-          <modifier value="LGUI"/>
+          <modifier value="LCTRL"/>
         </keystroke>
       </button>
-      <button number="7" name="Left Cmd + V">
+      <button number="7" name="Ctrl + V">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
           <key value="V"/>
-          <modifier value="LGUI"/>
+          <modifier value="LCTRL"/>
         </keystroke>
       </button>
-      <button number="8" name="Left Cmd + W">
+      <button number="8" name="Ctrl + W">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
           <key value="W"/>
-          <modifier value="LGUI"/>
+          <modifier value="LCTRL"/>
         </keystroke>
       </button>
       <button number="9" name="Return">
@@ -61,10 +62,10 @@
           <key value="ENTER"/>
         </keystroke>
       </button>
-      <button number="10" name="Ctrl + Up">
+      <button number="10" name="Left Cmd + Tab">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="UP"/>
-          <modifier value="LCTRL"/>
+          <key value="TAB"/>
+          <modifier value="LGUI"/>
         </keystroke>
       </button>
       <button number="11" name="Switch Profile">
