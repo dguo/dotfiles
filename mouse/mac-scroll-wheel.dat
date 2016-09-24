@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <obprofiles xmlns="http://www.logitech.com/Cassandra/2013.1/OnboardProfile">
   <profile name="Mac (scroll)">
-    <device model="Logitech.Gaming.Mouse.G700" reportrate="125" buttoncount="13" anglesnapping="0" powermode="1">
-      <dpitable defaultindex="0" currentindex="0">
+    <device anglesnapping="0" powermode="1" buttoncount="13" reportrate="125" model="Logitech.Gaming.Mouse.G700">
+      <dpitable currentindex="0" defaultindex="0">
         <dpi x="1150" y="1150"/>
         <dpi x="0" y="0"/>
         <dpi x="0" y="0"/>
@@ -56,9 +56,10 @@
           <modifier value="LGUI"/>
         </keystroke>
       </button>
-      <button number="9" name="Return">
+      <button number="9" name="Left Cmd + T">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="ENTER"/>
+          <key value="T"/>
+          <modifier value="LGUI"/>
         </keystroke>
       </button>
       <button number="10" name="Ctrl + Up">

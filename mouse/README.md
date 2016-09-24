@@ -35,13 +35,12 @@
     * Paste
 * Three buttons next to the left click
     * Show all open windows
-    * Enter
+    * New tab/window
     * Close tab/window
 * Scroll wheel
-    * Click is new tab/window
     * Left tilt to go to the previous tab
     * Right tilt to go to the next tab
-    * The alternate mode for each OS restores the middle click, left scroll, and right scroll
+    * The alternate mode for each OS restores the horizontal scroll
 
 ## Profiles
 * Mac

@@ -21,11 +21,10 @@
           <do task="rightclick"/>
         </mousefunction>
       </button>
-      <button number="3" name="Ctrl + T">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="T"/>
-          <modifier value="LCTRL"/>
-        </keystroke>
+      <button number="3" name="Middle Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="middleclick"/>
+        </mousefunction>
       </button>
       <button number="4" name="Left Cmd + [">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
@@ -57,9 +56,10 @@
           <modifier value="LCTRL"/>
         </keystroke>
       </button>
-      <button number="9" name="Return">
+      <button number="9" name="Ctrl + T">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="ENTER"/>
+          <key value="T"/>
+          <modifier value="LCTRL"/>
         </keystroke>
       </button>
       <button number="10" name="Left Cmd + Tab">
