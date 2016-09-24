@@ -7,7 +7,7 @@
     * Comes with an [Eneloop battery](https://www.amazon.com/Panasonic-K-KJ17MCA4BA-Individual-Rechargeable-Batteries/dp/B00JHKSMJU) that I am still using over five years later
 * Wired mode
     * For both charging and data
-* Sroll wheel
+* Scroll wheel
     * Can tilt to the left and right
     * Can be toggled between a free spinning mode and a ratcheted mode
 * Profiles
