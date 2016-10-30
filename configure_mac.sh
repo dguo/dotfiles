@@ -49,6 +49,7 @@ brew install git
 brew install pandoc
 brew install shellcheck
 brew install the_silver_searcher
+brew install tldr
 brew install tmux
 brew install vim
 # applications, using https://caskroom.github.io
