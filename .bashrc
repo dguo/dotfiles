@@ -16,7 +16,7 @@ YELLOW="\[\e[00;33m\]"
 USERNAME="\u"
 SHORT_HOST="\h"
 MILITARY_TIME="\t"
-SHORT_PWD="\W"
+WORKING_DIRECTORY="\w"
 
 # Ubuntu
 if [ -f /etc/bash_completion.d/git-prompt ]; then
@@ -48,7 +48,7 @@ if [ "$(type -t __git_ps1)" != function ]; then
     }
 fi
 
-export PS1="\n$RED$USERNAME@$SHORT_HOST$GREEN[$MILITARY_TIME]$BLUE:$SHORT_PWD$YELLOW\$(__git_ps1 ' (%s)')\n$WHITE\$ $GREY"
+export PS1="\n$RED$USERNAME@$SHORT_HOST$GREEN[$MILITARY_TIME]$BLUE:$WORKING_DIRECTORY$YELLOW\$(__git_ps1 ' (%s)')\n$GREY> $WHITE"
 
 # vi instead of emacs
 set -o vi
