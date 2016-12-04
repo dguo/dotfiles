@@ -461,6 +461,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DisableWindowSizeSnap</key>
+	<true/>
 	<key>EnableRendezvous</key>
 	<false/>
 	<key>FocusFollowsMouse</key>
@@ -532,7 +534,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>307</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -544,11 +546,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>753 1385 606 456 0 800 1920 1057 </string>
+	<string>-1167 1385 606 456 -1920 800 1920 1057 </string>
+	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
+	<string>332 465 616 174 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 302 620 392 0 0 1280 777 </string>
+	<string>330 301 620 392 0 0 1280 777 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>-1396 1011 606 456 -1920 800 1920 1057 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>262 223 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 52 1277 725 0 0 1280 777 </string>
+	<string>1 56 1277 717 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_18123AC0-FE8B-4E84-951C-FB2CA942E2A1</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_18123AC0-FE8B-4E84-951C-FB2CA942E2A1_selection</key>
@@ -2010,10 +2018,14 @@
 			<string>/Users/dannyguo</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C1E2C0AF-E3CA-4B24-9505-0A5596D94595</string>
 	<key>NoSyncLastTipTime</key>
@@ -2026,6 +2038,10 @@
 	<true/>
 	<key>NoSyncSuppressAnnyoingBellOffer</key>
 	<true/>
+	<key>NoSyncSuppressWarningAboutInlineImages</key>
+	<true/>
+	<key>NoSyncSuppressWarningAboutInlineImages_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>477047990.90823001</real>
 	<key>NoSyncTipsDisabled</key>
@@ -2109,17 +2125,17 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SUAutomaticallyUpdate</key>
-	<true/>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=51</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=51</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-27T19:03:43Z</date>
+	<date>2016-12-03T19:04:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2169,6 +2185,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160426</string>
+	<string>3.0.12</string>
 </dict>
 </plist>
