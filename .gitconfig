@@ -9,12 +9,20 @@
     a = add
     au = add -u
     b = branch
-    c = commit -m
+    c = commit
+    cm = commit -m
+    ca = commit --amend
+    cf = commit --fixup=HEAD
+    cs = commit --squash=HEAD -m
     co = checkout
     d = diff
     dt = difftool
     l = log
     m = merge
+    r = rebase
+    # Interactively rebase the last $1 commits, defaulting to 2 for most
+    # of my fixup/squash cases.
+    ri = "!f() { git rebase -i HEAD~${1:-2}; }; f"
     s = status
     t = tag
     ph = push
