@@ -126,6 +126,7 @@ let g:vim_json_syntax_conceal=0
 let javascript_enable_domhtmlcss = 1
 let b:javascript_fold = 0
 let g:jsx_ext_required = 0
+let g:javascript_plugin_flow = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
