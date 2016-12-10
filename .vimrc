@@ -15,8 +15,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " A foolish consistency is the hobgoblin of little minds
-Plug 'scrooloose/syntastic'
-Plug 'pmsorhaindo/syntastic-local-eslint.vim'
+Plug 'neomake/neomake'
+Plug 'jaawerth/nrun.vim'
 Plug 'editorconfig/editorconfig-vim'
 " faster editing
 Plug 'scrooloose/nerdcommenter'
@@ -52,7 +52,6 @@ call plug#end()
 " airline (status line)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_powerline_fonts=1
-let g:airline#extensions#syntastic#enabled=1
 let g:airline_theme='solarized'
 let g:airline_symbols = get(g:, 'airline_symbols', {})
 let g:airline_section_z = '%4l/%L %3c'
@@ -61,14 +60,12 @@ let g:airline_right_sep = ''
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" syntastic (syntax/style checker)
+" neomake (linting)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Slows down vim start-up
-let g:syntastic_check_on_open=0
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_jump=0
-let g:syntastic_python_checkers=['pylint']
-let g:syntastic_javascript_checkers=['eslint']
+autocmd! BufWritePost * Neomake
+let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_jsx_enabled_makers = ['eslint']
+au BufEnter *.js let b:neomake_javascript_eslint_exe = nrun#Which('eslint')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
