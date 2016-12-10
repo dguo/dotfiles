@@ -12,7 +12,8 @@ let mapleader=" "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 " light as air status line
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " A foolish consistency is the hobgoblin of little minds
 Plug 'scrooloose/syntastic'
 Plug 'pmsorhaindo/syntastic-local-eslint.vim'
@@ -52,6 +53,11 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_powerline_fonts=1
 let g:airline#extensions#syntastic#enabled=1
+let g:airline_theme='solarized'
+let g:airline_symbols = get(g:, 'airline_symbols', {})
+let g:airline_section_z = '%4l/%L %3c'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
