@@ -56,7 +56,9 @@ let g:airline_theme='solarized'
 let g:airline_symbols = get(g:, 'airline_symbols', {})
 let g:airline_section_z = '%4l/%L %3c'
 let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
