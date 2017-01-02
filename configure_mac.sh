@@ -79,6 +79,7 @@ brew cleanup
 # Version of pip that comes with brew is outdated
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools
+pip install pylint
 
 # Global node modules
 npm install -g eslint

@@ -68,6 +68,7 @@ autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
 au BufEnter *.js let b:neomake_javascript_eslint_exe = nrun#Which('eslint')
+let g:neomake_python_enabled_makers = ['pylint']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
