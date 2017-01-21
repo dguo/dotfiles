@@ -46,12 +46,14 @@ brew install awscli
 brew install cloc
 brew install fzf
 brew install git
+brew install gpg
 brew install pandoc
 brew install shellcheck
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
 brew install vim
+brew install yarn
 # applications, using https://caskroom.github.io
 brew tap caskroom/cask
 brew cask install appcleaner
@@ -85,6 +87,7 @@ pip install pylint
 npm install -g eslint
 npm install -g eslint-plugin-json
 npm install -g eslint-plugin-react
+npm install -g eslint-plugin-import
 npm install -g instant-markdown-d
 
 # Symlink configurations
