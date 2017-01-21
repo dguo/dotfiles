@@ -1,6 +1,7 @@
 [user]
     name = Danny Guo
     email = dannyguo91@gmail.com
+    signingkey = 563054975255DC30
 [push]
     default = simple
 [core]
@@ -38,4 +39,3 @@
     cmd = /Applications/Meld.app/Contents/MacOS/Meld \"$LOCAL\" \"$PWD/$REMOTE\"
 [rebase]
 	autosquash = true
-

@@ -48,6 +48,7 @@ brew install fzf
 brew install git
 brew install gpg
 brew install pandoc
+brew install pinentry-mac # for entering a GPG passphrase
 brew install shellcheck
 brew install the_silver_searcher
 brew install tldr
@@ -95,6 +96,7 @@ ln -s ~/Code/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Code/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 # Suppress the new window message
 ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
 
@@ -103,4 +105,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 vim +PlugUpdate +qall
-
