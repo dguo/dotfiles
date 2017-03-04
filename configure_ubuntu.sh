@@ -38,6 +38,7 @@ ln -s -f ~/Code/dotfiles/.bash_profile ~/.bash_profile
 ln -s -f ~/Code/dotfiles/.bashrc ~/.bashrc
 ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
 ln -s -f ~/Code/dotfiles/.gitconfig ~/.gitconfig
+ln -s -f ~/Code/dotfiles/.gitignore ~/.gitignore
 ln -s -f ~/Code/dotfiles/terminator/config ~/.config/terminator/config
 
 # Vim

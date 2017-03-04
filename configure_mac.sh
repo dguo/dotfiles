@@ -96,6 +96,7 @@ ln -s ~/Code/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Code/dotfiles/.gitignore ~/.gitignore
 ln -s ~/Code/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 # Suppress the new window message
 ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
