@@ -47,6 +47,7 @@ brew install cloc
 brew install fzf
 brew install git
 brew install gpg
+brew install md5sha1sum
 brew install pandoc
 brew install pinentry-mac # for entering a GPG passphrase
 brew install shellcheck
