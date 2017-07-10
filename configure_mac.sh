@@ -67,7 +67,7 @@ brew cask install duet
 brew cask install evernote
 brew cask install flux
 brew cask install google-chrome
-brew cask install karabiner
+brew cask install karabiner-elements
 brew cask install lastpass
 brew cask install mactex
 brew cask install opera
@@ -99,6 +99,7 @@ ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Code/dotfiles/.gitignore ~/.gitignore
 ln -s ~/Code/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+ln -s ~/Code/dotfiles/karabiner/karabiner.json karabiner.json
 # Suppress the new window message
 ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
 
