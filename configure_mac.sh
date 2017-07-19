@@ -54,6 +54,7 @@ brew install shellcheck
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
+brew install xsv
 brew install vim
 brew install yarn
 # applications, using https://caskroom.github.io
