@@ -3,9 +3,13 @@
 ###############################################################################
 
 ###############################################################################
-# custom prompt:
-# user@host at time in pwd on git branch
+# Custom prompt:
+#
+# <user>@<host> at <time> in <working directory> on <git branch and status>
 # λ
+#
+# Shows an exclamation point instead of a lambda if the last command had a
+# non-zero exit status.
 ###############################################################################
 RED="\[\e[0;31m\]"
 GREEN="\[\e[0;32m\]"
@@ -48,7 +52,7 @@ if [ "$(type -t __git_ps1)" != function ]; then
     }
 fi
 
-export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $BLUE$WORKING_DIRECTORY\$(__git_ps1 '$WHITE on $YELLOW%s')\n$RED$LAMBDA$WHITE "
+export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $BLUE$WORKING_DIRECTORY\$(__git_ps1 '$WHITE on $YELLOW%s')\n$RED\$(if [ \$? == 0 ]; then echo \$LAMBDA; else echo !; fi)$WHITE "
 export PS2="$RED>$WHITE "
 
 # vi instead of emacs
@@ -221,4 +225,3 @@ fcf() {
     cd "$dir"
 }
 ###############################################################################
-
