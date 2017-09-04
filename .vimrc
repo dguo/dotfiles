@@ -189,6 +189,7 @@ set tabstop=4         " number of spaces for tab
 set shiftwidth=4      " number of spaces for indentation
 set softtabstop=4     " number of spaces for tab in insert mode
 " Visuals
+set termguicolors " turn on 24-bit ("true") colors
 set background=dark
 " Precision colors for machines and people
 " Use silent so that Vim doesn't spew if it's not installed yet
@@ -258,4 +259,3 @@ endfun
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
