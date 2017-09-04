@@ -4,8 +4,8 @@
 
 ###############################################################################
 # custom prompt:
-# user@host[time]:pwd (git info if applicable)
-# $
+# user@host at time in pwd on git branch
+# λ
 ###############################################################################
 RED="\[\e[0;31m\]"
 GREEN="\[\e[0;32m\]"
@@ -48,7 +48,7 @@ if [ "$(type -t __git_ps1)" != function ]; then
     }
 fi
 
-export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $BLUE$WORKING_DIRECTORY$YELLOW\$(__git_ps1 ' (%s)')\n$RED$LAMBDA$WHITE "
+export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $BLUE$WORKING_DIRECTORY\$(__git_ps1 '$WHITE on $YELLOW%s')\n$RED$LAMBDA$WHITE "
 export PS2="$RED>$WHITE "
 
 # vi instead of emacs
