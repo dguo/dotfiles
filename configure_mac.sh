@@ -67,6 +67,7 @@ brew cask install dropbox
 brew cask install duet
 brew cask install evernote
 brew cask install flux
+brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install karabiner-elements
 brew cask install lastpass
