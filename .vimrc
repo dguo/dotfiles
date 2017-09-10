@@ -189,6 +189,7 @@ set tabstop=4         " number of spaces for tab
 set shiftwidth=4      " number of spaces for indentation
 set softtabstop=4     " number of spaces for tab in insert mode
 " Visuals
+set fillchars=vert:\│ " try to make the vertical split a solid line
 set termguicolors " turn on 24-bit ("true") colors
 set background=dark
 " Precision colors for machines and people
