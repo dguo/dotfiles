@@ -212,6 +212,9 @@ autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead .babelrc set filetype=json
 " Command-line
 set wildmenu " show possible autocomplete matches in a horizontal menu
+" Folding
+set foldmethod=syntax
+set foldlevel=99 " leave everything unfolded when the file is opened
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
