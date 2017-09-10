@@ -210,6 +210,8 @@ set encoding=utf-8
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead .babelrc set filetype=json
+" Command-line
+set wildmenu " show possible autocomplete matches in a horizontal menu
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
