@@ -100,6 +100,7 @@ ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Code/dotfiles/.gitignore ~/.gitignore
+ln -s ~/Code/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/Code/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 ln -s ~/Code/dotfiles/karabiner/karabiner.json karabiner.json
 # Suppress the new window message
