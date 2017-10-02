@@ -16,6 +16,7 @@ GREEN="\[\e[0;32m\]"
 BLUE="\[\e[0;34m\]"
 WHITE="\[\e[0;37m\]"
 YELLOW="\[\e[00;33m\]"
+MAGENTA="\[\e[00;35m\]"
 USERNAME="\u"
 SHORT_HOST="\h"
 MILITARY_TIME="\t"
@@ -52,7 +53,7 @@ if [ "$(type -t __git_ps1)" != function ]; then
     }
 fi
 
-export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $BLUE$WORKING_DIRECTORY\$(__git_ps1 '$WHITE on $YELLOW%s')\n$RED\$(if [ \$? == 0 ]; then echo \$LAMBDA; else echo !; fi)$WHITE "
+export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $BLUE$WORKING_DIRECTORY\$(__git_ps1 '$WHITE on $YELLOW%s')\n$MAGENTA\$(if [ \$? == 0 ]; then echo \$LAMBDA; else echo !; fi)$WHITE "
 export PS2="$RED>$WHITE "
 
 # vi instead of emacs
