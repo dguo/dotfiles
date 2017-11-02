@@ -34,12 +34,12 @@ sudo apt-get -y install apparmor
 sudo apt-get -y install docker-engine
 
 # Symlink configurations
-ln -s -f ~/Code/dotfiles/.bash_profile ~/.bash_profile
-ln -s -f ~/Code/dotfiles/.bashrc ~/.bashrc
-ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
-ln -s -f ~/Code/dotfiles/.gitconfig ~/.gitconfig
-ln -s -f ~/Code/dotfiles/.gitignore ~/.gitignore
-ln -s -f ~/Code/dotfiles/terminator/config ~/.config/terminator/config
+ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
+ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
+ln -sf ~/Code/dguo/dotfiles/terminator/config ~/.config/terminator/config
 
 # Vim
 sudo apt-get -y install vim
@@ -55,4 +55,3 @@ echo "Now open Vim and run :PlugInstall or :PlugUpdate"
 echo
 echo "And don't forget to install a patched font for vim-devicons:"
 echo "https://github.com/ryanoasis/nerd-fonts"
-

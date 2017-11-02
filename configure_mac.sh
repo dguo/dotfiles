@@ -95,16 +95,16 @@ npm install -g eslint-plugin-import
 npm install -g instant-markdown-d
 
 # Symlink configurations
-ln -s ~/Code/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/Code/dotfiles/.bashrc ~/.bashrc
-ln -s ~/Code/dotfiles/.vimrc ~/.vimrc
-ln -s ~/Code/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Code/dotfiles/.gitignore ~/.gitignore
-ln -s ~/Code/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/Code/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
-ln -s ~/Code/dotfiles/karabiner/karabiner.json karabiner.json
-# Suppress the new window message
-ln -s ~/Code/dotfiles/.hushlogin ~/.hushlogin
+ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
+ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
+ln -sf ~/Code/dguo/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/Code/dguo/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+ln -sf ~/Code/dguo/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+# Supfpress the new window message
+ln -sf ~/Code/dguo/dotfiles/.hushlogin ~/.hushlogin
 
 # Set up Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
