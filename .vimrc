@@ -25,16 +25,7 @@ Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-speeddating'
 " languages
-Plug 'rust-lang/rust.vim'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'digitaltoad/vim-jade'
-Plug 'elzr/vim-json'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'cespare/vim-toml'
-Plug 'mrk21/yaml-vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'suan/vim-instant-markdown'
+Plug 'sheerun/vim-polyglot'
 " precision colors for machines and people
 Plug 'altercation/vim-colors-solarized'
 " git
@@ -46,7 +37,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
-" writing prose
+" writing
+Plug 'suan/vim-instant-markdown'
 Plug 'junegunn/goyo.vim'
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
