@@ -10,5 +10,4 @@ addons:
       - shellcheck
 
 script:
-  - "shellcheck *.sh"
-
+  - "shellcheck **/*.sh"

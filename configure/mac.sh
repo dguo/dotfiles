@@ -98,7 +98,7 @@ npm install -g instant-markdown-d
 ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
 ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/Code/dguo/dotfiles/git/mac.gitconfig ~/.gitconfig
 ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/Code/dguo/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/Code/dguo/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf

@@ -21,7 +21,7 @@ yaourt -Syu
 # Bash
 ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/Code/dguo/dotfiles/git/linux.gitconfig ~/.gitconfig
 ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
 
 # Docker
