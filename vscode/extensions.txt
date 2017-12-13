@@ -1,0 +1,6 @@
+EditorConfig.EditorConfig
+PeterJausovec.vscode-docker
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+vscodevim.vim
+zhuangtongfa.Material-theme

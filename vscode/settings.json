@@ -26,5 +26,6 @@
     "workbench.editor.swipeToNavigate": true,
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.activityBar.visible": true,
-    "workbench.panel.location": "bottom"
+    "workbench.panel.location": "bottom",
+    "workbench.startupEditor": "newUntitledFile"
 }

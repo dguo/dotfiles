@@ -10,4 +10,4 @@ addons:
       - shellcheck
 
 script:
-  - "shellcheck **/*.sh"
+  - "shellcheck -e SC1090 **/*.sh"

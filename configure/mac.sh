@@ -97,18 +97,21 @@ npm install -g instant-markdown-d
 # Symlink configurations
 ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/Code/dguo/dotfiles/git/mac.gitconfig ~/.gitconfig
 ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/Code/dguo/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/Code/dguo/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 ln -sf ~/Code/dguo/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
-ln -sf ~/Code/dguo/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-# Supfpress the new window message
+# Suppress the new window message
 ln -sf ~/Code/dguo/dotfiles/.hushlogin ~/.hushlogin
 
-# Set up Vim
+# Vim
+ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
 vim +PlugUpdate +qall
+vim +PlugClean +qall
+
+# Visual Studio Code
+ln -sf ~/Code/dguo/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+. ~/Code/dguo/dotfiles/vscode/sync-extensions.sh
