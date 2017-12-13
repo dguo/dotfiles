@@ -29,6 +29,6 @@
     ph = push
     pl = pull
 [credential]
-    helper = cache --timeout=86400
+    helper = libsecret
 [rebase]
     autosquash = true

@@ -60,6 +60,7 @@ export PS1="\n$RED$USERNAME@$SHORT_HOST$WHITE at $GREEN$MILITARY_TIME$WHITE in $
 export PS2="$RED>$WHITE "
 
 # vi instead of emacs
+export EDITOR=vim
 set -o vi
 
 ###############################################################################

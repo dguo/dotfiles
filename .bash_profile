@@ -10,9 +10,13 @@ if [ "$(uname)" == "Darwin" ]; then
     [[ -s /usr/local/opt/autoenv/activate.sh ]] && \
         . /usr/local/opt/autoenv/activate.sh
 else
+    # Ubuntu
     [[ -s /usr/share/autojump/autojump.sh ]] && \
         . /usr/share/autojump/autojump.sh
 
+    # Arch
+    [[ -s /etc/profile.d/autojump.bash ]] && \
+        echo hi && . /etc/profile.d/autojump.bash
+
     [[ -s ~/.autoenv/activate.sh ]] && . ~/.autoenv/activate.sh
 fi
-
