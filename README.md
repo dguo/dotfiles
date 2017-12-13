@@ -1,4 +1,4 @@
-# System Configuration
+# System Configuration [![Build Status](https://travis-ci.org/dguo/dotfiles.svg?branch=travis)](https://travis-ci.org/dguo/dotfiles)
 
 ## Terminal toolkit
 * [Bash](https://www.gnu.org/software/bash/) for the shell
