@@ -32,3 +32,6 @@ sudo systemctl enable docker
 ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
 vim +PlugUpdate +qall
 vim +PlugClean! +qall
+
+# Visual Studio Code
+ln -sf ~/Code/dguo/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json

@@ -103,6 +103,7 @@ ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/Code/dguo/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/Code/dguo/dotfiles/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 ln -sf ~/Code/dguo/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+ln -sf ~/Code/dguo/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 # Supfpress the new window message
 ln -sf ~/Code/dguo/dotfiles/.hushlogin ~/.hushlogin
 
