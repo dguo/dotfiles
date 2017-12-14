@@ -4,7 +4,7 @@ DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
 # sudo pacman -Sy autojump git docker docker-compose dropbox fzf gvim \
-#     libsecret shellcheck the_silver_searcher vlc
+#     libsecret shellcheck the_silver_searcher vlc xcape
 # yaourt -Sy adobe-source-code-pro-fonts google-chrome firefox-developer \
 #     vim-plug visual-studio-code
 # Sign into Dropbox and Firefox
@@ -24,8 +24,14 @@ yaourt -Syu
 # Bash
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/.bashrc ~/.bashrc
+
+# Git
 ln -sf $DOTFILES/git/linux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
+
+# Remap
+mkdir -p ~/.config/autostart
+sudo ln -sf $DOTFILES/configure/caps-lock.desktop ~/.config/autostart/caps-lock.desktop
 
 # Docker
 sudo usermod -a -G docker "$USER"
