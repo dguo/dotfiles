@@ -4,7 +4,7 @@ DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
 # sudo pacman -Sy autojump git docker docker-compose dropbox fzf gvim \
-#     libsecret shellcheck the_silver_searcher tldr vlc xcape
+#     libsecret shellcheck the_silver_searcher terminator tldr vlc xcape
 # yaourt -Sy adobe-source-code-pro-fonts google-chrome firefox-developer \
 #     vim-plug visual-studio-code
 # Sign into Dropbox and Firefox
@@ -36,6 +36,10 @@ sudo ln -sf $DOTFILES/configure/caps-lock.desktop ~/.config/autostart/caps-lock.
 # Docker
 sudo usermod -a -G docker "$USER"
 sudo systemctl enable docker
+
+# Terminator
+mkdir -p ~/.config/terminator
+ln -sf $DOTFILES/terminator/config ~/.config/terminator/config
 
 # Vim
 ln -sf $DOTFILES/.vimrc ~/.vimrc
