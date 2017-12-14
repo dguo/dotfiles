@@ -5,6 +5,45 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Arch
+[[ -s /etc/profile.d/autojump.bash ]] && \
+    source /etc/profile.d/autojump.bash
+[[ -s /usr/share/git/completion/git-completion.bash ]] && \
+    source /usr/share/git/completion/git-completion.bash
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+    source /usr/share/git/completion/git-prompt.sh
+    __git_complete g __git_main
+fi
+
+# Ubuntu
+if [ -f /etc/bash_completion.d/git-prompt ]; then
+    source /etc/bash_completion.d/git-prompt
+fi
+if [ -f /usr/share/bash-completion/completions/git ]; then
+    source /usr/share/bash-completion/completions/git
+    __git_complete g __git_main
+fi
+[[ -s /usr/share/autojump/autojump.sh ]] && \
+    . /usr/share/autojump/autojump.sh
+[[ -s ~/.autoenv/activate.sh ]] && . ~/.autoenv/activate.sh
+
+# Mac
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    source /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
+    __git_complete g __git_main
+fi
+if [ "$(uname)" == "Darwin" ]; then
+    which -s brew && \
+        [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && \
+        . $(brew --prefix)/etc/profile.d/autojump.sh
+
+    [[ -s /usr/local/opt/autoenv/activate.sh ]] && \
+        . /usr/local/opt/autoenv/activate.sh
+fi
+
 ###############################################################################
 # Custom prompt:
 #
@@ -25,24 +64,6 @@ SHORT_HOST="\h"
 MILITARY_TIME="\t"
 WORKING_DIRECTORY="\w"
 LAMBDA=$'\xce\xbb'
-
-# Ubuntu
-if [ -f /etc/bash_completion.d/git-prompt ]; then
-    source /etc/bash_completion.d/git-prompt
-fi
-if [ -f /usr/share/bash-completion/completions/git ]; then
-    source /usr/share/bash-completion/completions/git
-    __git_complete g __git_main
-fi
-
-# Mac
-if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
-    source /usr/local/etc/bash_completion.d/git-prompt.sh
-fi
-if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-    source /usr/local/etc/bash_completion.d/git-completion.bash
-    __git_complete g __git_main
-fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
