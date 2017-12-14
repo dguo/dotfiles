@@ -4,7 +4,7 @@ DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
 # sudo pacman -Sy autojump git docker docker-compose dropbox fzf gvim \
-#     libsecret shellcheck the_silver_searcher vlc xcape
+#     libsecret shellcheck the_silver_searcher tldr vlc xcape
 # yaourt -Sy adobe-source-code-pro-fonts google-chrome firefox-developer \
 #     vim-plug visual-studio-code
 # Sign into Dropbox and Firefox
