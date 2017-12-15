@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Remap Caps Lock
-GenericName=Make caps lock useful
-Comment=Caps lock becomes escape when tapped and control when held
-Exec=/usr/bin/env bash -c "setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape;Control_L=Escape;Control_R=Escape'"
-Terminal=false
-Type=Application
-StartupNotify=false

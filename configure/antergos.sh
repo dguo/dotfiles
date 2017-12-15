@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
+set -e
+
 DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
 # sudo pacman -Sy autojump git docker docker-compose dropbox fzf gvim \
-#     libsecret shellcheck the_silver_searcher terminator tldr vlc xcape
+#     libsecret shellcheck the_silver_searcher terminator tldr vlc
 # yaourt -Sy adobe-source-code-pro-fonts google-chrome firefox-developer \
-#     vim-plug visual-studio-code
+#     interception-caps2esc vim-plug visual-studio-code
 # Sign into Dropbox and Firefox
 
 mkdir -p ~/Code/dguo
@@ -29,9 +31,9 @@ ln -sf $DOTFILES/.bashrc ~/.bashrc
 ln -sf $DOTFILES/git/linux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
-# Remap
-mkdir -p ~/.config/autostart
-sudo ln -sf $DOTFILES/configure/caps-lock.desktop ~/.config/autostart/caps-lock.desktop
+# Remap caps lock to escape and control
+sudo ln -sf $DOTFILES/configure/udevmon.yaml /etc/udevmon.yaml
+sudo systemctl enable udevmon
 
 # Docker
 sudo usermod -a -G docker "$USER"
