@@ -5,11 +5,13 @@ set -e
 DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
-# sudo pacman -Sy autojump git docker docker-compose dropbox fzf gvim \
+# sudo pacman -Sy autojump git docker docker-compose dropbox fzf \
+#     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
 #     libsecret shellcheck the_silver_searcher terminator tldr vlc
 # yaourt -Sy adobe-source-code-pro-fonts google-chrome firefox-developer \
 #     interception-caps2esc vim-plug visual-studio-code
-# Sign into Dropbox and Firefox
+# Sign into Chrome, Dropbox, and Firefox
+# USe the tweak tool to configure the dock.
 
 mkdir -p ~/Code/dguo
 cd ~/Code/dguo || exit 1
@@ -18,7 +20,6 @@ if cd dotfiles; then
 else
     git clone https://github.com/dguo/dotfiles.git
 fi
-
 
 sudo pacman -Syu
 yaourt -Syu
