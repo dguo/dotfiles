@@ -153,6 +153,7 @@ filetype plugin indent on   " indenting intelligence based on file type
 set autoindent              " copy indent to new line
 " Editing
 set backspace=indent,eol,start " can erase past chars, autoindent, and newlines
+set clipboard^=unnamed,unnamedplus " use the system clipboard
 " disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Extra information
