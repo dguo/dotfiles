@@ -11,12 +11,7 @@ let mapleader=" "
 " Vim Plug set-up
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-" light as air status line
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 " A foolish consistency is the hobgoblin of little minds
-Plug 'neomake/neomake'
-Plug 'jaawerth/nrun.vim'
 Plug 'editorconfig/editorconfig-vim'
 " faster editing
 Plug 'scrooloose/nerdcommenter'
@@ -36,34 +31,10 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
 " writing
 Plug 'suan/vim-instant-markdown'
 Plug 'junegunn/goyo.vim'
 call plug#end()
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" airline (status line)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_powerline_fonts=1
-let g:airline_theme='solarized'
-let g:airline_symbols = get(g:, 'airline_symbols', {})
-let g:airline_section_z = '%4l/%L %3c'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" neomake (linting)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd! BufWritePost * Neomake
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_jsx_enabled_makers = ['eslint']
-au BufEnter *.js let b:neomake_javascript_eslint_exe = nrun#Which('eslint')
-let g:neomake_python_enabled_makers = ['pylint']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
