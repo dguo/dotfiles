@@ -21,8 +21,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-speeddating'
 " languages
 Plug 'sheerun/vim-polyglot'
-" precision colors for machines and people
-Plug 'altercation/vim-colors-solarized'
+" color scheme
+Plug 'dguo/blood-moon', {'rtp': 'applications/vim'}
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -156,9 +156,8 @@ set softtabstop=4     " number of spaces for tab in insert mode
 set fillchars=vert:\│ " try to make the vertical split a solid line
 set termguicolors " turn on 24-bit ("true") colors
 set background=dark
-" Precision colors for machines and people
 " Use silent so that Vim doesn't spew if it's not installed yet
-silent! colorscheme solarized
+silent! colorscheme blood-moon
 " Fix incorrect background colors with Solarized in Terminator
 " https://github.com/Anthony25/gnome-terminal-colors-solarized
 " #conflicting-background-colors-in-vim
