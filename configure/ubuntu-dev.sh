@@ -13,6 +13,9 @@ sudo apt-get install git -y
 ln -sf $DOTFILES/git/ubuntu-dev.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
+# Tools
+sudo apt-get install mosh -y
+
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
