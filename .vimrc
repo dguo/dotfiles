@@ -158,12 +158,6 @@ set termguicolors " turn on 24-bit ("true") colors
 set background=dark
 " Use silent so that Vim doesn't spew if it's not installed yet
 silent! colorscheme blood-moon
-" Fix incorrect background colors with Solarized in Terminator
-" https://github.com/Anthony25/gnome-terminal-colors-solarized
-" #conflicting-background-colors-in-vim
-if system("uname") == "Linux\n"
-    set t_Co=16
-endif
 set colorcolumn=80    " vertical stripe for line limit
 set showmatch         " highlight matching parenthesis, bracket, or brace
 syntax on
