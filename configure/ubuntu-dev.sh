@@ -14,7 +14,9 @@ ln -sf $DOTFILES/git/ubuntu-dev.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Tools
+sudo apt-get install autojump -y
 sudo apt-get install mosh -y
+ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
 
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
