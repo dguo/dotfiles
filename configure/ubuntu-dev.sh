@@ -19,6 +19,7 @@ sudo apt-get install mosh -y
 ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
 
 # Vim
+sudo apt-get install cmake python-dev -y # for YouCompleteMe
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sf $DOTFILES/.vimrc ~/.vimrc
