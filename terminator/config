@@ -1,7 +1,7 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   scroll_tabbar = True
-  title_font = "Source Code Pro, Bold"
+  title_font = Source Code Pro 10
   title_hide_sizetext = True
   title_transmit_bg_color = "#dc322f"
   title_transmit_fg_color = "#eee8d5"
@@ -53,13 +53,14 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#10100e"
     background_darkness = 0.95
-    background_type = transparent
+    cursor_color = "#839496"
     cursor_shape = ibeam
-    font = "Source Code Pro, Bold"
-    foreground_color = "#839496"
+    font = Source Code Pro 10
+    foreground_color = "#c6c6c4"
     login_shell = True
-    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    palette = "#10100e:#c40233:#009f6b:#ffd700:#0087bd:#9a4eae:#20b2aa:#c6c6c4:#696969:#ff2400:#03c03c:#fdff00:#007fff:#ff1493:#00cccc:#fffafa"
     scrollback_infinite = True
+    show_titlebar = False
     use_system_font = False
