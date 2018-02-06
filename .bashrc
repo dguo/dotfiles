@@ -36,6 +36,8 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
     __git_complete g __git_main
 fi
 if [ "$(uname)" == "Darwin" ]; then
+    export CLICOLOR=1 # turns on ls colors
+
     which -s brew && \
         [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && \
         . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -113,7 +115,9 @@ bind "set show-all-if-ambiguous on"
 ###############################################################################
 # ls
 ###############################################################################
-alias ls="ls -G" # colors
+if [ "$(uname)" != "Darwin" ]; then
+    alias ls="ls --color=auto"
+fi
 alias l="ls"
 ###############################################################################
 
