@@ -5,7 +5,7 @@ set -e
 DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
-# sudo pacman -Sy autojump dbeaver docker docker-compose dropbox fzf git \
+# sudo pacman -Sy autojump cloc dbeaver docker docker-compose dropbox fzf git \
 #     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
 #     libsecret shellcheck the_silver_searcher terminator tldr vlc
 # yaourt -Sy adobe-source-code-pro-fonts google-chrome firefox-developer \
