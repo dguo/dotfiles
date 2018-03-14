@@ -25,7 +25,6 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
 fi
 [[ -s /usr/share/autojump/autojump.sh ]] && \
     . /usr/share/autojump/autojump.sh
-[[ -s ~/.autoenv/activate.sh ]] && . ~/.autoenv/activate.sh
 
 # Mac
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
@@ -41,9 +40,6 @@ if [ "$(uname)" == "Darwin" ]; then
     which -s brew && \
         [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && \
         . $(brew --prefix)/etc/profile.d/autojump.sh
-
-    [[ -s /usr/local/opt/autoenv/activate.sh ]] && \
-        . /usr/local/opt/autoenv/activate.sh
 fi
 
 ###############################################################################

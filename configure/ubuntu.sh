@@ -18,12 +18,6 @@ sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install shellcheck
 sudo apt-get -y install tmux
 
-if cd ~/.autoenv; then
-    git pull
-else
-    git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
-fi
-
 # Java
 sudo apt-get -y install default-jre
 
