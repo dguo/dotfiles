@@ -6,8 +6,8 @@
 [[ $- != *i* ]] && return
 
 # Arch
-[[ -s /etc/profile.d/autojump.bash ]] && \
-    source /etc/profile.d/autojump.bash
+[[ -s /usr/share/fzf-marks/fzf-marks.bash ]] && \
+    source /usr/share/fzf-marks/fzf-marks.bash
 [[ -s /usr/share/git/completion/git-completion.bash ]] && \
     source /usr/share/git/completion/git-completion.bash
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
@@ -23,8 +23,6 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
     source /usr/share/bash-completion/completions/git
     __git_complete g __git_main
 fi
-[[ -s /usr/share/autojump/autojump.sh ]] && \
-    . /usr/share/autojump/autojump.sh
 
 # Mac
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
@@ -36,10 +34,6 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 fi
 if [ "$(uname)" == "Darwin" ]; then
     export CLICOLOR=1 # turns on ls colors
-
-    which -s brew && \
-        [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && \
-        . $(brew --prefix)/etc/profile.d/autojump.sh
 fi
 
 ###############################################################################
@@ -156,6 +150,8 @@ alias dc="docker-compose"
 alias dm="docker-machine"
 # the stupid content tracker
 alias g="git"
+# fzf-marks
+alias j="jump"
 # turtles all the way down
 alias m="mkdir"
 # print working directory

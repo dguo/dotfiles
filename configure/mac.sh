@@ -40,7 +40,6 @@ brew install python3
 brew install ruby
 brew install rust
 # tools
-brew install autojump
 brew install awscli
 brew install cloc
 brew install fzf

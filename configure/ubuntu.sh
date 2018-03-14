@@ -11,7 +11,6 @@ sudo apt-get -y autoremove
 sudo apt-get -y install terminator
 
 # Command line tools
-sudo apt-get -y install autojump
 sudo apt-get -y install bash
 sudo apt-get -y install git
 sudo apt-get -y install silversearcher-ag

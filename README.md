@@ -4,18 +4,16 @@
 * [Bash](https://www.gnu.org/software/bash/) for the shell
     * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
 * [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
-* [autojump](https://github.com/wting/autojump) to avoid tedious `cd`ing
 * [fzf](https://github.com/junegunn/fzf) for a general purpose fuzzy finder
-    * Jump to directories (making `cd` even more obsolete)
+    * Jump to directories (making `cd` somewhat obsolete) with [fzf-marks](https://github.com/urbainvaes/fzf-marks)
     * Open files without navigating to the directory
 * [Git](https://git-scm.com) for source control
     * I tried to do a merge in [SVN](https://subversion.apache.org) once. Never again.
 * [tmux](https://tmux.github.io) for multiplexing
     * Except on my local machine because iTerm is powerful enough
-* [Vim](http://www.vim.org) for text editing
-    * Tried both [Sublime Text](https://www.sublimetext.com) and [Atom](https://atom.io), but the ubiquity of Vim is awesome
+* [Vim](http://www.vim.org) and [Visual Studio Code](https://code.visualstudio.com/) for text editing
     * [vim-plug](https://github.com/junegunn/vim-plug) to manage the plugins
-        * See the [.vimrc](https://github.com/dguo/dotfiles/blob/master/.vimrc) for a list of plugins
+    * See the [.vimrc](https://github.com/dguo/dotfiles/blob/master/.vimrc) for a list of plugins
 * [Docker](https://www.docker.com) for development environments
     * Containerization means it's much lighter than VM solutions like [Vagrant](https://www.vagrantup.com)
     * Supported by many [CI services](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)
@@ -43,4 +41,3 @@
 
 ---
 ![xkcd 1172](http://imgs.xkcd.com/comics/workflow.png)
-
