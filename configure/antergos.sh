@@ -8,9 +8,10 @@ DOTFILES=~/Code/dguo/dotfiles
 # sudo pacman -Sy autojump cloc dbeaver docker docker-compose dropbox fzf git \
 #     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
 #     libsecret obs-studio shellcheck the_silver_searcher terminator \
-#     thunderbird tldr vlc yaourt -Sy adobe-source-code-pro-fonts \
+#     thunderbird tldr vlc
+# yaourt -Sy adobe-source-code-pro-fonts \
 #     google-chrome firefox-developer \
-#     interception-caps2esc vim-plug visual-studio-code
+#     interception-caps2esc vim-plug visual-studio-code-bin
 # Sign into Chrome, Dropbox, and Firefox
 # USe the tweak tool to configure the dock.
 
