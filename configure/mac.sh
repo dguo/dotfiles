@@ -71,6 +71,7 @@ brew cask install google-chrome
 brew cask install karabiner-elements
 brew cask install lastpass
 brew cask install mactex
+brew cask install obs
 brew cask install opera
 brew cask install paintbrush
 brew cask install razer-synapse
@@ -85,6 +86,10 @@ brew cleanup
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools
 pip install pylint
+
+# fzf-marks
+curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
+    https://raw.githubusercontent.com/urbainvaes/fzf-marks/master/fzf-marks.plugin.bash
 
 # Global node modules
 npm install -g eslint

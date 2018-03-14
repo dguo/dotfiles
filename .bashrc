@@ -25,6 +25,8 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
 fi
 
 # Mac
+[[ -s /usr/local/etc/fzf-marks/fzf-marks.bash ]] && \
+    source /usr/local/etc/fzf-marks/fzf-marks.bash
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
