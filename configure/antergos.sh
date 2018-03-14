@@ -7,7 +7,7 @@ DOTFILES=~/Code/dguo/dotfiles
 # Initial
 # sudo pacman -Sy autojump cloc dbeaver docker docker-compose dropbox fzf git \
 #     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
-#     libsecret obs-studio shellcheck the_silver_searcher terminator \
+#     libsecret obs-studio ripgrep shellcheck terminator \
 #     thunderbird tldr vlc
 # yaourt -Sy adobe-source-code-pro-fonts \
 #     google-chrome firefox-developer \

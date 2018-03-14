@@ -51,8 +51,8 @@ brew install md5sha1sum
 brew install mosh
 brew install pandoc
 brew install pinentry-mac # for entering a GPG passphrase
+brew install ripgrep
 brew install shellcheck
-brew install the_silver_searcher
 brew install tldr
 brew install tmux
 brew install xsv

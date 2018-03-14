@@ -3,8 +3,7 @@
 ## Terminal toolkit
 * [Bash](https://www.gnu.org/software/bash/) for the shell
     * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
-* [The Silver Searcher](http://geoff.greer.fm/ag/) for searching through code
-    * I haven't had a chance to try out [ripgrep](https://github.com/BurntSushi/ripgrep) yet
+* [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
 * [autoenv](https://github.com/kennethreitz/autoenv) for automatically setting environment variables in project directories
 * [autojump](https://github.com/wting/autojump) to avoid tedious `cd`ing
 * [fzf](https://github.com/junegunn/fzf) for a general purpose fuzzy finder
