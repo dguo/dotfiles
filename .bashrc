@@ -119,17 +119,17 @@ alias l="ls"
 # regular change
 alias c="cd"
 cl() {
-    cd "$1" && ls;
+    cd "$1" && exa;
 }
 # back to previous working directory
 alias c-="cd -"
-alias c-l="c- && ls"
+alias c-l="c- && l"
 # move up a directory
 alias ..="cd .."
-alias ..l=".. && ls"
+alias ..l=".. && l"
 # move up several directories
 alias ...="cd ../.."
-alias ...l="... && ls"
+alias ...l="... && l"
 ###############################################################################
 
 ###############################################################################
@@ -152,6 +152,8 @@ alias dc="docker-compose"
 alias dm="docker-machine"
 # the stupid content tracker
 alias g="git"
+# replace ls with exa
+alias l="exa"
 # fzf-marks
 alias j="jump"
 # turtles all the way down

@@ -3,21 +3,22 @@
 ## Terminal toolkit
 * [Bash](https://www.gnu.org/software/bash/) for the shell
     * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
-* [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
+* [Docker](https://www.docker.com) for development environments
+    * Containerization means it's much lighter than VM solutions like [Vagrant](https://www.vagrantup.com)
+    * Supported by many [CI services](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)
+* [exa](https://the.exa.website/) for replacing `ls`
 * [fd](https://github.com/sharkdp/fd) for replacing `find`
 * [fzf](https://github.com/junegunn/fzf) for a general purpose fuzzy finder
     * Jump to directories (making `cd` somewhat obsolete) with [fzf-marks](https://github.com/urbainvaes/fzf-marks)
     * Open files without navigating to the directory
 * [Git](https://git-scm.com) for source control
     * I tried to do a merge in [SVN](https://subversion.apache.org) once. Never again.
+* [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
 * [tmux](https://tmux.github.io) for multiplexing
     * Except on my local machine because iTerm is powerful enough
 * [Vim](http://www.vim.org) and [Visual Studio Code](https://code.visualstudio.com/) for text editing
     * [vim-plug](https://github.com/junegunn/vim-plug) to manage the plugins
     * See the [.vimrc](https://github.com/dguo/dotfiles/blob/master/.vimrc) for a list of plugins
-* [Docker](https://www.docker.com) for development environments
-    * Containerization means it's much lighter than VM solutions like [Vagrant](https://www.vagrantup.com)
-    * Supported by many [CI services](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)
 
 ## Languages
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [Node](https://nodejs.org/)
