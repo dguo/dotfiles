@@ -53,5 +53,4 @@ vim +PlugClean! +qall
 
 # Visual Studio Code
 ln -sf $DOTFILES/vscode/settings.json ~/.config/Code/User/settings.json
-pwd
 . $DOTFILES/vscode/sync-extensions.sh

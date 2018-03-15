@@ -1,0 +1,65 @@
+# https://github.com/Homebrew/homebrew-bundle
+
+# https://caskroom.github.io
+cask_args appdir: "/Applications"
+tap "caskroom/cask"
+
+# languages
+cask "java"
+# for Node
+brew "n"
+# python refers to python 3
+# https://docs.brew.sh/Homebrew-and-Python
+brew "python"
+brew "python@2"
+brew "ruby"
+brew "rust"
+
+# tools
+brew "awscli"
+brew "bash"
+cask "docker"
+brew "exa"
+brew "fd"
+brew "fzf"
+brew "git"
+brew "gpg"
+brew "md5sha1sum"
+brew "mosh"
+brew "pandoc"
+# for entering a GPG passphrase
+brew "pinentry-mac"
+brew "ripgrep"
+brew "shellcheck"
+brew "tldr"
+brew "tmux"
+brew "tokei"
+brew "xsv"
+cask "vagrant"
+brew "vim"
+brew "yarn"
+
+# applications
+cask "android-studio"
+cask "appcleaner"
+# cask "dropbox"
+cask "duet"
+# cask "evernote"
+cask "firefoxdeveloperedition"
+cask "flux"
+cask "gimp"
+cask "google-backup-and-sync"
+# cask "google-chrome"
+cask "karabiner-elements"
+cask "lastpass"
+# cask "mactex"
+cask "obs"
+# cask "opera"
+cask "paintbrush"
+cask "postman"
+cask "razer-synapse"
+cask "smcfancontrol"
+cask "spectacle"
+# cask "steam"
+cask "visual-studio-code"
+cask "vlc"
