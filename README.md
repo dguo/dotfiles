@@ -4,6 +4,7 @@
 * [Bash](https://www.gnu.org/software/bash/) for the shell
     * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
 * [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
+* [fd](https://github.com/sharkdp/fd) for replacing `find`
 * [fzf](https://github.com/junegunn/fzf) for a general purpose fuzzy finder
     * Jump to directories (making `cd` somewhat obsolete) with [fzf-marks](https://github.com/urbainvaes/fzf-marks)
     * Open files without navigating to the directory

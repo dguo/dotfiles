@@ -42,6 +42,7 @@ brew install rust
 # tools
 brew install awscli
 brew install cloc
+brew isntall fd
 brew install fzf
 brew install git
 brew install gpg

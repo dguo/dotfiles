@@ -5,7 +5,7 @@ set -e
 DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
-# sudo pacman -Sy cloc dbeaver docker docker-compose dropbox fzf git \
+# sudo pacman -Sy cloc dbeaver docker docker-compose dropbox fd fzf git \
 #     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
 #     libsecret obs-studio ripgrep shellcheck terminator \
 #     thunderbird tldr vlc
