@@ -16,6 +16,7 @@
 * [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
 * [tmux](https://tmux.github.io) for multiplexing
     * Except on my local machine because iTerm is powerful enough
+* [Tokei](https://github.com/Aaronepower/tokei) for counting code statistics
 * [Vim](http://www.vim.org) and [Visual Studio Code](https://code.visualstudio.com/) for text editing
     * [vim-plug](https://github.com/junegunn/vim-plug) to manage the plugins
     * See the [.vimrc](https://github.com/dguo/dotfiles/blob/master/.vimrc) for a list of plugins

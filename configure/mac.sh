@@ -41,7 +41,6 @@ brew install ruby
 brew install rust
 # tools
 brew install awscli
-brew install cloc
 brew install exa
 brew isntall fd
 brew install fzf
@@ -55,6 +54,7 @@ brew install ripgrep
 brew install shellcheck
 brew install tldr
 brew install tmux
+brew install tokei
 brew install xsv
 brew install vim
 brew install yarn
