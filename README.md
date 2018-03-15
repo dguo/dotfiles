@@ -45,3 +45,5 @@
 
 ---
 ![xkcd 1172](http://imgs.xkcd.com/comics/workflow.png)
+---
+![xkcd 1806](https://imgs.xkcd.com/comics/borrow_your_laptop.png )
