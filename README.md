@@ -14,6 +14,7 @@
 * [Git](https://git-scm.com) for source control
     * I tried to do a merge in [SVN](https://subversion.apache.org) once. Never again.
 * [ripgrep](https://github.com/BurntSushi/ripgrep) for searching through code
+* [tldr](https://tldr.sh/) for when `man` is overkill
 * [tmux](https://tmux.github.io) for multiplexing
     * Except on my local machine because iTerm is powerful enough
 * [Tokei](https://github.com/Aaronepower/tokei) for counting code statistics
