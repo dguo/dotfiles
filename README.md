@@ -3,6 +3,7 @@
 ## Terminal toolkit
 * [Bash](https://www.gnu.org/software/bash/) for the shell
     * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
+* [ctop](https://ctop.sh/) for monitoring containers
 * [Docker](https://www.docker.com) for development environments
     * Containerization means it's much lighter than VM solutions like [Vagrant](https://www.vagrantup.com)
     * Supported by many [CI services](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)

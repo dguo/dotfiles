@@ -18,6 +18,7 @@ brew "rust"
 # tools
 brew "awscli"
 brew "bash"
+brew "ctop"
 cask "docker"
 brew "exa"
 brew "fd"
