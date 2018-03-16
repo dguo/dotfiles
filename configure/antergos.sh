@@ -10,6 +10,7 @@ DOTFILES=~/Code/dguo/dotfiles
 #     libsecret obs-studio ripgrep shellcheck terminator \
 #     thunderbird tldr tokei vlc
 # yaourt -Sy adobe-source-code-pro-fonts ctop \
+#     gnome-shell-extension-no-title-bar-git \
 #     google-chrome firefox-developer fzf-marks-git \
 #     interception-caps2esc vim-plug visual-studio-code-bin
 # Sign into Chrome, Dropbox, and Firefox
