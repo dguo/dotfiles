@@ -8,7 +8,7 @@ DOTFILES=~/Code/dguo/dotfiles
 # sudo pacman -Sy cloc dbeaver docker docker-compose dropbox exa fd fzf git \
 #     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
 #     libsecret obs-studio ripgrep shellcheck terminator \
-#     thunderbird tldr tokei vlc
+#     thunderbird tldr tokei vlc yarn
 # yaourt -Sy adobe-source-code-pro-fonts ctop \
 #     gnome-shell-extension-no-title-bar-git \
 #     google-chrome firefox-developer fzf-marks-git \
