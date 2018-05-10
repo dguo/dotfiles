@@ -54,7 +54,8 @@ npm install -g eslint \
                eslint-plugin-json \
                eslint-plugin-react \
                eslint-plugin-import \
-               instant-markdown-d
+               instant-markdown-d \
+               opn-cli
 
 # Symlink configurations
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
