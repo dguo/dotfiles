@@ -2,12 +2,5 @@ language: c
 
 sudo: false
 
-addons:
-  apt:
-    sources:
-      - debian-sid
-    packages:
-      - shellcheck
-
 script:
   - "shellcheck -e SC1090 **/*.sh"
