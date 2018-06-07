@@ -26,6 +26,10 @@ fi
 
 sudo pacman -Syu
 yaourt -Syu
+# Remove orphans and their configuration files
+if pacman -Qtdq; then
+    sudo pacman -Rns "$(pacman -Qtdq)"
+fi
 
 # Bash
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
