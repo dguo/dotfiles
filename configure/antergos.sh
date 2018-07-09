@@ -7,7 +7,7 @@ DOTFILES=~/Code/dguo/dotfiles
 # Initial
 # sudo pacman -Sy adobe-source-han-sans-cn-fonts cloc dbeaver docker \
 #     docker-compose dropbox exa fd fzf git \
-#     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim \
+#     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim jq \
 #     libsecret obs-studio ripgrep shellcheck terminator \
 #     thunderbird tldr tokei vlc yarn
 # yaourt -Sy adobe-source-code-pro-fonts ctop \
