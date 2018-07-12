@@ -5,6 +5,37 @@ my dotfiles into the appropriate locations. I also use the scripts in the
 `configure` directory to initialize new machines and keep them up to date
 later.
 
+## Remapping caps lock
+
+The best tip I ever got for switching away from a default setting was to change
+my caps lock key to function as both escape and control. On every OS, there is
+a way to make caps lock work as escape when tapped and control when held down.
+You can configure the threshold for when it counts as control, but 150
+milliseconds works great for me. This hack is especially useful if you use
+[Vim](http://www.vim.org), but even if you don't, I frequently hit escape just
+to close things. Escape and control are usually in the corners of the keyboard,
+so this makes using them much easier. How often do you use caps lock anyway? I
+usually remap escape to caps lock for the rare times that I do need it.
+
+### Linux
+
+I use [xcape](https://github.com/alols/xcape) (check out this Ask Ubuntu
+[answer](https://askubuntu.com/a/228379/772322)) on
+[Ubuntu](https://www.ubuntu.com/desktop) and
+[caps2esc](https://gitlab.com/interception/linux/plugins/caps2esc) on
+[Arch](https://www.archlinux.org/). I don't remember exactly what trouble I ran
+into with xcape on Arch, but caps2esc works just fine for me.
+
+### Mac
+
+I use [Karabiner](https://github.com/tekezo/Karabiner). The configuration is in
+the `karabiner` directory.
+
+### Windows
+
+I use [AutoHotkey](https://www.autohotkey.com/). The configuration is in the
+`autohotkey` directory.
+
 ## Terminal toolkit
 
 * [Bash](https://www.gnu.org/software/bash/) for the shell
