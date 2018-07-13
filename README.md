@@ -28,7 +28,7 @@ into with xcape on Arch, but caps2esc works just fine for me.
 
 ### Mac
 
-I use [Karabiner](https://github.com/tekezo/Karabiner). The configuration is in
+I use [Karabiner](https://pqrs.org/osx/karabiner/). The configuration is in
 the `karabiner` directory.
 
 ### Windows
