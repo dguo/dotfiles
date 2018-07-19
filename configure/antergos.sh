@@ -24,7 +24,7 @@ MISSING_PACKAGES="$(comm -23 --check-order \
 if [ -z "$MISSING_PACKAGES" ]; then
     echo "No missing packages to install"
 else
-    yay -S --needed $MISSING_PACKAGES
+    yay -S --needed "$MISSING_PACKAGES"
 fi
 
 # Update all packages, and clean unneeded packages
