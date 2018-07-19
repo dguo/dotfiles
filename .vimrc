@@ -24,6 +24,7 @@ Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-speeddating'
+Plug 'prettier/vim-prettier'
 " languages
 Plug 'sheerun/vim-polyglot'
 " color scheme
@@ -89,6 +90,19 @@ map <Leader>e <Plug>(easymotion-e)
 map <Leader>E <Plug>(easymotion-E)
 map <Leader>gE <Plug>(easymotion-gE)
 map <Leader>ge <Plug>(easymotion-ge)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Prettier
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:prettier#autoformat = 0
+let g:prettier#config#bracket_spacing = 'false'
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#tab_width = 4
+" Format on save
+autocmd BufWritePre
+  \ *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue
+  \ PrettierAsync
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
