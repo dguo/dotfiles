@@ -4,17 +4,8 @@ set -e
 
 DOTFILES=~/Code/dguo/dotfiles
 
-# Initial
-# sudo pacman -Sy adobe-source-han-sans-cn-fonts dbeaver docker \
-#     docker-compose dropbox exa fd fzf git glances \
-#     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim htop jq \
-#     libsecret obs-studio ripgrep shellcheck terminator \
-#     thunderbird tldr tokei vlc yarn
-# yaourt -Sy adobe-source-code-pro-fonts ctop \
-#     gnome-shell-extension-no-title-bar-git \
-#     google-chrome firefox-developer fzf-marks-git \
-#     interception-caps2esc vim-plug visual-studio-code-bin
-# Sign into Chrome, Dropbox, and Firefox
+# Initial setup
+# Sign into Chrome, Dropbox, and Firefox.
 # USe the tweak tool to configure the dock.
 
 mkdir -p ~/Code/dguo
@@ -25,12 +16,20 @@ else
     git clone https://github.com/dguo/dotfiles.git
 fi
 
-sudo pacman -Syu
-yaourt -Syu
-# Remove orphans and their configuration files
-if pacman -Qtdq; then
-    sudo pacman -Rns "$(pacman -Qtdq)"
+MISSING_PACKAGES="$(comm -23 --check-order \
+    <(cat $DOTFILES/configure/aur-packages.txt \
+          $DOTFILES/configure/pacman-packages.txt | sort) \
+    <(yay -Qqe | sort) \
+    | tr '\n' ' ')"
+if [ -z "$MISSING_PACKAGES" ]; then
+    echo "No missing packages to install"
+else
+    yay -S --needed $MISSING_PACKAGES
 fi
+
+# Update all packages, and clean unneeded packages
+yay -Syu
+yay -Yc
 
 # Bash
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
