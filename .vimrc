@@ -2,6 +2,11 @@
 " Author: Danny Guo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Temporary fix for https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
 " Vi IMproved
 set nocompatible
 " space is easier to reach than backslash
