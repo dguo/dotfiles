@@ -53,6 +53,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 echo "############################################################"
 echo
 echo "Now open Vim and run :PlugInstall or :PlugUpdate"
-echo
-echo "And don't forget to install a patched font for vim-devicons:"
-echo "https://github.com/ryanoasis/nerd-fonts"
