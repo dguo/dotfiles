@@ -38,7 +38,6 @@ brew "tldr"
 brew "tmux"
 brew "tokei"
 brew "xsv"
-cask "vagrant"
 brew "vim"
 brew "yarn"
 
