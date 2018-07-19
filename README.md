@@ -24,6 +24,7 @@ how to do it.
     * Supported by many [CI services](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)
 * [Git](https://git-scm.com) for source control
     * I tried to do a merge in [SVN](https://subversion.apache.org) once. Never again.
+* [Glances](https://nicolargo.github.io/glances/) for system monitoring
 * [opn](https://github.com/sindresorhus/opn-cli) for opening files using the default program
 * [tldr](https://tldr.sh/) for when `man` is overkill
 * [tmux](https://tmux.github.io) for multiplexing
@@ -35,11 +36,11 @@ how to do it.
 ### Replacements for [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
 
 * [exa](https://the.exa.website/) for replacing `ls`
-    * I really like colors
 * [fd](https://github.com/sharkdp/fd) for replacing `find`
 * [fzf](https://github.com/junegunn/fzf) for a general purpose fuzzy finder
     * Jump to directories (making `cd` somewhat obsolete) with [fzf-marks](https://github.com/urbainvaes/fzf-marks)
     * Open files without navigating to the directory
+* [htop](https://hisham.hm/htop/) for replacing `top`
 * [ripgrep](https://github.com/BurntSushi/ripgrep) for replacing `grep`
     * The [announcement blog post](https://blog.burntsushi.net/ripgrep/) is a great read
 
