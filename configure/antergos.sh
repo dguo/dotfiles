@@ -5,7 +5,7 @@ set -e
 DOTFILES=~/Code/dguo/dotfiles
 
 # Initial
-# sudo pacman -Sy adobe-source-han-sans-cn-fonts cloc dbeaver docker \
+# sudo pacman -Sy adobe-source-han-sans-cn-fonts dbeaver docker \
 #     docker-compose dropbox exa fd fzf git \
 #     gnome-shell-extension-dash-to-dock gnome-tweak-tool gvim jq \
 #     libsecret obs-studio ripgrep shellcheck terminator \
