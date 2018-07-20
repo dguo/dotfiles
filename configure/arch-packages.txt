@@ -12,11 +12,14 @@ glances
 htop
 jq
 libsecret
+mosh
 nodejs
 npm
+python
 ripgrep
 shellcheck
 tldr
+tmux
 tokei
 vim-plug
 yarn
