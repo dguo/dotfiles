@@ -32,10 +32,6 @@ else
     yay -S --needed $MISSING_PACKAGES
 fi
 
-# For some reason, libsecret doesn't show up as explicitly-installed unless we
-# set it.
-yay -D --asexplicit libsecret
-
 # Update all packages, and clean unneeded packages
 yay -Syu
 yay -Yc
@@ -45,7 +41,7 @@ ln -sf $DOTFILES/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/.bashrc ~/.bashrc
 
 # Git
-ln -sf $DOTFILES/git/linux.gitconfig ~/.gitconfig
+ln -sf $DOTFILES/git/arch-server.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Docker

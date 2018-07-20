@@ -8,6 +8,7 @@ gnome-shell-extension-no-title-bar-git
 google-chrome
 gvim
 interception-caps2esc
+libsecret
 obs-studio
 terminator
 thunderbird
