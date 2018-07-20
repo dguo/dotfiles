@@ -12,7 +12,7 @@ else
     git clone https://github.com/dguo/dotfiles.git
 fi
 
-if ! [ -x "$(command -v vyay)" ]; then
+if ! [ -x "$(command -v yay)" ]; then
     sudo pacman -S base-devel
     git clone https://aur.archlinux.org/yay.git
     (

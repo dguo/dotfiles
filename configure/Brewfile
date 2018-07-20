@@ -28,7 +28,7 @@ brew "glances"
 brew "gpg"
 brew "htop"
 brew "md5sha1sum"
-brew "mosh"
+brew "mosh", args: ['HEAD']
 brew "pandoc"
 # for entering a GPG passphrase
 brew "pinentry-mac"

@@ -12,7 +12,7 @@ git
 glances
 htop
 jq
-mosh
+mosh-git
 nodejs
 npm
 python
