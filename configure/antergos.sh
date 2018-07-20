@@ -17,8 +17,8 @@ else
 fi
 
 MISSING_PACKAGES="$(comm -23 --check-order \
-    <(cat $DOTFILES/configure/aur-packages.txt \
-          $DOTFILES/configure/pacman-packages.txt | sort) \
+    <(cat $DOTFILES/configure/arch-packages.txt \
+          $DOTFILES/configure/arch-desktop-packages.txt | sort) \
     <(yay -Qqe | sort) \
     | tr '\n' ' ')"
 if [ -z "$MISSING_PACKAGES" ]; then

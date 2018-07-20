@@ -1,8 +1,0 @@
-ctop
-fzf-marks-git
-gnome-shell-extension-no-title-bar-git
-google-chrome
-interception-caps2esc
-vim-plug
-visual-studio-code-bin
-yay
