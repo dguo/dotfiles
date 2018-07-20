@@ -6,6 +6,7 @@ firefox-developer-edition
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-no-title-bar-git
 google-chrome
+gvim
 interception-caps2esc
 obs-studio
 terminator

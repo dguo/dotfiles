@@ -9,7 +9,6 @@ fzf
 fzf-marks-git
 git
 glances
-gvim
 htop
 jq
 libsecret

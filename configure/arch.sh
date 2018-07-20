@@ -4,10 +4,6 @@ set -e
 
 DOTFILES=~/Code/dguo/dotfiles
 
-# Initial setup
-# Sign into Chrome, Dropbox, and Firefox.
-# USe the tweak tool to configure the dock.
-
 mkdir -p ~/Code/dguo
 cd ~/Code/dguo || exit 1
 if cd dotfiles; then
@@ -16,9 +12,18 @@ else
     git clone https://github.com/dguo/dotfiles.git
 fi
 
+if ! [ -x "$(command -v yay)" ]; then
+    sudo pacman -S base-devel
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd ..
+    rm -rf yay
+fi
+
 MISSING_PACKAGES="$(comm -23 --check-order \
     <(cat $DOTFILES/configure/arch-packages.txt \
-          $DOTFILES/configure/arch-desktop-packages.txt | sort) \
+          $DOTFILES/configure/arch-server-packages.txt | sort) \
     <(yay -Qqe | sort) \
     | tr '\n' ' ')"
 if [ -z "$MISSING_PACKAGES" ]; then
@@ -39,24 +44,11 @@ ln -sf $DOTFILES/.bashrc ~/.bashrc
 ln -sf $DOTFILES/git/linux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
-# Remap caps lock to escape and control
-sudo ln -sf $DOTFILES/configure/udevmon.yaml /etc/udevmon.yaml
-sudo systemctl enable udevmon
-
 # Docker
 sudo usermod -a -G docker "$USER"
-sudo systemctl enable docker
-
-# Terminator
-mkdir -p ~/.config/terminator
-ln -sf $DOTFILES/terminator/config ~/.config/terminator/config
+sudo systemctl enable --now docker
 
 # Vim
-sudo npm install -g instant-markdown-d opn-cli
 ln -sf $DOTFILES/.vimrc ~/.vimrc
 vim +PlugUpdate +qall
 vim +PlugClean! +qall
-
-# Visual Studio Code
-ln -sf $DOTFILES/vscode/settings.json ~/.config/Code/User/settings.json
-. $DOTFILES/vscode/sync-extensions.sh
