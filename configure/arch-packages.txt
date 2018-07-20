@@ -1,5 +1,6 @@
 bash
 bash-completion
+cmake
 ctop
 docker
 docker-compose
