@@ -17,6 +17,7 @@ npm
 python
 ripgrep
 shellcheck
+sudo
 tldr
 tmux
 tokei

@@ -12,12 +12,13 @@ else
     git clone https://github.com/dguo/dotfiles.git
 fi
 
-if ! [ -x "$(command -v yay)" ]; then
+if ! [ -x "$(command -v vyay)" ]; then
     sudo pacman -S base-devel
     git clone https://aur.archlinux.org/yay.git
-    cd yay
+    (
+    cd yay || exit
     makepkg -si
-    cd ..
+    )
     rm -rf yay
 fi
 
@@ -29,6 +30,7 @@ MISSING_PACKAGES="$(comm -23 --check-order \
 if [ -z "$MISSING_PACKAGES" ]; then
     echo "No missing packages to install"
 else
+    # shellcheck disable=SC2086
     yay -S --needed $MISSING_PACKAGES
 fi
 
