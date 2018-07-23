@@ -1,6 +1,16 @@
 EditorConfig.EditorConfig
+GrapeCity.gc-excelviewer
 PeterJausovec.vscode-docker
+alefragnani.project-manager
+codezombiech.gitignore
 dbaeumer.vscode-eslint
+deerawan.vscode-faker
+eamodio.gitlens
+eg2.tslint
 esbenp.prettier-vscode
+mikestead.dotenv
+ms-python.python
+ms-vsliveshare.vsliveshare
+rust-lang.rust
 vscodevim.vim
 zhuangtongfa.Material-theme

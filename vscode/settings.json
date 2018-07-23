@@ -9,13 +9,24 @@
     "editor.renderLineHighlight": "gutter",
     "editor.rulers": [80, 120],
     "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "search.useIgnoreFilesByDefault": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "projectManager.git.baseFolders": [
+        "$home/Code/"
+    ],
+    "search.smartCase": true,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
+    "terminal.external.osxExec": "iTerm.app",
     "vim.easymotion": true,
     "vim.easymotionMarkerFontFamily": "Source Code Pro, monospace",
     "vim.easymotionMarkerFontSize": "10",
@@ -26,6 +37,5 @@
     "workbench.editor.swipeToNavigate": true,
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.activityBar.visible": true,
-    "workbench.panel.location": "bottom",
     "workbench.startupEditor": "newUntitledFile"
 }
