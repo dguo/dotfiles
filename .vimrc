@@ -153,6 +153,7 @@ set noshowmode        " don't show --INSERT-- at bottom; unneeded with airline
 set title             " file name in title bar
 set visualbell        " flash command on error
 " File handling
+set autochdir         " working directory should always be the same as the file
 set confirm           " raise dialogue for unsaved changes when quitting
 set hidden            " hide buffers with unsaved changes
 " Rendering
