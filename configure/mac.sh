@@ -14,14 +14,13 @@ set -e
 
 DOTFILES=~/Code/dguo/dotfiles
 
-
 hash gcc 2>/dev/null || {
     echo >&2 "Please install XCode from the App Store";
     exit 1;
 }
 
 hash brew 2>/dev/null || {
-    echo >&2 "Please install homebrew: http://brew.sh";
+    echo >&2 "Please install homebrew: https://brew.sh";
     exit 1;
 }
 
@@ -43,19 +42,13 @@ brew bundle
 brew cleanup
 
 pip install --upgrade pip setuptools
-pip3 install --upgrade pip setuptools
 
 # fzf-marks
 curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
     https://raw.githubusercontent.com/urbainvaes/fzf-marks/master/fzf-marks.plugin.bash
 
 # Global node modules
-npm install -g eslint \
-               eslint-plugin-json \
-               eslint-plugin-react \
-               eslint-plugin-import \
-               instant-markdown-d \
-               opn-cli
+npm install -g instant-markdown-d opn-cli
 
 # Symlink configurations
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
