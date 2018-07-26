@@ -47,8 +47,9 @@ call plug#end()
 " NERDTree (file system explorer)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " close vim if NERDTree is the only window still open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
-                                     \ && b:NERDTreeType == "primary") | q
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
+                                     \ && b:NERDTree.isTabTree()) | q | endif
+
 " shortcut to open/close NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
