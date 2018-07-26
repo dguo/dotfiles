@@ -23,12 +23,14 @@ Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-speeddating'
 Plug 'prettier/vim-prettier'
+Plug 'tpope/vim-repeat'
 " languages
 Plug 'sheerun/vim-polyglot'
 " color scheme
 Plug 'dguo/blood-moon', {'rtp': 'applications/vim'}
 " git
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 " directory navigation
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
@@ -218,17 +220,6 @@ noremap : ;
 noremap ; :
 " Ctrl-P for fzf (assume we're in a git repo)
 noremap <silent> <C-p> :GitFiles -co --exclude-standard<CR>
-" gm moves to middle of current physical line
-" http://www.vim.wikia.com/wiki/A_better_gm_command
-function! s:Gm()
-    execute 'normal! ^'
-    let first_col = virtcol('.')
-    execute 'normal! g_'
-    let last_col  = virtcol('.')
-    execute 'normal! ' . (first_col + last_col) / 2 . '|'
-endfunction
-nnoremap <silent> gm :call <SID>Gm()<CR>
-onoremap <silent> gm :call <SID>Gm()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
