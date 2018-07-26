@@ -203,6 +203,12 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+" new tab
+nnoremap <C-t>     :tabnew<CR>
+" previous tab
+nnoremap H gT
+" next tab
+nnoremap L gt
 " use S (normally equivalent to cc) to save
 nnoremap S :w<CR>
 " use Q (normally goes into ex mode) to quit
