@@ -31,7 +31,7 @@ Plug 'dguo/blood-moon', {'rtp': 'applications/vim'}
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 " directory navigation
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
@@ -122,10 +122,10 @@ let g:javascript_plugin_flow = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Git Gutter
+" Signify for VCS change indicators
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gitgutter_realtime=0
-let g:gitgutter_eager=0
+let g:signify_sign_change = '~'
+let g:signify_sign_show_count = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
