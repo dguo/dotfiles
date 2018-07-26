@@ -198,11 +198,11 @@ nnoremap <Leader>/ :noh<CR>
 " move vertically by physical lines rather than logical lines
 map j gj
 map k gk
-" move faster with ctrl
-map <C-j> 5j
-map <C-k> 5k
-map <C-h> 3h
-map <C-l> 3l
+" navigate splits more easily
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 " use S (normally equivalent to cc) to save
 nnoremap S :w<CR>
 " use Q (normally goes into ex mode) to quit
