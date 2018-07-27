@@ -27,7 +27,7 @@ curl -Lo ~/.termux/font.ttf --create-dirs \
     https://raw.githubusercontent.com/termux/termux-styling/master/app/src/main/assets/fonts/Source-Code-Pro.ttf
 curl -Lo ~/.termux/colors.properties --create-dirs \
     https://raw.githubusercontent.com/termux/termux-styling/master/app/src/main/assets/colors/gruvbox-dark.properties
-termux reload-settings
+termux-reload-settings
 
 # Install tldr
 curl -Lo "$PREFIX/bin/tldr" \
