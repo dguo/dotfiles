@@ -38,6 +38,15 @@ if [ "$(uname)" == "Darwin" ]; then
     export CLICOLOR=1 # turns on ls colors
 fi
 
+# Termux
+if [ -f "$PREFIX/etc/bash_completion.d/git-prompt.sh" ]; then
+    source "$PREFIX/etc/bash_completion.d/git-prompt.sh"
+fi
+if [ -f "$PREFIX/etc/bash_completion.d/git-completion.bash" ]; then
+    source "$PREFIX/etc/bash_completion.d/git-completion.bash"
+    __git_complete g __git_main
+fi
+
 ###############################################################################
 # Custom prompt:
 #
