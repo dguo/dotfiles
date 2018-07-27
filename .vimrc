@@ -18,7 +18,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 " faster editing
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
+if $PREFIX !~ "termux"
+    Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
+endif
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-speeddating'
