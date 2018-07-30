@@ -1,9 +1,11 @@
 # System Configuration [![Build Status](https://travis-ci.org/dguo/dotfiles.svg?branch=travis)](https://travis-ci.org/dguo/dotfiles)
 
 I try to keep as much of my configuration as possible in this repo. I symlink
-my dotfiles into the appropriate locations. I also use the scripts in the
-`configure` directory to initialize new machines and keep them up to date
-later.
+my [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory)
+into the appropriate locations. I also use the scripts in the `configure`
+directory to initialize new machines and keep them up to date later. The
+top-level `configure.sh` script detects the current platform and runs the
+appropriate script.
 
 ## Remapping caps lock
 
@@ -16,16 +18,19 @@ how to do it.
 
 ## Terminal toolkit
 
-* [Bash](https://www.gnu.org/software/bash/) for the shell
+* [Bash](https://www.gnu.org/software/bash/) for the [shell](https://en.wikipedia.org/wiki/Unix_shell)
     * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
+* [clipboard-cli](https://github.com/sindresorhus/clipboard-cli) for a cross-platform way to access the system clipboard
 * [ctop](https://ctop.sh/) for monitoring containers
+* [diff2html-cli](https://diff2html.xyz/) for viewing side by side Git diffs
 * [Docker](https://www.docker.com) for development environments
     * Containerization means it's much lighter than VM solutions like [Vagrant](https://www.vagrantup.com)
     * Supported by many [CI services](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software)
 * [Git](https://git-scm.com) for source control
     * I tried to do a merge in [SVN](https://subversion.apache.org) once. Never again.
 * [Glances](https://nicolargo.github.io/glances/) for system monitoring
-* [opn](https://github.com/sindresorhus/opn-cli) for opening files using the default program
+* [Neofetch](https://github.com/dylanaraps/neofetch) for system show off screenshots
+* [opn-cli](https://github.com/sindresorhus/opn-cli) for opening files using the default program
 * [tldr](https://tldr.sh/) for when `man` is overkill
 * [tmux](https://tmux.github.io) for multiplexing
 * [Tokei](https://github.com/Aaronepower/tokei) for counting code statistics

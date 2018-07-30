@@ -154,12 +154,15 @@ alias lessr="\less"
 # <C-k>/<C-j> instead up/down for command history
 bind '"\C-k":previous-history'
 bind '"\C-j":next-history'
+# Cross-platform clipboard access
+alias cb="clipboard"
 # Build, Ship, Run
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
 # the stupid content tracker
 alias g="git"
+alias gd="diff2html -s side"
 # replace ls with exa
 alias l="exa"
 # fzf-marks

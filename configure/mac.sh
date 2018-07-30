@@ -48,7 +48,7 @@ curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
     https://raw.githubusercontent.com/urbainvaes/fzf-marks/master/fzf-marks.plugin.bash
 
 # Global node modules
-npm install -g instant-markdown-d opn-cli
+npm install -g clipboard-cli diff2html-cli instant-markdown-d opn-cli
 
 # Symlink configurations
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
