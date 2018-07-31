@@ -26,7 +26,7 @@ curl -o "$PREFIX/etc/bash_completion.d/git-prompt.sh" \
 curl -Lo ~/.termux/font.ttf --create-dirs \
     https://raw.githubusercontent.com/termux/termux-styling/master/app/src/main/assets/fonts/Source-Code-Pro.ttf
 curl -Lo ~/.termux/colors.properties --create-dirs \
-    https://raw.githubusercontent.com/termux/termux-styling/master/app/src/main/assets/colors/gruvbox-dark.properties
+    https://raw.githubusercontent.com/dguo/blood-moon/master/applications/termux/blood-moon.properties
 termux-reload-settings
 
 # Install tldr
