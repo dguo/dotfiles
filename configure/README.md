@@ -16,4 +16,5 @@ $ cd ~/code/dguo
 $ git clone https://github.com/dguo/dotfiles.git
 $ cd dotfiles
 $ ./configure.sh
+# start a new session or source ~/.bashrc
 ```
