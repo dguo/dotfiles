@@ -1,5 +1,6 @@
 bash
 bash-completion
+bat
 cmake
 ctop
 docker

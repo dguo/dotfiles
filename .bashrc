@@ -154,6 +154,8 @@ alias lessr="\less"
 # <C-k>/<C-j> instead up/down for command history
 bind '"\C-k":previous-history'
 bind '"\C-j":next-history'
+# cat with syntax highlighting and Git integration
+alias b="bat"
 # Cross-platform clipboard access
 alias cb="clipboard"
 # Build, Ship, Run
