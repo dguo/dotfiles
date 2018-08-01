@@ -6,6 +6,29 @@ DOTFILES=~/code/dguo/dotfiles
 
 pkg upgrade
 
+pkg install bash-completion \
+            cmake \
+            curl \
+            fzf \
+            git \
+            golang \
+            htop \
+            jq \
+            libgit2-dev \
+            nodejs \
+            openssl-dev \
+            python \
+            ruby \
+            tmux \
+            vim-python \
+            wget
+
+wget https://its-pointless.github.io/setup-pointless-repo.sh
+bash setup-pointless-repo.sh
+rm setup-pointless-repo.sh pointless.gpg
+
+pkg install cargo exa rustc ripgrep
+
 # Create storage symlinks. See https://termux.com/storage.html
 termux-setup-storage
 
