@@ -29,9 +29,6 @@ rm setup-pointless-repo.sh pointless.gpg
 
 pkg install cargo exa rustc ripgrep
 
-# Create storage symlinks. See https://termux.com/storage.html
-termux-setup-storage
-
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/.bashrc ~/.bashrc
 
@@ -60,3 +57,8 @@ chmod +x "$PREFIX/bin/tldr"
 # Install vim-plug
 curl -Lo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugUpdate +qall
+vim +PlugClean +qall
+
+# Create storage symlinks. See https://termux.com/storage.html
+termux-setup-storage
