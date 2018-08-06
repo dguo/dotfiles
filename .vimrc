@@ -208,6 +208,10 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+imap <C-j> <esc><C-W>j
+imap <C-k> <esc><C-W>k
+imap <C-h> <esc><C-W>h
+imap <C-l> <esc><C-W>l
 " new tab
 nnoremap <C-t>     :tabnew<CR>
 " previous tab
