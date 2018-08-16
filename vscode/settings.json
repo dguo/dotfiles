@@ -4,6 +4,7 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorStyle": "line-thin",
     "editor.fontFamily": "Source Code Pro, monospace",
+    "editor.formatOnSave": true,
     "editor.mouseWheelZoom": true,
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "gutter",
@@ -37,5 +38,6 @@
     "workbench.editor.swipeToNavigate": true,
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.activityBar.visible": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.visible": true
 }
