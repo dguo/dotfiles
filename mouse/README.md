@@ -3,7 +3,7 @@
 ## [Logitech G700](https://www.amazon.com/Logitech-Wireless-Gaming-Mouse-G700/dp/B003VAM32E)
 * Wireless
     * The wireless dongle can be stored in the mouse itself
-    * Easy replaceable AA battery
+    * Easily replaceable AA battery
     * Comes with an [Eneloop battery](https://www.amazon.com/Panasonic-K-KJ17MCA4BA-Individual-Rechargeable-Batteries/dp/B00JHKSMJU) that I am still using over five years later
 * Wired mode
     * For both charging and data
