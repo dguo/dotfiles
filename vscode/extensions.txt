@@ -8,6 +8,7 @@ deerawan.vscode-faker
 eamodio.gitlens
 eg2.tslint
 esbenp.prettier-vscode
+ionutvmi.reg
 mikestead.dotenv
 ms-python.python
 ms-vsliveshare.vsliveshare
