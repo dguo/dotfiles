@@ -90,7 +90,7 @@ comprehensive.
 * [Duet Display](http://www.duetdisplay.com) to use an iPad as another display
 * [f.lux](https://justgetflux.com/) for controlling blue light at night
 * [iTerm2](https://www.iterm2.com) for terminal emulation
-* [Karabiner](https://github.com/tekezo/Karabiner) for key remapping
+* [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements) for key remapping
 * [smcFanControl](https://github.com/hholtmann/smcFanControl) to keep things cool
 * [Spectacle](https://www.spectacleapp.com) for window management
 
