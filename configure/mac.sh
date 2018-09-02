@@ -50,6 +50,10 @@ curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
 # Global node modules
 npm install -g clipboard-cli diff2html-cli instant-markdown-d opn-cli
 
+# Make keys repeat when held down
+# https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Symlink configurations
 ln -sf $DOTFILES/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/.bashrc ~/.bashrc
