@@ -12,7 +12,7 @@
 # Exit immediately if any command fails
 set -e
 
-DOTFILES=~/Code/dguo/dotfiles
+DOTFILES=~/code/dguo/dotfiles
 
 hash gcc 2>/dev/null || {
     echo >&2 "Please install XCode from the App Store";
@@ -41,7 +41,7 @@ brew update
 brew bundle
 brew cleanup
 
-pip install --upgrade pip setuptools
+pip3 install --upgrade pip setuptools
 
 # fzf-marks
 curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
@@ -56,7 +56,9 @@ ln -sf $DOTFILES/.bashrc ~/.bashrc
 ln -sf $DOTFILES/git/mac.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
+mkdir -p ~/.gnupg
 ln -sf $DOTFILES/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+mkdir -p ~/.config/karabiner
 ln -sf $DOTFILES/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 # Suppress the new window message
 ln -sf $DOTFILES/.hushlogin ~/.hushlogin
