@@ -4,6 +4,20 @@
     signingkey = 563054975255DC30
 [push]
     default = simple
+[color]
+    ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 [core]
     autocrlf = input
     editor = vim
@@ -17,7 +31,7 @@
     cf = commit --fixup=HEAD
     cs = commit --squash=HEAD -m
     co = checkout
-    d = diff
+    d = ! git diff --color | diff-so-fancy
     dt = difftool
     l = log
     m = merge

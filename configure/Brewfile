@@ -19,6 +19,7 @@ brew "bat"
 # For YouCompleteMe
 brew "cmake"
 brew "ctop"
+brew "diff-so-fancy"
 brew "exa"
 brew "fd"
 brew "fzf"
