@@ -1,9 +1,10 @@
 # https://github.com/Homebrew/homebrew-bundle
 
-# https://caskroom.github.io
 cask_args appdir: "/Applications"
+
 tap "caskroom/cask"
 tap "caskroom/fonts"
+tap "getantibody/tap"
 
 # languages
 brew "node"
@@ -14,6 +15,7 @@ brew "python@2"
 brew "ruby"
 
 # tools
+brew "getantibody/tap/antibody"
 brew "bash"
 brew "bat"
 # For YouCompleteMe
@@ -41,6 +43,7 @@ brew "tokei"
 brew "xsv"
 brew "vim"
 brew "yarn"
+brew "zsh"
 
 # applications
 # cask "android-studio"
