@@ -62,7 +62,7 @@ ln -sf $DOTFILES/git/mac.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.gnupg
-ln -sf $DOTFILES/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+ln -sf $DOTFILES/programs/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 mkdir -p ~/.config/karabiner
 ln -sf $DOTFILES/programs/karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 # Suppress the new window message
