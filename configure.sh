@@ -16,7 +16,7 @@ elif [ -f /etc/os-release ]; then
 	fi
     elif [ "$NAME" == "Ubuntu" ]; then
         echo Updating Ubuntu
-        ./systems/ubuntu.sh
+        ./systems/ubuntu/desktop.sh
     else
         echo Failed to detect the Linux distribution
         exit 1
