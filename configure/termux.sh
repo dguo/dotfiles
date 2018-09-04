@@ -35,7 +35,7 @@ ln -sf $DOTFILES/.bashrc ~/.bashrc
 ln -sf $DOTFILES/git/termux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
-ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
+ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 
 ln -sf $DOTFILES/.vimrc ~/.vimrc
 

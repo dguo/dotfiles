@@ -15,7 +15,7 @@ ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Tools
 sudo apt-get install mosh -y
-ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
+ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 
 # Vim
 sudo apt-get install cmake python-dev -y # for YouCompleteMe
@@ -24,4 +24,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ln -sf $DOTFILES/.vimrc ~/.vimrc
 vim +PlugUpdate +qall
 vim +PlugClean! +qall
-

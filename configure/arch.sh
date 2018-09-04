@@ -50,8 +50,8 @@ ln -sf $DOTFILES/.gitignore ~/.gitignore
 sudo usermod -a -G docker "$USER"
 sudo systemctl enable --now docker
 
-# Tmux
-ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
+# tmux
+ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 
 # Vim
 ln -sf $DOTFILES/.vimrc ~/.vimrc
