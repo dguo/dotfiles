@@ -21,6 +21,7 @@ function () {
     local newline=$'\n'
 
     PROMPT="${newline}%F{red}$username@$short_host%F{white} at %F{green}$military_time%F{white} in %F{blue}$working_directory${newline}%F{magenta}%(0?.$lambda.!) %F{white}"
+    PS2="%F{magenta}> %F{white}"
 }
 
 ###############################################################################
