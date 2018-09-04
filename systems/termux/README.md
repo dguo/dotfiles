@@ -1,13 +1,16 @@
-# Configure Scripts
+# Termux
 
-## Termux
+[Termux](https://termux.com/) is a terminal emulator and Linux environment for
+Android.
 
-Install [Termux](https://play.google.com/store/apps/details?id=com.termux) and
+## Configuration
+
+Install the [app](https://play.google.com/store/apps/details?id=com.termux) and
 the
 [CodeBoard](https://play.google.com/store/apps/details?id=com.gazlaws.codeboard&rdid=com.gazlaws.codeboard)
 keyboard.
 
-```bash
+```sh
 $ pkg upgrade
 $ pkg install git termux-exec
 # start a new session for termux-exec

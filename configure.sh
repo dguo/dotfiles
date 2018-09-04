@@ -23,7 +23,7 @@ elif [ -f /etc/os-release ]; then
     fi
 elif [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
     echo Updating Termux
-    ./systems/termux.sh
+    ./systems/termux/termux.sh
 else
     echo Failed to detect the OS
     exit 1
