@@ -3,8 +3,8 @@
 DOTFILES=~/code/dguo/dotfiles
 
 # Bash
-ln -sf $DOTFILES/.bash_profile ~/.bash_profile
-ln -sf $DOTFILES/.bashrc ~/.bashrc
+ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
+ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 
 # Git
 sudo add-apt-repository ppa:git-core/ppa -y

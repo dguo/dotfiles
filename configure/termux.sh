@@ -29,8 +29,8 @@ rm setup-pointless-repo.sh pointless.gpg
 
 pkg install cargo exa rustc ripgrep
 
-ln -sf $DOTFILES/.bash_profile ~/.bash_profile
-ln -sf $DOTFILES/.bashrc ~/.bashrc
+ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
+ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 
 ln -sf $DOTFILES/git/termux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore

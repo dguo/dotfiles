@@ -55,8 +55,8 @@ npm install -g clipboard-cli diff2html-cli instant-markdown-d opn-cli
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Symlink configurations
-ln -sf $DOTFILES/.bash_profile ~/.bash_profile
-ln -sf $DOTFILES/.bashrc ~/.bashrc
+ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
+ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc
 ln -sf $DOTFILES/git/mac.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore

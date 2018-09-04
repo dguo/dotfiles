@@ -35,8 +35,8 @@ sudo apt-get -y update
 sudo apt-get -y install docker-ce
 
 # Symlink configurations
-ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/Code/dguo/dotfiles/programs/bash/.bash_profile ~/.bash_profile
+ln -sf ~/Code/dguo/dotfiles/programs/bash/.bashrc ~/.bashrc
 ln -sf ~/Code/dguo/dotfiles/programs/vim/.vimrc ~/.vimrc
 ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
