@@ -1,0 +1,5 @@
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+
+# Needs to be the last plugin sourced, according to the docs
+zsh-users/zsh-syntax-highlighting

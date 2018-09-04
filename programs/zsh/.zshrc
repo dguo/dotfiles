@@ -62,3 +62,10 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_VERIFY
 # Share history between shells
 setopt SHARE_HISTORY
+
+###############################################################################
+# Plugins
+###############################################################################
+[[ -a ~/.zsh_plugins.sh ]] && source ~/.zsh_plugins.sh
+# Accept and execute the current suggestion with ctrl + space
+bindkey '^ ' autosuggest-execute
