@@ -23,8 +23,8 @@ if ! [ -x "$(command -v yay)" ]; then
 fi
 
 MISSING_PACKAGES="$(comm -23 --check-order \
-    <(cat $DOTFILES/systems/arch-packages.txt \
-          $DOTFILES/systems/arch-server-packages.txt | sort) \
+    <(cat $DOTFILES/systems/arch/packages.txt \
+          $DOTFILES/systems/arch/server/packages.txt | sort) \
     <(yay -Qqe | sort) \
     | tr '\n' ' ')"
 if [ -z "$MISSING_PACKAGES" ]; then

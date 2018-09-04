@@ -9,10 +9,10 @@ elif [ -f /etc/os-release ]; then
     if [ "$NAME" == "Arch Linux" ]; then
 	if [ -z "$DISPLAY" ]; then
             echo Updating Arch server
-            ./systems/arch.sh
+            ./systems/arch/server/arch.sh
 	else
             echo Updating Arch desktop
-            ./systems/antergos.sh
+            ./systems/arch/antergos/antergos.sh
 	fi
     elif [ "$NAME" == "Ubuntu" ]; then
         echo Updating Ubuntu
