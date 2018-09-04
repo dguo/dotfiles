@@ -76,8 +76,8 @@ vim +PlugUpdate +qall
 vim +PlugClean +qall
 
 # Visual Studio Code
-ln -sf $DOTFILES/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-. $DOTFILES/vscode/sync-extensions.sh
+ln -sf $DOTFILES/programs/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+. $DOTFILES/programs/vscode/sync-extensions.sh
 
 # Zsh
 antibody bundle < $DOTFILES/programs/zsh/zsh_plugins.txt > ~/.zsh_plugins.sh
