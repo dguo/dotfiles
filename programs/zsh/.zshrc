@@ -64,6 +64,41 @@ setopt HIST_VERIFY
 setopt SHARE_HISTORY
 
 ###############################################################################
+# Aliases
+###############################################################################
+# <C-k>/<C-j> instead of up/down for command history
+bindkey "^k" history-beginning-search-backward
+bindkey "^j" history-beginning-search-forward
+# cat with syntax highlighting and Git integration
+alias b="bat"
+# Cross-platform clipboard access
+alias cb="clipboard"
+# Build, Ship, Run
+alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
+# the stupid content tracker
+alias g="git"
+alias gd="diff2html -s side"
+# a modern ls
+alias l="exa"
+# fzf-marks
+alias j="jump"
+# turtles all the way down
+alias m="mkdir"
+# print working directory
+alias p="pwd"
+# you better check yo self before you wreck yo self
+alias r="rm -i"
+# text editor of choice
+alias v="vim"
+
+###############################################################################
+# fzf
+###############################################################################
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+###############################################################################
 # Plugins
 ###############################################################################
 [[ -a ~/.zsh_plugins.sh ]] && source ~/.zsh_plugins.sh
