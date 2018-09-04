@@ -4,7 +4,8 @@ if [ "$(uname)" == "Darwin" ]; then
     echo Updating Mac
     ./systems/mac/mac.sh
 elif [ -f /etc/os-release ]; then
-    . /etc/os-release
+    # shellcheck disable=SC1091
+    source /etc/os-release
 
     if [ "$NAME" == "Arch Linux" ]; then
 	if [ -z "$DISPLAY" ]; then

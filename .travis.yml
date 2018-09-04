@@ -1,6 +1,6 @@
-language: c
+language: shell
 
 sudo: false
 
 script:
-  - "shellcheck -e SC1090 **/*.sh"
+    - bash -c 'shopt -s globstar; shellcheck -e SC1090 **/*.sh'

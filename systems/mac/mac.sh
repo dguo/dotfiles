@@ -12,6 +12,9 @@
 # Exit immediately if any command fails
 set -e
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+PROGRAMS_DIR="$SCRIPT_DIR/../../programs"
+
 DOTFILES=~/code/dguo/dotfiles
 
 hash gcc 2>/dev/null || {
@@ -77,7 +80,7 @@ vim +PlugClean +qall
 
 # Visual Studio Code
 ln -sf $DOTFILES/programs/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-. $DOTFILES/programs/vscode/sync-extensions.sh
+source "$PROGRAMS_DIR/vscode/sync-extensions.sh"
 
 # Zsh
 antibody bundle < $DOTFILES/programs/zsh/zsh_plugins.txt > ~/.zsh_plugins.sh
