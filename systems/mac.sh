@@ -35,7 +35,7 @@ if [ "$(command -v bash)" != "/usr/local/bin/bash" ]; then
 fi
 
 # to pick up the Brewfile
-cd $DOTFILES/configure
+cd $DOTFILES/systems
 
 brew update
 brew bundle

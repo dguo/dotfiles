@@ -17,8 +17,8 @@ else
 fi
 
 MISSING_PACKAGES="$(comm -23 --check-order \
-    <(cat $DOTFILES/configure/arch-packages.txt \
-          $DOTFILES/configure/arch-desktop-packages.txt | sort) \
+    <(cat $DOTFILES/systems/arch-packages.txt \
+          $DOTFILES/systems/arch-desktop-packages.txt | sort) \
     <(yay -Qqe | sort) \
     | tr '\n' ' ')"
 if [ -z "$MISSING_PACKAGES" ]; then
@@ -45,7 +45,7 @@ ln -sf $DOTFILES/programs/git/linux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Remap caps lock to escape and control
-sudo ln -sf $DOTFILES/configure/udevmon.yaml /etc/udevmon.yaml
+sudo ln -sf $DOTFILES/systems/udevmon.yaml /etc/udevmon.yaml
 sudo systemctl enable udevmon
 
 # Docker

@@ -2,9 +2,9 @@
 
 I try to keep as much of my configuration as possible in this repo. I symlink
 my [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory)
-into the appropriate locations. I also use the scripts in the `configure`
+into the appropriate locations. I also use the scripts in the `systems`
 directory to initialize new machines and keep them up to date later. The
-top-level `configure.sh` script detects the current platform and runs the
+top-level `configure.sh` script detects the current system and runs the
 appropriate script.
 
 ## Remapping caps lock
