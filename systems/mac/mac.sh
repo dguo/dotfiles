@@ -69,7 +69,7 @@ ln -sf $DOTFILES/programs/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 mkdir -p ~/.config/karabiner
 ln -sf $DOTFILES/programs/karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 # Suppress the new window message
-ln -sf $DOTFILES/.hushlogin ~/.hushlogin
+ln -sf $DOTFILES/systems/mac/.hushlogin ~/.hushlogin
 
 # Vim
 ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc

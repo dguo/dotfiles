@@ -1,0 +1,2 @@
+The mere existence of this file in the home directory will cause macOS to
+suppress the last login message in terminals.
