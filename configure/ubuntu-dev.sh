@@ -10,7 +10,7 @@ ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
 sudo apt-get install git -y
-ln -sf $DOTFILES/git/ubuntu-dev.gitconfig ~/.gitconfig
+ln -sf $DOTFILES/programs/git/ubuntu-dev.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Tools

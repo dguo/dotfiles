@@ -41,7 +41,7 @@ ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 
 # Git
-ln -sf $DOTFILES/git/linux.gitconfig ~/.gitconfig
+ln -sf $DOTFILES/programs/git/linux.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Remap caps lock to escape and control

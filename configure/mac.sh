@@ -58,7 +58,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc
-ln -sf $DOTFILES/git/mac.gitconfig ~/.gitconfig
+ln -sf $DOTFILES/programs/git/mac.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.gnupg

@@ -43,7 +43,7 @@ ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 
 # Git
-ln -sf $DOTFILES/git/arch-server.gitconfig ~/.gitconfig
+ln -sf $DOTFILES/programs/git/arch-server.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 # Docker

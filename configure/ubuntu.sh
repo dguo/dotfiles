@@ -38,7 +38,7 @@ sudo apt-get -y install docker-ce
 ln -sf ~/Code/dguo/dotfiles/programs/bash/.bash_profile ~/.bash_profile
 ln -sf ~/Code/dguo/dotfiles/programs/bash/.bashrc ~/.bashrc
 ln -sf ~/Code/dguo/dotfiles/programs/vim/.vimrc ~/.vimrc
-ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/Code/dguo/dotfiles/programs/git/.gitconfig ~/.gitconfig
 ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/Code/dguo/dotfiles/programs/terminator/config ~/.config/terminator/config
 

@@ -1,0 +1,4 @@
+[include]
+    path = ~/code/dguo/dotfiles/programs/git/.gitconfig
+[credential]
+    helper = osxkeychain
