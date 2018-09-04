@@ -40,8 +40,6 @@ setopt AUTO_CD
 ###############################################################################
 autoload -Uz compinit
 compinit
-# Autocompletion of command line switches for aliases
-setopt COMPLETE_ALIASES
 
 ###############################################################################
 # History
