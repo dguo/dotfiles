@@ -54,7 +54,7 @@ sudo systemctl enable docker
 
 # Terminator
 mkdir -p ~/.config/terminator
-ln -sf $DOTFILES/terminator/config ~/.config/terminator/config
+ln -sf $DOTFILES/programs/terminator/config ~/.config/terminator/config
 
 # Vim
 sudo npm install -g instant-markdown-d opn-cli
