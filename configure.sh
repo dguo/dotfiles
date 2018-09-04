@@ -2,7 +2,7 @@
 
 if [ "$(uname)" == "Darwin" ]; then
     echo Updating Mac
-    ./systems/mac.sh
+    ./systems/mac/mac.sh
 elif [ -f /etc/os-release ]; then
     . /etc/os-release
 
