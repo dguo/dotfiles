@@ -54,6 +54,6 @@ sudo systemctl enable --now docker
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 
 # Vim
-ln -sf $DOTFILES/.vimrc ~/.vimrc
+ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
 vim +PlugUpdate +qall
 vim +PlugClean! +qall

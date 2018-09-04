@@ -21,6 +21,6 @@ ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 sudo apt-get install cmake python-dev -y # for YouCompleteMe
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -sf $DOTFILES/.vimrc ~/.vimrc
+ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
 vim +PlugUpdate +qall
 vim +PlugClean! +qall

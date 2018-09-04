@@ -37,7 +37,7 @@ ln -sf $DOTFILES/.gitignore ~/.gitignore
 
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 
-ln -sf $DOTFILES/.vimrc ~/.vimrc
+ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
 
 curl -o "$PREFIX/etc/bash_completion.d/git-prompt.sh" \
 	https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh

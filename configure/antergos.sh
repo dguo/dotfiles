@@ -58,7 +58,7 @@ ln -sf $DOTFILES/programs/terminator/config ~/.config/terminator/config
 
 # Vim
 sudo npm install -g instant-markdown-d opn-cli
-ln -sf $DOTFILES/.vimrc ~/.vimrc
+ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
 vim +PlugUpdate +qall
 vim +PlugClean! +qall
 

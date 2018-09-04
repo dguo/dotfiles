@@ -37,10 +37,10 @@ sudo apt-get -y install docker-ce
 # Symlink configurations
 ln -sf ~/Code/dguo/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/Code/dguo/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/Code/dguo/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/Code/dguo/dotfiles/programs/vim/.vimrc ~/.vimrc
 ln -sf ~/Code/dguo/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/Code/dguo/dotfiles/.gitignore ~/.gitignore
-ln -sf ~/Code/dguo/dotfiles/terminator/config ~/.config/terminator/config
+ln -sf ~/Code/dguo/dotfiles/programs/terminator/config ~/.config/terminator/config
 
 # Vim
 sudo apt-get -y install vim

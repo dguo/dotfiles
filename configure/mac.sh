@@ -69,7 +69,7 @@ ln -sf $DOTFILES/programs/karabiner-elements/karabiner.json ~/.config/karabiner/
 ln -sf $DOTFILES/.hushlogin ~/.hushlogin
 
 # Vim
-ln -sf $DOTFILES/.vimrc ~/.vimrc
+ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugUpdate +qall
