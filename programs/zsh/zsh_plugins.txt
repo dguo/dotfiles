@@ -1,3 +1,4 @@
+urbainvaes/fzf-marks
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 
