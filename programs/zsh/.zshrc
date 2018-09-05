@@ -232,7 +232,10 @@ bindkey "^R" history-incremental-pattern-search-backward
 
 ###############################################################################
 # Completion
-# should be triggered after zsh-completions is loaded
 ###############################################################################
+# Smartcase completions:
+# capital matches capital; lower matches both lower and capital
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# should be triggered after zsh-completions is loaded
 autoload -Uz compinit
 compinit
