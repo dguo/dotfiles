@@ -14,6 +14,10 @@ bindkey -v
 # Turn on spelling correction for all arguments
 setopt CORRECTALL
 
+# Don't print a '%' for partial lines (ones that don't end with a newline)
+# https://superuser.com/a/645612/922801
+unsetopt PROMPT_SP
+
 ###############################################################################
 # Prompt
 ###############################################################################
