@@ -11,7 +11,35 @@ bindkey -v
 # Search command history with ctrl-r
 bindkey "^R" history-incremental-pattern-search-backward
 
-# Custom prompt
+###############################################################################
+# Prompt
+###############################################################################
+
+# Arch
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+    source /usr/share/git/completion/git-prompt.sh
+fi
+
+# Mac
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    source /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+
+# Termux
+if [ -f "$PREFIX/etc/bash_completion.d/git-prompt.sh" ]; then
+    source "$PREFIX/etc/bash_completion.d/git-prompt.sh"
+fi
+
+# Ubuntu
+if [ -f /etc/bash_completion.d/git-prompt ]; then
+    source /etc/bash_completion.d/git-prompt
+fi
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM="auto verbose git"
+
 function () {
     local username="%n"
     local short_host="%m"
@@ -19,9 +47,13 @@ function () {
     local working_directory="%~"
     local lambda=$'\xce\xbb'
     local newline=$'\n'
+    local git_info='$(__git_ps1 " on \e[00;33m%s")'
 
-    PROMPT="${newline}%F{red}$username@$short_host%F{white} at %F{green}$military_time%F{white} in %F{blue}$working_directory${newline}%F{magenta}%(0?.$lambda.!) %F{white}"
+    PS1="${newline}%F{red}$username@$short_host%F{white} at %F{green}$military_time%F{white} in %F{blue}$working_directory%F{white}${git_info}${newline}%F{magenta}%(0?.$lambda.!) %F{white}"
     PS2="%F{magenta}> %F{white}"
+
+    # Expand the Git info in the prompt
+    setopt PROMPT_SUBST
 }
 
 ###############################################################################
