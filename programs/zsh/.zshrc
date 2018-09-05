@@ -36,12 +36,6 @@ function () {
 setopt AUTO_CD
 
 ###############################################################################
-# Completion
-###############################################################################
-autoload -Uz compinit
-compinit
-
-###############################################################################
 # History
 ###############################################################################
 HISTFILE=~/.zsh_history
@@ -103,3 +97,10 @@ alias v="vim"
 [[ -a ~/.zsh_plugins.sh ]] && source ~/.zsh_plugins.sh
 # Accept and execute the current suggestion with ctrl + space
 bindkey '^ ' autosuggest-execute
+
+###############################################################################
+# Completion
+# should be triggered after zsh-completions is loaded
+###############################################################################
+autoload -Uz compinit
+compinit
