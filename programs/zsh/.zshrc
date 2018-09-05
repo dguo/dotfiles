@@ -10,8 +10,6 @@ export VISUAL=vim
 
 # Use vi style key bindings instead of emacs
 bindkey -v
-# Search command history with ctrl-r
-# bindkey "^R" history-incremental-pattern-search-backward
 
 ###############################################################################
 # Prompt
@@ -104,8 +102,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 # Max lines kept in the file
 SAVEHIST=10000
-# Save timestamps and durations along with each command
-setopt EXTENDED_HISTORY
 # Remove duplicates before unique commands
 setopt HIST_EXPIRE_DUPS_FIRST
 # Don't add entires that duplicate the previous command
@@ -227,6 +223,9 @@ fcf() {
 [[ -a ~/.zsh_plugins.sh ]] && source ~/.zsh_plugins.sh
 # Accept and execute the current suggestion with ctrl + space
 bindkey '^ ' autosuggest-execute
+# Search command history with ctrl-r
+# Override fzf-history-widget because it doesn't seem to work
+bindkey "^R" history-incremental-pattern-search-backward
 
 ###############################################################################
 # Completion
