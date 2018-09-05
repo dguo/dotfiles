@@ -27,13 +27,13 @@ hash brew 2>/dev/null || {
     exit 1;
 }
 
-if [ "$(command -v bash)" != "/usr/local/bin/bash" ]; then
-    echo >&2 "Please change the system shell to the homebrew managed bash:";
+if [ "$(command -v zsh)" != "/usr/local/bin/zsh" ]; then
+    echo >&2 "Please change the system shell to the homebrew managed Zsh:";
     echo >&2 "See https://johndjameson.com/blog/updating-your-shell-with-homebrew/";
-    # brew install bash
+    # brew install zsh
     # sudo -s
-    # echo /usr/local/bin/bash >> /etc/shells
-    # chsh -s /usr/local/bin/bash
+    # echo /usr/local/bin/zsh >> /etc/shells
+    # chsh -s /usr/local/bin/zsh
     exit 1;
 fi
 

@@ -18,8 +18,6 @@ how to do it.
 
 ## Terminal toolkit
 
-* [Bash](https://www.gnu.org/software/bash/) for the [shell](https://en.wikipedia.org/wiki/Unix_shell)
-    * The benefits of [zsh](http://www.zsh.org) seem to be somewhat negated by some of these other tools
 * [clipboard-cli](https://github.com/sindresorhus/clipboard-cli) for a cross-platform way to access the system clipboard
 * [ctop](https://ctop.sh/) for monitoring containers
 * [diff2html-cli](https://diff2html.xyz/) for viewing side by side Git diffs
@@ -37,6 +35,7 @@ how to do it.
 * [Vim](http://www.vim.org) and [Visual Studio Code](https://code.visualstudio.com/) for text editing
     * [vim-plug](https://github.com/junegunn/vim-plug) to manage the plugins
     * See the [.vimrc](https://github.com/dguo/dotfiles/blob/master/.vimrc) for a list of plugins
+* [Z shell](http://zsh.sourceforge.net/) for the [shell](https://en.wikipedia.org/wiki/Unix_shell)
 
 ### Replacements for [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
 
@@ -58,7 +57,6 @@ comprehensive.
 
 * [jq](https://stedolan.github.io/jq/) for [JSON](https://en.wikipedia.org/wiki/JSON)
 * [xsv](https://github.com/BurntSushi/xsv) for [CSV](https://en.wikipedia.org/wiki/Comma-separated_values)
-
 
 ## Languages
 
