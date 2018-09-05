@@ -42,6 +42,13 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM="auto verbose git"
 
+# Make __git_ps1 a no-op if it's not defined
+if ! type __git_ps1 > /dev/null; then
+    function __git_ps1 {
+        :
+    }
+fi
+
 function () {
     local username="%n"
     local short_host="%m"
