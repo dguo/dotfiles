@@ -11,6 +11,9 @@ export VISUAL=vim
 # Use vi style key bindings instead of emacs
 bindkey -v
 
+# Turn on spelling correction for all arguments
+setopt CORRECTALL
+
 ###############################################################################
 # Prompt
 ###############################################################################
