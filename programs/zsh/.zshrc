@@ -1,5 +1,7 @@
 ###############################################################################
 # Author: Danny Guo
+# Zsh options are documented here:
+# http://zsh.sourceforge.net/Doc/Release/Options.html
 ###############################################################################
 
 # https://wiki.archlinux.org/index.php/environment_variables#Default_programs
@@ -57,15 +59,25 @@ function () {
 }
 
 ###############################################################################
-# Options
-# http://zsh.sourceforge.net/Doc/Release/Options.html
-###############################################################################
-
-###############################################################################
 # Changing directories
+# Add 'l' to immediately do a ls
 ###############################################################################
 # If a command is a directory, cd to it
 setopt AUTO_CD
+# regular change
+alias c="cd"
+cl() {
+    cd "$1" && exa;
+}
+# back to previous working directory
+alias c-="cd -"
+alias c-l="c- && l"
+# move up a directory
+alias ..="cd .."
+alias ..l=".. && l"
+# move up several directories
+alias ...="cd ../.."
+alias ...l="... && l"
 
 ###############################################################################
 # History
