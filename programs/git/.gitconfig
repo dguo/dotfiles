@@ -31,7 +31,7 @@
     cf = commit --fixup=HEAD
     cs = commit --squash=HEAD -m
     co = checkout
-    d = ! git diff --color | diff-so-fancy
+    d = "!f() { git diff --color \"$@\" | diff-so-fancy; }; f"
     dt = difftool
     l = log
     m = merge
