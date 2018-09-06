@@ -23,7 +23,7 @@ if $PREFIX !~ "termux"
 endif
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
-Plug 'jiangmiao/auto-pairs'
+Plug 'lionize/auto-pairs'
 Plug 'tpope/vim-speeddating'
 Plug 'prettier/vim-prettier'
 Plug 'tpope/vim-repeat'
@@ -94,6 +94,13 @@ map <Leader>e <Plug>(easymotion-e)
 map <Leader>E <Plug>(easymotion-E)
 map <Leader>gE <Plug>(easymotion-gE)
 map <Leader>ge <Plug>(easymotion-ge)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" auto-pairs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Skip autopairs unless the following character is whitespace
+let g:AutoPairsOnlyWhitespace=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
