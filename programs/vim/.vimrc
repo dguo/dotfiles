@@ -77,23 +77,10 @@ set pumheight=5 " limit the number of results shown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " EasyMotion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:EasyMotion_do_mapping = 0
+" Use a single leader instead of double leader
+map <Leader> <Plug>(easymotion-prefix)
+let g:EasyMotion_do_mapping = 1
 let g:EasyMotion_smartcase = 1
-let g:EasyMotion_startofline = 1
-map <Leader>l <Plug>(easymotion-lineforward)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-map <Leader>h <Plug>(easymotion-linebackward)
-map <Leader>s <Plug>(easymotion-f)
-map <Leader>S <Plug>(easymotion-F)
-map <Leader>w <Plug>(easymotion-w)
-map <Leader>W <Plug>(easymotion-W)
-map <Leader>b <Plug>(easymotion-b)
-map <Leader>B <Plug>(easymotion-B)
-map <Leader>e <Plug>(easymotion-e)
-map <Leader>E <Plug>(easymotion-E)
-map <Leader>gE <Plug>(easymotion-gE)
-map <Leader>ge <Plug>(easymotion-ge)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
