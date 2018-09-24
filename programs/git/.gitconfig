@@ -21,6 +21,9 @@
 [core]
     autocrlf = input
     editor = vim
+    # Use diff-so-fancy for all diff output
+    # To bypass diff-so-fancy, run $ git --no-pager diff
+    pager = "diff-so-fancy | less --tabs=4 -RFX"
 [alias]
     a = add
     au = add -u
@@ -31,7 +34,7 @@
     cf = commit --fixup=HEAD
     cs = commit --squash=HEAD -m
     co = checkout
-    d = "!f() { git diff --color \"$@\" | diff-so-fancy; }; f"
+    d = diff
     dt = difftool
     l = log
     m = merge
