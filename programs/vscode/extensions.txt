@@ -2,6 +2,7 @@ EditorConfig.EditorConfig
 GrapeCity.gc-excelviewer
 PeterJausovec.vscode-docker
 alefragnani.project-manager
+bungcip.better-toml
 codezombiech.gitignore
 dbaeumer.vscode-eslint
 deerawan.vscode-faker
