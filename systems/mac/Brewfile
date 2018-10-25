@@ -47,6 +47,7 @@ brew "yarn"
 brew "zsh"
 
 # applications
+cask "alfred"
 cask "android-studio"
 # cask "appcleaner"
 cask "anki"
