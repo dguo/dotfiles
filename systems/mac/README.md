@@ -7,6 +7,7 @@
 * Install [Homebrew](https://brew.sh/)
 * Go through system preferences
 * Sign in to iCloud
+* Sign in to Google, and sync contacts and calendars
 
 ### Terminal
 
