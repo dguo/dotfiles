@@ -11,8 +11,9 @@ export VISUAL=vim
 # Use vi style key bindings instead of emacs
 bindkey -v
 
-# Turn on spelling correction for all arguments
-setopt CORRECTALL
+# Only suggest corrections for commands, not arguments
+setopt CORRECT
+unsetopt CORRECTALL
 
 # Don't print a '%' for partial lines (ones that don't end with a newline)
 # https://superuser.com/a/645612/922801
