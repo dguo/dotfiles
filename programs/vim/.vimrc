@@ -144,6 +144,8 @@ set backspace=indent,eol,start " can erase past chars, autoindent, and newlines
 set clipboard^=unnamed,unnamedplus " use the system clipboard
 " disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Automatically wrap lines for Markdown files
+au BufRead,BufNewFile *.md setlocal textwidth=80
 " Extra information
 set laststatus=2      " for airline plugin
 set number            " show line numbers
