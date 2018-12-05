@@ -51,7 +51,7 @@ curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
     https://raw.githubusercontent.com/urbainvaes/fzf-marks/master/fzf-marks.plugin.bash
 
 # Global node modules
-npm install -g clipboard-cli diff2html-cli instant-markdown-d opn-cli
+npm install -g clipboard-cli diff2html-cli instant-markdown-d live-server opn-cli
 
 # Make keys repeat when held down
 # https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
