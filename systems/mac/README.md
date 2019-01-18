@@ -6,6 +6,7 @@
 * Install XCode
 * Install [Homebrew](https://brew.sh/)
 * Go through system preferences
+* Turn on FileVault
 * Sign in to iCloud
 * Sign in to Google, and sync contacts and calendars
 
