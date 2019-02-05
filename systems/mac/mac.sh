@@ -57,6 +57,9 @@ npm install -g clipboard-cli diff2html-cli instant-markdown-d live-server opn-cl
 # https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# Change where screenshots are saved to (default is the desktop)
+defaults write com.apple.screencapture location ~/Downloads
+
 # Symlink configurations
 ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
