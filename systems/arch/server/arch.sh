@@ -22,6 +22,10 @@ if ! [ -x "$(command -v yay)" ]; then
     rm -rf yay
 fi
 
+# Update the keyring first to prevent unknown trust errors
+# https://nanxiao.me/en/update-keyring-first-if-your-arch-linux-is-old-enough/
+yay -Sy --needed archlinux-keyring
+
 MISSING_PACKAGES="$(comm -23 --check-order \
     <(cat $DOTFILES/systems/arch/packages.txt \
           $DOTFILES/systems/arch/server/packages.txt | sort) \
@@ -34,8 +38,9 @@ else
     yay -S --needed $MISSING_PACKAGES
 fi
 
-# Update all packages, and clean unneeded packages
+# Update all packages
 yay -Syu
+# Clean unneeded packages
 yay -Yc
 
 # Bash
