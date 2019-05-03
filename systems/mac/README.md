@@ -61,6 +61,9 @@ cd dotfiles
         * Turn on dark mode
     * Finder
         * Turn off showing external disks on the desktop
+        * Set new finder windows to show downloads
+        * Set sidebar items
+        * Turn on show all filename extensions
     * Desktop & Screen Saver
         * Change screen saver to "Ken Burns"
     * Dock
