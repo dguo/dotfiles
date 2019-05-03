@@ -33,6 +33,7 @@ if [ "$(command -v zsh)" != "/usr/local/bin/zsh" ]; then
     # brew install zsh
     # sudo -s
     # echo /usr/local/bin/zsh >> /etc/shells
+    # exit
     # chsh -s /usr/local/bin/zsh
     exit 1;
 fi
