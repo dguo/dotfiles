@@ -62,6 +62,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.screencapture location ~/Downloads
 
 # Symlink configurations
+ln -sf $DOTFILES/programs/sh/.profile ~/.profile
 ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc

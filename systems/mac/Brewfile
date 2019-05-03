@@ -13,6 +13,7 @@ brew "node"
 brew "python"
 brew "python@2"
 brew "ruby"
+brew "rustup"
 
 # tools
 brew "getantibody/tap/antibody"
