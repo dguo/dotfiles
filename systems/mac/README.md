@@ -5,10 +5,8 @@
 * Do a system update
 * Install XCode
 * Install [Homebrew](https://brew.sh/)
-* Go through system preferences
-* Turn on FileVault
-* Sign in to iCloud
-* Sign in to Google, and sync contacts and calendars
+* Run the initial setup through the terminal
+* Set up programs and system preferences
 
 ### Terminal
 
@@ -22,44 +20,101 @@ cd dotfiles
 
 ### Programs
 
-* Docker
+* Chrome
     * Sign in
+    * Set advanced sync settings
+* Docker
     * Set resource limits
-* Spectacle
-    * Set to start on log in
+* Dropbox
+    * Sign in
+    * Turn on selective sync
+    * Disable camera uploads
+* Evernote
+    * Sign in
+    * Uncheck Edit > Spelling and Grammer > Correct Spelling Automatically
 * Firefox
     * Sign in to sync
     * Go through preferences
     * Make the bookmarks toolbar visible
     * Pin certain add-ons to the overflow menu
-* LastPass
-    * Sign in
-    * Click the LastPass icon
-    * Go to More Options > About LastPass
-    * Donwload and install the binary component
-* Web Scrobbler
-    * Sign in to Last.fm
-    * Turn off now playing notifications
-    * Disable Google Analytics
-* Dropbox
+    * LastPass
+        * Sign in
+        * Click the LastPass icon
+        * Go to More Options > About LastPass
+        * Download and install the binary component
+    * Web Scrobbler
+        * Sign in to Last.fm
+        * Turn off now playing notifications
+        * Disable Google Analytics
+* Google Backup and Sync
     * Sign in
     * Turn on selective sync
-    * Disable camera uploads
+* iTerm
+    * Set the path for "Load preferences from a custom folder or URL"
+* Karabiner
+    * Launch it
+* Settings
+    * Storage
+        * Turn on empty trash automatically
+        * Remove GarageBand sound library
+    * General
+        * Turn on dark mode
+    * Finder
+        * Turn off showing external disks on the desktop
+    * Desktop & Screen Saver
+        * Change screen saver to "Ken Burns"
+    * Dock
+        * Make it smaller
+        * Turn magnification on
+        * Change double-click a window's title bar to minimize
+        * Turn hiding on
+        * Remove applications from the dock
+    * Mission Control
+        * Hot corners
+                * Top left: Mission Control
+                * Top right: Desktop
+    * Language & Region
+        * Add Chinese, Simplified
+    * Security & Privacy
+        * Require password 5 seconds after sleep or screen saver
+        * Turn on FileVault
+    * Displays
+        * Turn on Night Shift from 9 PM to 5 AM
+    * Energy Saver
+        * Battery
+            * Turn display off after 5 min.
+        * Power Adapter
+            * Turn display off after 10 min.
+    * Keyboard
+        * Fastest key repeat speed
+        * Shortest delay until repeat
+    * Trackpad
+        * Point & Click
+            * Look up & data detectors: tap with three fingers
+            * Tap to click: tap with one finger
+            * Second fastest tracking speed
+        * Scroll & Zoom
+            * Turn off natural scroll direction
+        * More Gestures
+            * Swipe between pages: swipe with two or three fingers
+            * Turn on App Expose
+    * Sound
+        * Turn on show volume in menu bar
+    * iCloud
+        * Sign in
+        * Turn on Find My Mac
+    * Internet accounts
+        * Google
+            * Sign in
+            * Sync contacts and calendars
+    * Sharing
+        * Set computer name
+    * Users & Groups
+        * Login items
+            * Add Karabiner
 * smcFanControl
     * Turn on auto updates
     * Set to start on log in
     * Create Medium and Max settings
-* iTerm
-    * Set the path for "Load preferences from a custom folder or URL"
-* Login items
-    * Remove `ituneshelper`
-    * Add Karabiner-Elements
-* Chrome
-    * Sign in
-    * Set advanced sync settings
-* Google Backup and Sync
-    * Sign in
-    * Turn on selective sync
-* Evernote
-    * Sign in
-    * Uncheck Edit > Spelling and Grammer > Correct Spelling Automatically
+* Spectacle
+    * Set to start on log in
