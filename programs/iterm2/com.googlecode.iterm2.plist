@@ -757,7 +757,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<true/>
+	<false/>
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
@@ -843,7 +843,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 605 400 422 0 0 1680 1027 </string>
+	<string>0 550 590 477 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>212 101 400 422 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_18123AC0-FE8B-4E84-951C-FB2CA942E2A1</key>
@@ -3177,7 +3177,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-28T12:41:37Z</date>
+	<date>2019-05-05T18:32:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
