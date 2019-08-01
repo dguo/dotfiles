@@ -78,6 +78,7 @@ cask "smcfancontrol"
 cask "spectacle"
 cask "steam"
 cask "sublime-text"
+cask "tableplus"
 mas 'Todoist', id: 585829637
 cask "visual-studio-code"
 cask "vlc"
