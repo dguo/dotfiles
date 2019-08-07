@@ -5,6 +5,7 @@
     "editor.cursorStyle": "line-thin",
     "editor.fontFamily": "Source Code Pro, monospace",
     "editor.formatOnSave": true,
+    "editor.minimap.renderCharacters": false,
     "editor.mouseWheelZoom": true,
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "gutter",
@@ -35,9 +36,9 @@
     "vim.useSystemClipboard": true,
     "window.restoreWindows": "all",
     "window.restoreFullscreen": true,
+    "workbench.editor.enablePreview": false,
     "workbench.editor.swipeToNavigate": true,
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.activityBar.visible": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": true
 }
