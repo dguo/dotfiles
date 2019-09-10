@@ -1,4 +1,6 @@
-# System Configuration [![Build Status](https://travis-ci.org/dguo/dotfiles.svg?branch=travis)](https://travis-ci.org/dguo/dotfiles)
+# System Configuration
+
+[![Build Status](https://travis-ci.org/dguo/dotfiles.svg?branch=travis)](https://travis-ci.org/dguo/dotfiles)
 
 I try to keep as much of my configuration as possible in this repo. I symlink
 my [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory)
