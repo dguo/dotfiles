@@ -219,9 +219,6 @@ nnoremap L gt
 nnoremap S :w<CR>
 " use Q (normally goes into ex mode) to quit
 nnoremap Q :q<CR>
-" don't need to use shift to enter command
-noremap : ;
-noremap ; :
 " Ctrl-P for fzf (assume we're in a git repo)
 noremap <silent> <C-p> :GitFiles -co --exclude-standard<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
