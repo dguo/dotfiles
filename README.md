@@ -1,5 +1,6 @@
 # System Configuration
 
+[![CI status](https://github.com/dguo/dotfiles/workflows/CI/badge.svg)](https://github.com/dguo/dotfiles/actions?query=branch%3Amaster)
 [![Build Status](https://travis-ci.org/dguo/dotfiles.svg?branch=travis)](https://travis-ci.org/dguo/dotfiles)
 
 I try to keep as much of my configuration as possible in this repo. I symlink
