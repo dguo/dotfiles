@@ -23,7 +23,6 @@ if $PREFIX !~ "termux"
 endif
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
-Plug 'lionize/auto-pairs'
 Plug 'tpope/vim-speeddating'
 Plug 'prettier/vim-prettier'
 Plug 'tpope/vim-repeat'
