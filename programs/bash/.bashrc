@@ -127,7 +127,7 @@ fi
 # regular change
 alias c="cd"
 cl() {
-    cd "$1" && exa;
+    cd "$1" && exa --all;
 }
 # back to previous working directory
 alias c-="cd -"
@@ -166,7 +166,7 @@ alias dm="docker-machine"
 alias g="git"
 alias gd="diff2html -s side"
 # replace ls with exa
-alias l="exa"
+alias l="exa --all"
 # fzf-marks
 alias j="jump"
 # turtles all the way down
