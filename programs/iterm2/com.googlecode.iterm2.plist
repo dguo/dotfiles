@@ -10,6 +10,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -840,13 +842,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-4190 356 700 622 -5120 -240 2560 1417 </string>
+	<string>490 303 700 622 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>630 236 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1280 -240 1280 1417 -2560 -240 2560 1417 </string>
+	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 550 590 477 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2503,6 +2505,7 @@
 		<string>3.3.2beta1</string>
 		<string>3.3.0beta12</string>
 		<string>3.3.0beta13</string>
+		<string>3.3.8</string>
 		<string>3.3.0beta15</string>
 		<string>3.3.5beta1</string>
 		<string>3.3.0beta16</string>
@@ -2528,7 +2531,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>557982510.92439604</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>39</integer>
+	<integer>45</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>575587204.33243406</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -3336,7 +3339,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-22T03:11:32Z</date>
+	<date>2020-02-08T01:16:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3404,7 +3407,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
