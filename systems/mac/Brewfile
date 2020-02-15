@@ -47,6 +47,7 @@ brew "tokei"
 brew "xsv"
 brew "vim"
 brew "yarn"
+brew "ykman"
 brew "zsh"
 
 # applications
