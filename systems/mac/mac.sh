@@ -68,6 +68,8 @@ ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc
 ln -sf $DOTFILES/programs/git/mac.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
+mkdir -p ~/.hammerspoon
+ln -sf $DOTFILES/programs/hammerspoon/init.lua ~/.hammerspoon/init.lua
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.gnupg
 ln -sf $DOTFILES/programs/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
