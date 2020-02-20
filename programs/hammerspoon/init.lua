@@ -61,8 +61,20 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
+  if character == 'y' and hyper then
+    hs.application.launchOrFocus("Todoist")
+    hyperTime = nil
+    return true
+  end
+
   if character == 'u' and hyper then
     hs.application.launchOrFocus("Slack")
+    hyperTime = nil
+    return true
+  end
+
+  if character == 'i' and hyper then
+    hs.application.launchOrFocus("Spotify")
     hyperTime = nil
     return true
   end
