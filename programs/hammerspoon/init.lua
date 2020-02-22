@@ -117,3 +117,45 @@ up = hs.eventtap.new({hs.eventtap.event.types.keyUp}, function(event)
   end
 end)
 up:start()
+
+--[[
+  Set the default output device, based on this priority:
+
+    1. Sony headphones
+    2. Other Bluetooth headphones
+    3. CalDigit dock audio (i.e. desktop speakers)
+    4. Built-in speakers
+
+  Crucially, this also avoids the issue of macOS setting the default device to
+  a monitor that doesn't even have speakers but registers as an output device
+  for some reason.
+]]
+hs.audiodevice.watcher.setCallback(function(event)
+  --[[
+    We only care about when devices are connected or disconnected. This allows
+    us to manually change the default device without issues.
+  ]]
+  if event ~= "dev#" then
+    return
+  end
+
+  for i, device in ipairs(hs.audiodevice.allOutputDevices()) do
+    local currentDevice = hs.audiodevice.defaultOutputDevice()
+
+    if device:transportType() == "Bluetooth" then
+      if currentDevice:name() ~= "WH-1000XM3" then
+        device:setDefaultOutputDevice()
+      end
+    elseif device:transportType() == "USB" then
+      if currentDevice:transportType() ~= "Bluetooth" then
+        device:setDefaultOutputDevice()
+      end
+    elseif device:transportType() == "Built-in" then
+      if currentDevice:transportType() ~= "Bluetooth" and
+         currentDevice:transportType() ~= "USB" then
+        device:setDefaultOutputDevice()
+      end
+    end
+  end
+end)
+hs.audiodevice.watcher.start()
