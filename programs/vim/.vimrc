@@ -19,7 +19,7 @@ Plug 'editorconfig/editorconfig-vim'
 " faster editing
 Plug 'scrooloose/nerdcommenter'
 if $PREFIX !~ "termux"
-    Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
+  Plug 'Valloric/YouCompleteMe', {'do': 'python3 ./install.py --ts-completer --rust-completer --clang-completer'}
 endif
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
