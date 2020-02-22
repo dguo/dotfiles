@@ -19,6 +19,12 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
+  if character == 'h' and hyper then
+    hs.eventtap.keyStroke(nil, "left", 0)
+    hyperTime = nil
+    return true
+  end
+
   if character == 'j' and hyper then
     hs.eventtap.keyStroke(nil, "down", 0)
     hyperTime = nil
@@ -27,6 +33,12 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
 
   if character == 'k' and hyper then
     hs.eventtap.keyStroke(nil, "up", 0)
+    hyperTime = nil
+    return true
+  end
+
+  if character == 'l' and hyper then
+    hs.eventtap.keyStroke(nil, "right", 0)
     hyperTime = nil
     return true
   end
