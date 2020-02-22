@@ -1,6 +1,6 @@
 EditorConfig.EditorConfig
 GrapeCity.gc-excelviewer
-PeterJausovec.vscode-docker
+ms-azuretools.vscode-docker
 alefragnani.project-manager
 bungcip.better-toml
 codezombiech.gitignore
