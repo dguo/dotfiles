@@ -8,9 +8,15 @@ hyperTime = nil
 
 down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
   local character = event:getCharacters()
-  -- local keyCode = event:getKeyCode()
+  local keyCode = event:getKeyCode()
   -- print("down", character, keyCode)
 
+  -- Disable the insert key because overwrite mode is annoying
+  if keyCode == 114 then
+    return true
+  end
+
+  -- Set up ; as the hyper key
   if character == ";" then
     hyper = true
     if hyperTime == nil then
@@ -18,6 +24,8 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     end
     return true
   end
+
+  -- Use h, j, k, l as arrow keys
 
   if character == 'h' and hyper then
     hs.eventtap.keyStroke(nil, "left", 0)
@@ -30,7 +38,6 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     hyperTime = nil
     return true
   end
-
   if character == 'k' and hyper then
     hs.eventtap.keyStroke(nil, "up", 0)
     hyperTime = nil
@@ -42,6 +49,8 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     hyperTime = nil
     return true
   end
+
+  -- Quick switch to applications
 
   if character == 'q' and hyper then
     hs.application.launchOrFocus("Authy Desktop")
