@@ -29,9 +29,6 @@ cd dotfiles
     * Sign in
     * Turn on selective sync
     * Disable camera uploads
-* Evernote
-    * Sign in
-    * Uncheck Edit > Spelling and Grammer > Correct Spelling Automatically
 * Firefox
     * Sign in to sync
     * Go through preferences

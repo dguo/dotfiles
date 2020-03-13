@@ -95,7 +95,6 @@ comprehensive.
 
 ## Services
 
-* [Evernote](https://evernote.com) for notes
 * [Todoist](https://todoist.com) for keeping track of what I need to do
 
 ---
