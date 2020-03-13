@@ -73,8 +73,6 @@ ln -sf $DOTFILES/programs/hammerspoon/init.lua ~/.hammerspoon/init.lua
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.gnupg
 ln -sf $DOTFILES/programs/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
-mkdir -p ~/.config/karabiner
-ln -sf $DOTFILES/programs/karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 # Suppress the new window message
 ln -sf $DOTFILES/systems/mac/.hushlogin ~/.hushlogin
 

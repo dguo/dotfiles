@@ -1,7 +1,10 @@
 -- Get around paste blockers with cmd+alt+v
+
 hs.hotkey.bind({"cmd", "shift"}, "V", function()
   hs.eventtap.keyStrokes(hs.pasteboard.getContents())
 end)
+
+-- Set up a hyper key
 
 hyper = false
 hyperTime = nil
@@ -130,6 +133,7 @@ up:start()
   a monitor that doesn't even have speakers but registers as an output device
   for some reason.
 ]]
+
 hs.audiodevice.watcher.setCallback(function(event)
   --[[
     We only care about when devices are connected or disconnected. This allows
@@ -159,3 +163,50 @@ hs.audiodevice.watcher.setCallback(function(event)
   end
 end)
 hs.audiodevice.watcher.start()
+
+--[[
+  Make control act as escape when tapped
+  Thanks to https://gist.github.com/arbelt/b91e1f38a0880afb316dd5b5732759f1
+]]
+
+send_escape = false
+last_mods = {}
+
+control_key_handler = function()
+  send_escape = false
+end
+
+control_key_timer = hs.timer.delayed.new(0.15, control_key_handler)
+
+control_handler = function(evt)
+  local new_mods = evt:getFlags()
+  if last_mods["ctrl"] == new_mods["ctrl"] then
+    return false
+  end
+  if not last_mods["ctrl"] then
+    last_mods = new_mods
+    send_escape = true
+    control_key_timer:start()
+  else
+    last_mods = new_mods
+    control_key_timer:stop()
+    if send_escape then
+      return true, {
+        hs.eventtap.event.newKeyEvent({}, 'escape', true),
+        hs.eventtap.event.newKeyEvent({}, 'escape', false),
+      }
+    end
+  end
+  return false
+end
+
+control_tap = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, control_handler)
+control_tap:start()
+
+other_handler = function(evt)
+  send_escape = false
+  return false
+end
+
+other_tap = hs.eventtap.new({hs.eventtap.event.types.keyDown}, other_handler)
+other_tap:start()

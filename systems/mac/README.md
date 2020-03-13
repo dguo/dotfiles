@@ -48,8 +48,6 @@ cd dotfiles
     * Turn on selective sync
 * iTerm
     * Set the path for "Load preferences from a custom folder or URL"
-* Karabiner
-    * Launch it
 * Settings
     * Storage
         * Turn on empty trash automatically
@@ -88,6 +86,7 @@ cd dotfiles
     * Keyboard
         * Fastest key repeat speed
         * Shortest delay until repeat
+        * Make caps lock function as control
     * Trackpad
         * Point & Click
             * Look up & data detectors: tap with three fingers
