@@ -48,6 +48,10 @@ cd dotfiles
     * Turn on selective sync
 * iTerm
     * Set the path for "Load preferences from a custom folder or URL"
+* Rectangle
+    * Give accessibility permission
+    * Set to start on log in
+    * Turn on automatic updates
 * Settings
     * Storage
         * Turn on empty trash automatically
@@ -111,9 +115,3 @@ cd dotfiles
     * Users & Groups
         * Login items
             * Add Karabiner
-* smcFanControl
-    * Turn on auto updates
-    * Set to start on log in
-    * Create Medium and Max settings
-* Spectacle
-    * Set to start on log in

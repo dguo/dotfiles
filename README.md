@@ -89,7 +89,7 @@ comprehensive.
 
 * [Duet Display](http://www.duetdisplay.com) to use an iPad as another display
 * [iTerm2](https://www.iterm2.com) for terminal emulation
-* [Spectacle](https://www.spectacleapp.com) for window management
+* [Rectangle](https://github.com/rxhanson/Rectangle) for window management
 
 ## Services
 
