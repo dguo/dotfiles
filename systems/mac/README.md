@@ -91,6 +91,7 @@ cd dotfiles
         * Fastest key repeat speed
         * Shortest delay until repeat
         * Make caps lock function as control
+        * Swap option and command on external keyboards
     * Trackpad
         * Point & Click
             * Look up & data detectors: tap with three fingers
