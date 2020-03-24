@@ -48,3 +48,5 @@
     pl = pull
 [rebase]
     autosquash = true
+[includeIf "gitdir:~/code/seedfi/"]
+    path = ~/code/seedfi/.gitconfig
