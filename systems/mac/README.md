@@ -46,6 +46,8 @@ cd dotfiles
 * Google Backup and Sync
     * Sign in
     * Turn on selective sync
+* iStat Menus
+    * Import the settings backup in Google Drive
 * iTerm
     * Set the path for "Load preferences from a custom folder or URL"
 * Rectangle
