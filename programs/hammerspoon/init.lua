@@ -122,13 +122,8 @@ end)
 up:start()
 
 --[[
-  Set the default output device, based on this priority:
-
-    1. Sony headphones
-    2. Other Bluetooth headphones
-    3. Headphone jack
-    4. CalDigit dock audio (i.e. desktop speakers)
-    5. Built-in speakers
+  Set the audio output and input devices, based on the priorities in the look
+  up functions because macOS is bad at keeping track of my preferences.
 
   Crucially, this also avoids the issue of macOS setting the default device to
   a monitor that doesn't even have speakers but registers as an output device
@@ -144,6 +139,22 @@ function getAudioOutputPriority (device)
     device:name() == "External Headphones" then
     return 3
   elseif device:name() == "CalDigit Thunderbolt 3 Audio" then
+    return 4
+  elseif device:transportType() == "Built-in" then
+    return 5
+  else
+    return 6
+  end
+end
+
+function getAudioInputPriority (device)
+  if device:name() == "ATR2100x-USB Microphone" then
+    return 1
+  elseif device:name() == "WH-1000XM3" then
+    return 2
+  elseif device:transportType() == "Bluetooth" then
+    return 3
+  elseif device:name() == "HD Pro Webcam C920" then
     return 4
   elseif device:transportType() == "Built-in" then
     return 5
@@ -168,6 +179,14 @@ hs.audiodevice.watcher.setCallback(function(event)
       device:setDefaultOutputDevice()
     end
   end
+
+  for i, device in ipairs(hs.audiodevice.allInputDevices()) do
+    local currentDevice = hs.audiodevice.defaultInputDevice()
+    local currentPriority = getAudioInputPriority(currentDevice)
+    if getAudioInputPriority(device) < currentPriority then
+      device:setDefaultInputDevice()
+    end
+ end
 end)
 hs.audiodevice.watcher.start()
 
