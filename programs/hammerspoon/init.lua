@@ -126,13 +126,31 @@ up:start()
 
     1. Sony headphones
     2. Other Bluetooth headphones
-    3. CalDigit dock audio (i.e. desktop speakers)
-    4. Built-in speakers
+    3. Headphone jack
+    4. CalDigit dock audio (i.e. desktop speakers)
+    5. Built-in speakers
 
   Crucially, this also avoids the issue of macOS setting the default device to
   a monitor that doesn't even have speakers but registers as an output device
   for some reason.
 ]]
+
+function getAudioOutputPriority (device)
+  if device:name() == "WH-1000XM3" then
+    return 1
+  elseif device:transportType() == "Bluetooth" then
+    return 2
+  elseif device:transportType() == "Built-in" and
+    device:name() == "External Headphones" then
+    return 3
+  elseif device:name() == "CalDigit Thunderbolt 3 Audio" then
+    return 4
+  elseif device:transportType() == "Built-in" then
+    return 5
+  else
+    return 6
+  end
+end
 
 hs.audiodevice.watcher.setCallback(function(event)
   --[[
@@ -145,20 +163,9 @@ hs.audiodevice.watcher.setCallback(function(event)
 
   for i, device in ipairs(hs.audiodevice.allOutputDevices()) do
     local currentDevice = hs.audiodevice.defaultOutputDevice()
-
-    if device:transportType() == "Bluetooth" then
-      if currentDevice:name() ~= "WH-1000XM3" then
-        device:setDefaultOutputDevice()
-      end
-    elseif device:transportType() == "USB" then
-      if currentDevice:transportType() ~= "Bluetooth" then
-        device:setDefaultOutputDevice()
-      end
-    elseif device:transportType() == "Built-in" then
-      if currentDevice:transportType() ~= "Bluetooth" and
-         currentDevice:transportType() ~= "USB" then
-        device:setDefaultOutputDevice()
-      end
+    local currentPriority = getAudioOutputPriority(currentDevice)
+    if getAudioOutputPriority(device) < currentPriority then
+      device:setDefaultOutputDevice()
     end
   end
 end)
