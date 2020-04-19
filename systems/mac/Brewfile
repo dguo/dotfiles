@@ -55,6 +55,7 @@ brew "ykman"
 brew "zsh"
 
 # applications
+cask "1password"
 cask "alfred"
 cask "android-studio"
 cask "anki"
