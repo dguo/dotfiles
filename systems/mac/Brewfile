@@ -8,7 +8,7 @@ tap "getantibody/tap"
 tap "homebrew/cask-drivers"
 
 # languages
-brew "node"
+brew "node@12", link: true
 # python refers to python 3
 # https://docs.brew.sh/Homebrew-and-Python
 brew "python"
@@ -44,7 +44,7 @@ brew "pinentry-mac"
 brew "rclone"
 brew "ripgrep"
 brew "shellcheck"
-brew "terraform"
+brew "terraform@0.12", link: true
 brew "tldr"
 brew "tmux"
 brew "tokei"
