@@ -820,7 +820,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -2532,7 +2532,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>557982510.92439604</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>48</integer>
+	<integer>59</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>575587204.33243406</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -3340,13 +3340,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-22T00:46:18Z</date>
+	<date>2020-06-11T02:45:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>1981960910</integer>
+	<integer>2269123491</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
@@ -3354,7 +3354,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
