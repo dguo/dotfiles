@@ -46,6 +46,8 @@
     t = tag
     ph = push
     pl = pull
+[pull]
+	ff = only
 [rebase]
     autosquash = true
 [includeIf "gitdir:~/code/seedfi/"]
