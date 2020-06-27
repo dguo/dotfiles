@@ -61,6 +61,10 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Change where screenshots are saved to (default is the desktop)
 defaults write com.apple.screencapture location ~/Downloads
 
+# Prevent a MacBook from turning on just by opening the lid
+# https://www.ifixit.com/Guide/How+to+Disable+Auto+Boot/110034
+sudo nvram AutoBoot=%00
+
 # Symlink configurations
 ln -sf $DOTFILES/programs/sh/.profile ~/.profile
 ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
