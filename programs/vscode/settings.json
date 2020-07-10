@@ -40,5 +40,6 @@
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "extensions.ignoreRecommendations": false,
-  "pgFormatter.keywordCase": "lowercase"
+  "pgFormatter.keywordCase": "lowercase",
+  "window.zoomLevel": 0
 }
