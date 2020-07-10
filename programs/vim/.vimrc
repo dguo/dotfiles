@@ -92,14 +92,8 @@ let g:AutoPairsOnlyWhitespace=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Prettier
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:prettier#autoformat = 0
-let g:prettier#config#bracket_spacing = 'false'
-let g:prettier#config#single_quote = 'true'
-let g:prettier#config#tab_width = 4
-" Format on save
-autocmd BufWritePre
-  \ *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue
-  \ PrettierAsync
+let g:prettier#autoformat_config_present = 1
+let g:prettier#exec_cmd_async = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
