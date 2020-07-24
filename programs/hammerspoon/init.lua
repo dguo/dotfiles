@@ -1,3 +1,13 @@
+local requireLeo = function()
+    require("leo");
+end;
+
+if pcall(requireLeo) then
+    print("Loaded Leo");
+else
+    hs.notify.new({title="Hammerspoon", informativeText="Failed to load Leo"}):send()
+end
+
 -- Get around paste blockers with cmd+alt+v
 
 hs.hotkey.bind({"cmd", "shift"}, "V", function()
