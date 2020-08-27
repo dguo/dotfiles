@@ -1,29 +1,3 @@
-[user]
-    name = Danny Guo
-    email = dannyguo91@gmail.com
-    signingkey = 563054975255DC30
-[push]
-    default = simple
-[color]
-    ui = true
-[color "diff-highlight"]
-    oldNormal = red bold
-    oldHighlight = red bold 52
-    newNormal = green bold
-    newHighlight = green bold 22
-[color "diff"]
-    meta = yellow
-    frag = magenta bold
-    commit = yellow bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
-[core]
-    autocrlf = input
-    editor = vim
-    # Use diff-so-fancy for all diff output
-    # To bypass diff-so-fancy, run $ git --no-pager diff
-    pager = "diff-so-fancy | less --tabs=4 -RFX"
 [alias]
     a = add
     au = add -u
@@ -46,9 +20,37 @@
     t = tag
     ph = push
     pl = pull
-[pull]
-	ff = only
-[rebase]
-    autosquash = true
+[color]
+    ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[core]
+    autocrlf = input
+    editor = vim
+    # Use diff-so-fancy for all diff output
+    # To bypass diff-so-fancy, run $ git --no-pager diff
+    pager = "diff-so-fancy | less --tabs=4 -RFX"
 [includeIf "gitdir:~/code/seedfi/"]
     path = ~/code/seedfi/.gitconfig
+[init]
+    defaultBranch = main
+[pull]
+	ff = only
+[push]
+    default = simple
+[rebase]
+    autosquash = true
+[user]
+    name = Danny Guo
+    email = dannyguo91@gmail.com
+    signingkey = 563054975255DC30
