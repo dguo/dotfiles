@@ -226,6 +226,21 @@ fcf() {
 }
 
 ###############################################################################
+# Completion
+###############################################################################
+# Smartcase completions:
+# capital matches capital; lower matches both lower and capital
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# Only regenerate compinit's cache once a day:
+# https://htr3n.github.io/2018/07/faster-zsh/
+autoload -Uz compinit
+if [ $(date +'%j') != $(/usr/bin/stat -f '%Sm' -t '%j' ${ZDOTDIR:-$HOME}/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
+
+###############################################################################
 # Plugins
 ###############################################################################
 [[ -a ~/.zsh_plugins.sh ]] && source ~/.zsh_plugins.sh
@@ -234,13 +249,3 @@ bindkey '^ ' autosuggest-execute
 # Search command history with ctrl-r
 # Override fzf-history-widget because it doesn't seem to work
 bindkey "^R" history-incremental-pattern-search-backward
-
-###############################################################################
-# Completion
-###############################################################################
-# Smartcase completions:
-# capital matches capital; lower matches both lower and capital
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-# should be triggered after zsh-completions is loaded
-autoload -Uz compinit
-compinit
