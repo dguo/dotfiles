@@ -40,8 +40,6 @@
     # Use diff-so-fancy for all diff output
     # To bypass diff-so-fancy, run $ git --no-pager diff
     pager = "diff-so-fancy | less --tabs=4 -RFX"
-[includeIf "gitdir:~/code/seedfi/"]
-    path = ~/code/seedfi/.gitconfig
 [init]
     defaultBranch = main
 [pull]
@@ -54,3 +52,6 @@
     name = Danny Guo
     email = dannyguo91@gmail.com
     signingkey = 563054975255DC30
+# Needs to be at the end to override previous settings
+[includeIf "gitdir:~/code/seedfi/"]
+    path = ~/code/seedfi/.gitconfig
