@@ -65,14 +65,14 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
 
   -- Quick switch to applications
 
-  if character == 'q' and hyper then
-    hs.application.launchOrFocus("Authy Desktop")
+  if character == 'a' and hyper then
+    hs.application.launchOrFocus("Anki")
     hyperTime = nil
     return true
   end
 
-  if character == 'w' and hyper then
-    hs.application.launchOrFocus("Firefox Developer Edition")
+  if character == 'd' and hyper then
+    hs.application.launchOrFocus("Todoist")
     hyperTime = nil
     return true
   end
@@ -83,8 +83,14 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
-  if character == 'r' and hyper then
-    hs.application.launchOrFocus("Visual Studio Code")
+  if character == 'n' and hyper then
+    hs.application.launchOrFocus("Notion")
+    hyperTime = nil
+    return true
+  end
+
+  if character == 's' and hyper then
+    hs.application.launchOrFocus("Spotify")
     hyperTime = nil
     return true
   end
@@ -95,24 +101,43 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
-  if character == 'y' and hyper then
-    hs.application.launchOrFocus("Todoist")
-    hyperTime = nil
-    return true
-  end
-
   if character == 'u' and hyper then
     hs.application.launchOrFocus("Slack")
     hyperTime = nil
     return true
   end
 
-  if character == 'i' and hyper then
-    hs.application.launchOrFocus("Spotify")
+  if character == 'v' and hyper then
+    hs.application.launchOrFocus("Visual Studio Code")
     hyperTime = nil
     return true
   end
-end)
+
+  if character == 'w' and hyper then
+    hs.application.launchOrFocus("Firefox Developer Edition")
+    hyperTime = nil
+    return true
+  end
+
+  if character == 'x' and hyper then
+    hs.application.launchOrFocus("Xcode")
+    hyperTime = nil
+    return true
+  end
+
+  if character == 'y' and hyper then
+    hs.application.launchOrFocus("Todoist")
+    hyperTime = nil
+    return true
+  end
+
+  if character == 'z' and hyper then
+    hs.application.launchOrFocus("zoom.us")
+    hyperTime = nil
+    return true
+  end
+
+  end)
 down:start()
 
 up = hs.eventtap.new({hs.eventtap.event.types.keyUp}, function(event)
