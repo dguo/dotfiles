@@ -77,7 +77,13 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
-  if character == 'e' and hyper then
+  if character == 'f' and hyper then
+    hs.application.launchOrFocus("Firefox Developer Edition")
+    hyperTime = nil
+    return true
+  end
+
+  if character == 'i' and hyper then
     hs.application.launchOrFocus("iTerm")
     hyperTime = nil
     return true
@@ -109,12 +115,6 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
 
   if character == 'v' and hyper then
     hs.application.launchOrFocus("Visual Studio Code")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'w' and hyper then
-    hs.application.launchOrFocus("Firefox Developer Edition")
     hyperTime = nil
     return true
   end
