@@ -19,6 +19,10 @@ unsetopt CORRECTALL
 # https://superuser.com/a/645612/922801
 unsetopt PROMPT_SP
 
+# Allow comments in interactive shells
+# https://unix.stackexchange.com/q/33994/280976
+setopt INTERACTIVE_COMMENTS
+
 ###############################################################################
 # Prompt
 ###############################################################################
