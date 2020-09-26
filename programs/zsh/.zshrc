@@ -152,6 +152,8 @@ alias m="mkdir"
 alias p="pwd"
 # you better check yo self before you wreck yo self
 alias r="rm -i"
+# infrastructure as code
+alias tf="terraform"
 # text editor of choice
 alias v="vim"
 
