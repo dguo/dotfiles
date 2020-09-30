@@ -14,10 +14,25 @@ hs.hotkey.bind({"cmd", "shift"}, "V", function()
   hs.eventtap.keyStrokes(hs.pasteboard.getContents())
 end)
 
--- Set up a hyper key
+-- Set up a hyper key tree
 
-hyper = false
+hyperKeys = hs.json.read("~/Google Drive/programs/hammerspoon/hyper-keys.json")
+currentKey = nil
+currentTree = hyperKeys or {}
 hyperTime = nil
+
+function executeHyperAction (tree)
+  if tree["action"] == "type" then
+    -- Avoid treating the emulated keystrokes as hyper commands
+    down:stop()
+    hs.eventtap.keyStrokes(tree["text"])
+    down:start()
+  elseif tree["action"] == "launch-or-focus" then
+    hs.application.launchOrFocus(tree["program"])
+  elseif tree["action"] == "direction" then
+    hs.eventtap.keyStroke(nil, tree["direction"], 0)
+  end
+end
 
 down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
   local character = event:getCharacters()
@@ -29,129 +44,53 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
-  -- Set up ; as the hyper key
-  if character == ";" then
-    hyper = true
-    if hyperTime == nil then
+  if currentKey == character then
+    return true
+  elseif currentTree["keys"] and currentTree["keys"][character] then
+    --[[
+      There's no need to wait for the up event if we know the tree doesn't go
+      any deeper, so we can execute the action immediately.
+
+      This also lets us hold down the current hyper key and execute multiple or
+      repeated actions for its tree. For example for multiple actions, we could
+      hold down the hyper key and tap two keys in its tree that both do not
+      have subtrees. Both actions can execute without having to restart the
+      sequence.
+
+      For example for repeated actions, we could hold down the hyper key and
+      hold another key to emulate holding down the up key.
+    ]]
+    if currentTree["keys"][character]["action"] and
+       not currentTree["keys"][character]["keys"] then
+      executeHyperAction(currentTree["keys"][character])
+      -- Reset the time so that the up event handler doesn't execute any actions
+      hyperTime = nil
+    -- Otherwise, go deeper into the tree
+    elseif currentTree["keys"][character]["keys"] then
+      currentKey = character
+      currentTree = currentTree["keys"][character]
       hyperTime = hs.timer.absoluteTime()
     end
+
     return true
   end
-
-  -- Use h, j, k, l as arrow keys
-
-  if character == 'h' and hyper then
-    hs.eventtap.keyStroke(nil, "left", 0)
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'j' and hyper then
-    hs.eventtap.keyStroke(nil, "down", 0)
-    hyperTime = nil
-    return true
-  end
-  if character == 'k' and hyper then
-    hs.eventtap.keyStroke(nil, "up", 0)
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'l' and hyper then
-    hs.eventtap.keyStroke(nil, "right", 0)
-    hyperTime = nil
-    return true
-  end
-
-  -- Quick switch to applications
-
-  if character == 'a' and hyper then
-    hs.application.launchOrFocus("Anki")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'd' and hyper then
-    hs.application.launchOrFocus("Todoist")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'f' and hyper then
-    hs.application.launchOrFocus("Firefox Developer Edition")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'i' and hyper then
-    hs.application.launchOrFocus("iTerm")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'n' and hyper then
-    hs.application.launchOrFocus("Notion")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 's' and hyper then
-    hs.application.launchOrFocus("Spotify")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 't' and hyper then
-    hs.application.launchOrFocus("TablePlus")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'u' and hyper then
-    hs.application.launchOrFocus("Slack")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'v' and hyper then
-    hs.application.launchOrFocus("Visual Studio Code")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'x' and hyper then
-    hs.application.launchOrFocus("Xcode")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'y' and hyper then
-    hs.application.launchOrFocus("Todoist")
-    hyperTime = nil
-    return true
-  end
-
-  if character == 'z' and hyper then
-    hs.application.launchOrFocus("zoom.us")
-    hyperTime = nil
-    return true
-  end
-
-  end)
+end)
 down:start()
 
 up = hs.eventtap.new({hs.eventtap.event.types.keyUp}, function(event)
   local character = event:getCharacters()
-  if character == ";" and hyper then
-      local currentTime = hs.timer.absoluteTime()
-      -- print(currentTime, hyperTime)
-      if hyperTime ~= nil and (currentTime - hyperTime) / 1000000 < 250 then
-          down:stop()
-          hs.eventtap.keyStrokes(";")
-          down:start()
-      end
-      hyper = false
-      hyperTime = nil
+  -- print("up", character)
+
+  if character == currentKey then
+    local currentTime = hs.timer.absoluteTime()
+    -- print(currentTime, hyperTime)
+    if hyperTime ~= nil and (currentTime - hyperTime) / 1000000 < 250 then
+      executeHyperAction(currentTree)
+    end
+
+    currentKey = nil
+    currentTree = hyperKeys
+    hyperTime = nil
   end
 end)
 up:start()
