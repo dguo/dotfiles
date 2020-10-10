@@ -9,10 +9,7 @@ tap "homebrew/cask-drivers"
 
 # languages
 brew "node@12", link: true
-# python refers to python 3
-# https://docs.brew.sh/Homebrew-and-Python
 brew "python"
-brew "python@2"
 brew "ruby"
 brew "rustup"
 
