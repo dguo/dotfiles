@@ -39,11 +39,17 @@
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "pgFormatter.keywordCase": "lowercase",
   "window.zoomLevel": 0,
   "editor.autoClosingBrackets": "never",
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
-  "typescript.autoClosingTags": false
+  "typescript.autoClosingTags": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
