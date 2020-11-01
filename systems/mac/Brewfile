@@ -84,6 +84,7 @@ cask "spotify"
 cask "steam"
 cask "sublime-text"
 cask "tableplus"
+cask "toggl-track"
 mas 'Todoist', id: 585829637
 cask "tunnelblick"
 cask "visual-studio-code"
