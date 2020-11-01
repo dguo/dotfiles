@@ -49,6 +49,7 @@ cd dotfiles
     * Choose "Spectacle" shortcuts and behavior
     * Turn on "Launch on login"
     * Turn off "Snap windows by dragging"
+    * Turn off "Cycle across displays on repeated left or right commands"
     * Turn on "Check for updates automatically"
 * 1Password
     * Sign in
