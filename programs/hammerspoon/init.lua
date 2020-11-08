@@ -210,3 +210,14 @@ end
 
 other_tap = hs.eventtap.new({hs.eventtap.event.types.keyDown}, other_handler)
 other_tap:start()
+
+--[[
+  Make all new windows stay on the active screen.
+]]
+
+screen_change_handler = function(active_screen_changed)
+  -- print('wtf', active_screen_changed)
+end
+
+screen_watcher = hs.screen.watcher.newWithActiveScreen(screen_change_handler)
+screen_watcher:start()
