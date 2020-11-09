@@ -126,6 +126,10 @@ cd dotfiles
 * TablePlus
     * Enter the license
     * Import connections
+* Toggl
+    * Sign in
+    * Turn off idle detection
+    * Turn off reminders
 * Slack
     * Sign in
     * Set the theme to "Light"
@@ -233,4 +237,11 @@ cd dotfiles
     * `cd ~/Downloads && mark downloads`
     * `cd ~/code/dguo && mark dguo`
 * GPG
+    * Create a `~/.gnupg` directory and
+        [give it the right permissions](https://superuser.com/a/954536/922801)
+    * [Import](https://www.phildev.net/pgp/gpg_moving_keys.html) the private and public keys
+    * Add ultimate trust for the key
 * Leo
+    * Follow Notion instructions
+* SSH
+    * Run the setup script in Google Drive
