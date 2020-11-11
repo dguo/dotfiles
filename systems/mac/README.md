@@ -54,6 +54,7 @@ cd dotfiles
 * 1Password
     * Sign in
     * Turn off "Open 1Password in the background when you log in"
+    * Don't enable the extension helper when prompted
 * Bitwarden
     * Sign in
 * Docker
@@ -65,6 +66,8 @@ cd dotfiles
     * Disable camera uploads
 * Firefox
     * Sign in
+    * Go through preferences
+        * Set Firefox as the default browser
     * Make the bookmarks toolbar visible (View > Toolbars)
     * Configure extensions
         * 1Password
@@ -100,15 +103,13 @@ cd dotfiles
             * Session Sync
             * uBlock Origin
             * React Developer Tools
-    * Go through preferences
-        * Set Firefox as the default browser
 * Google Backup and Sync
     * Sign in
     * Don't backup macOS folders
     * Change photo and video upload size to high quality
     * Turn on selective sync
 * Hammerspoon
-    * Turn on "Launch Hammerspoon at login
+    * Turn on "Launch Hammerspoon at login"
 * Notion
     * Sign in
 * iStat Menus
@@ -120,9 +121,19 @@ cd dotfiles
     * Allow accessibility permissions
 * Zoom
     * Sign in
+    * Change settings
+        * General
+            * Change the reaction skin tone
+            * Turn on "Copy invite link when starting a meeting"
+        * Video
+            * Turn on HD
+            * Turn on "Always display participant name on their videos"
+        * Recording
+            * Switch the recordings location to the Downloads folder
 * Spotify
     * Sign in
     * Hide friend activity sidebar
+    * Limit the cache size
 * TablePlus
     * Enter the license
     * Import connections
@@ -148,6 +159,7 @@ cd dotfiles
         * Spotify
         * Slack
         * Zoom
+        * Toggl
 * macOS Finder
     * Turn off showing external disks on the desktop
     * Set new finder windows to show downloads
