@@ -6,7 +6,6 @@
   "editor.fontFamily": "Source Code Pro, monospace",
   "editor.formatOnSave": true,
   "editor.minimap.renderCharacters": false,
-  "editor.mouseWheelZoom": true,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [80, 120],
