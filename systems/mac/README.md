@@ -119,6 +119,7 @@ cd dotfiles
     * Sign in
 * Duet
     * Allow accessibility permissions
+    * Turn off "Open app at login"
 * Zoom
     * Sign in
     * Change settings
