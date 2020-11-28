@@ -198,8 +198,11 @@ cd dotfiles
         * Hot corners
             * Top left: Mission Control
             * Top right: Desktop
+    * Siri
+        * Turn off "Enable Ask Siri"
     * Language & Region
         * Add Chinese, Simplified
+            * Use the "Pinyin - Simplified" input source
     * Internet accounts
         * iCloud accounts (for 2FA)
     * Touch ID
@@ -218,6 +221,7 @@ cd dotfiles
     * Keyboard
         * Fastest key repeat speed
         * Shortest delay until repeat
+        * Change Touch Bar to show "Expanded Control Strip"
         * Make caps lock function as control
         * Swap option and command on external keyboards
     * Trackpad
@@ -231,7 +235,10 @@ cd dotfiles
             * Swipe between pages: swipe with three fingers
             * Turn on App Expose
     * Displays
-        * Turn on Night Shift from 9 PM to 5 AM
+        * Turn off True Tone
+        * Turn off "show mirroring options in the menu bar when available"
+        * Night Shift
+            * Turn on Night Shift from 9 PM to 5 AM
     * Energy Saver
         * Battery
             * Turn display off after 5 min.
@@ -245,7 +252,7 @@ cd dotfiles
     * `cd ~/code/dguo/dotfiles && mark dotfiles`
     * `cd ~/Google\ Drive && mark gdrive`
     * `cd ~/code && mark code`
-    * `mkdir -p ~/code/scratch && mark scratch`
+    * `mkdir -p ~/code/scratch && cd ~/code/scratch && mark scratch`
     * `cd ~/Downloads && mark downloads`
     * `cd ~/code/dguo && mark dguo`
 * GPG
