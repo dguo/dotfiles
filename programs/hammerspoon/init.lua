@@ -21,6 +21,7 @@ currentKey = nil
 currentTree = hyperKeys or {}
 hyperTime = nil
 
+-- Return true if it's definitely a terminating action
 function executeHyperAction (tree)
   if tree["action"] == "type" then
     -- Avoid treating the emulated keystrokes as hyper commands
@@ -29,9 +30,16 @@ function executeHyperAction (tree)
     down:start()
   elseif tree["action"] == "launch-or-focus" then
     hs.application.launchOrFocus(tree["program"])
+    --[[
+      If we don't ask the caller to end hyper mode, launching Anki causes us to
+      temporarily get stuck in hyper mode.
+    ]]
+    return true
   elseif tree["action"] == "direction" then
     hs.eventtap.keyStroke(nil, tree["direction"], 0)
   end
+
+  return false
 end
 
 down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
@@ -62,9 +70,13 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     ]]
     if currentTree["keys"][character]["action"] and
        not currentTree["keys"][character]["keys"] then
-      executeHyperAction(currentTree["keys"][character])
+      local isTerminatingAction = executeHyperAction(currentTree["keys"][character])
       -- Reset the time so that the up event handler doesn't execute any actions
       hyperTime = nil
+      if isTerminatingAction then
+        currentKey = nil
+        currentTree = hyperKeys
+      end
     -- Otherwise, go deeper into the tree
     elseif currentTree["keys"][character]["keys"] then
       currentKey = character
