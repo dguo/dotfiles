@@ -24,7 +24,10 @@ hyperTime = nil
 -- Return true if it's definitely a terminating action
 function executeHyperAction (tree)
   if tree["action"] == "type" then
-    -- Avoid treating the emulated keystrokes as hyper commands
+    --[[
+      Avoid treating the emulated keystrokes as hyper commands. This also avoids
+      logging the emulated keystrokes.
+    ]]
     down:stop()
     hs.eventtap.keyStrokes(tree["text"])
     down:start()
@@ -42,14 +45,28 @@ function executeHyperAction (tree)
   return false
 end
 
+keyLog = assert(io.open(os.getenv("HOME") .. "/.keys.log", "a"))
+keyLog:setvbuf("no")
+
 down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
   local character = event:getCharacters()
   local keyCode = event:getKeyCode()
-  -- print("down", character, keyCode)
+  local mods = event:getFlags()
+  -- print("down", character, keyCode, hs.inspect.inspect(mods))
 
   -- Disable the insert key because overwrite mode is annoying
   if keyCode == 114 then
     return true
+  end
+
+  --[[
+    Log keystrokes, but ignore hyper mode, keys that aren't characters or space,
+    and non-shift modifiers
+  ]]
+  if currentKey == nil and character ~= '' and keyCode >= 0 and
+    keyCode <= 50 and keyCode ~= 10 and keyCode ~= 36 and keyCode ~= 48 and
+    (next(mods) == nil or mods["shift"]) then
+    keyLog:write(character)
   end
 
   if currentKey == character then
