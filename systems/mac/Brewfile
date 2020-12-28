@@ -29,6 +29,7 @@ brew "git"
 brew "glances"
 brew "gpg"
 brew "htop"
+brew "hyperfine"
 brew "jq"
 brew "md5sha1sum"
 brew "mosh", args: ['HEAD']
