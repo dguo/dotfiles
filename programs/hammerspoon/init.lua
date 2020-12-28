@@ -63,7 +63,7 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     Log keystrokes, but ignore hyper mode, keys that aren't characters or space,
     and non-shift modifiers
   ]]
-  if currentKey == nil and character ~= '' and keyCode >= 0 and
+  if currentKey == nil and character ~= "" and keyCode >= 0 and
     keyCode <= 50 and keyCode ~= 10 and keyCode ~= 36 and keyCode ~= 48 and
     (next(mods) == nil or mods["shift"]) then
     keyLog:write(character)
