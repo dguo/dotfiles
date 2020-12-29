@@ -89,4 +89,4 @@ cask "toggl-track"
 mas 'Todoist', id: 585829637
 cask "visual-studio-code"
 cask "vlc"
-cask "zoomus"
+cask "zoom"
