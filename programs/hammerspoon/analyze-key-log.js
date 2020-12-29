@@ -15,7 +15,8 @@ const counts = new Map();
 for (let i = 0; i < log.length; i++) {
     for (let j = i + 3; j < i + 40; j++) {
         const substring = log.slice(i, j);
-        if (!/^\s+$/g.test(substring)) {
+        // Ignore directional sequences
+        if (!/^[hjkl\s]+$/g.test(substring)) {
             const currentValue = counts.get(substring);
             const newFrequency = currentValue ? currentValue.frequency + 1 : 1;
             counts.set(substring, {
@@ -34,7 +35,7 @@ let count = 0;
 for (const entry of sorted) {
     console.log(entry);
     count++;
-    if (count > 1000) {
+    if (count > 300) {
         break;
     }
 }
