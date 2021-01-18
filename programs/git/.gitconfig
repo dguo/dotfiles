@@ -20,28 +20,21 @@
     t = tag
     ph = push
     pl = pull
-[color]
-    ui = true
-[color "diff-highlight"]
-    oldNormal = red bold
-    oldHighlight = red bold 52
-    newNormal = green bold
-    newHighlight = green bold 22
-[color "diff"]
-    meta = yellow
-    frag = magenta bold
-    commit = yellow bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
 [core]
     autocrlf = input
     editor = vim
-    # Use diff-so-fancy for all diff output
-    # To bypass diff-so-fancy, run $ git --no-pager diff
-    pager = "diff-so-fancy | less --tabs=4 -RFX"
+    # Use delta for all diff output
+    # To bypass delta, run $ git --no-pager diff
+    pager = "delta"
+[delta]
+    line-numbers = true
+    syntax-theme = Monokai Extended
+[diff]
+    colorMoved = default
 [init]
     defaultBranch = main
+[interactive]
+    diffFilter = delta --color-only
 [pull]
 	ff = only
 [push]

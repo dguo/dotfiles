@@ -3,7 +3,6 @@ bash-completion
 bat
 cmake
 ctop
-diff-so-fancy
 docker
 docker-compose
 exa
@@ -11,6 +10,7 @@ fd
 fzf
 fzf-marks-git
 git
+git-delta
 glances
 htop
 jq
