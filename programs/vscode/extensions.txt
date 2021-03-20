@@ -1,5 +1,6 @@
 EditorConfig.EditorConfig
 GrapeCity.gc-excelviewer
+Prisma.prisma
 alefragnani.project-manager
 bradymholt.pgformatter
 bungcip.better-toml
@@ -15,6 +16,7 @@ jdinhlife.gruvbox
 mikestead.dotenv
 ms-azuretools.vscode-docker
 ms-python.python
+ms-toolsai.jupyter
 ms-vsliveshare.vsliveshare
 rust-lang.rust
 vscodevim.vim
