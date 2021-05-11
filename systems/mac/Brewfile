@@ -3,7 +3,7 @@
 cask_args appdir: "/Applications"
 
 # languages
-brew "node@12", link: true
+brew "node@14", link: true
 brew "python"
 brew "ruby"
 brew "rustup"
