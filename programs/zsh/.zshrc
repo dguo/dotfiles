@@ -255,3 +255,7 @@ bindkey '^ ' autosuggest-execute
 # Search command history with ctrl-r
 # Override fzf-history-widget because it doesn't seem to work
 bindkey "^R" history-incremental-pattern-search-backward
+
+
+# asdf
+. /usr/local/opt/asdf/asdf.sh

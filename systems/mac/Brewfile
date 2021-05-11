@@ -3,7 +3,6 @@
 cask_args appdir: "/Applications"
 
 # languages
-brew "node@14", link: true
 brew "python"
 brew "ruby"
 brew "rustup"
@@ -11,6 +10,7 @@ brew "rustup"
 # tools
 tap "getantibody/tap"
 brew "getantibody/tap/antibody"
+brew "asdf"
 brew "awscli"
 brew "bash"
 brew "bat"
@@ -31,7 +31,6 @@ brew "gpg"
 brew "htop"
 brew "hyperfine"
 brew "jq"
-brew "md5sha1sum"
 brew "mosh", args: ['HEAD']
 brew "neofetch"
 brew "nmap"
@@ -42,7 +41,6 @@ brew "pinentry-mac"
 brew "rclone"
 brew "ripgrep"
 brew "shellcheck"
-brew "terraform@0.12", link: true
 brew "tldr"
 brew "tmux"
 brew "tokei"
