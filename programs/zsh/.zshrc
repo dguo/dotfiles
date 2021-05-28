@@ -137,8 +137,7 @@ alias b="bat"
 alias cb="clipboard"
 # Build, Ship, Run
 alias d="docker"
-alias dc="docker-compose"
-alias dm="docker-machine"
+alias dc="docker compose"
 # the stupid content tracker
 alias g="git"
 alias gd="diff2html -s side"
