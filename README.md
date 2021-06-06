@@ -1,6 +1,6 @@
 # System Configuration
 
-[![CI status](https://github.com/dguo/dotfiles/workflows/CI/badge.svg)](https://github.com/dguo/dotfiles/actions?query=branch%3Amaster)
+[![CI status](https://github.com/dguo/dotfiles/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/dguo/dotfiles/actions/workflows/ci.yml)
 
 I try to keep as much of my configuration as possible in this repo. I symlink
 my [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory)
@@ -36,7 +36,7 @@ how to do it.
 * [Tokei](https://github.com/Aaronepower/tokei) for counting code statistics
 * [Vim](http://www.vim.org) and [Visual Studio Code](https://code.visualstudio.com/) for text editing
     * [vim-plug](https://github.com/junegunn/vim-plug) to manage the plugins
-    * See the [.vimrc](https://github.com/dguo/dotfiles/blob/master/.vimrc) for a list of plugins
+    * See the [.vimrc](https://github.com/dguo/dotfiles/blob/main/programs/vim/.vimrc) for a list of plugins
 * [Z shell](http://zsh.sourceforge.net/) for the [shell](https://en.wikipedia.org/wiki/Unix_shell)
 
 ### Replacements for [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
