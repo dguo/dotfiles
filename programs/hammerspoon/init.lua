@@ -59,6 +59,12 @@ down = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     return true
   end
 
+  -- Map backspace + shift to forward delete
+  if keyCode == 51 and mods["shift"] then
+    hs.eventtap.keyStroke(nil, "forwarddelete", 0)
+    return true
+  end
+
   --[[
     Log keystrokes, but ignore hyper mode, keys that aren't characters or space,
     and non-shift modifiers
