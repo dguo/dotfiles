@@ -8,8 +8,10 @@
   "editor.minimap.renderCharacters": false,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [80, 120],
-  "editor.wordWrap": "on",
+  "editor.rulers": [
+    80,
+    120
+  ],
   "explorer.confirmDelete": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -60,13 +62,13 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "files.associations": {
     ".parcelrc": "json"
-  }
+  },
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
 }
