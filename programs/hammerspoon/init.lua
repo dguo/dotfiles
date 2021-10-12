@@ -40,6 +40,16 @@ function executeHyperAction (tree)
     return true
   elseif tree["action"] == "direction" then
     hs.eventtap.keyStroke(nil, tree["direction"], 0)
+  elseif tree["action"] == "make-window-full-screen" then
+    hs.window.focusedWindow():maximize(0)
+  elseif tree["action"] == "minimize-window" then
+    hs.window.focusedWindow():minimize(0)
+  elseif tree["action"] == "move-window" then
+    if tree["direction"] == "left" then
+      hs.window.focusedWindow():moveOneScreenWest(nil, true, 0)
+    elseif tree["direction"] == "right" then
+      hs.window.focusedWindow():moveOneScreenEast(nil, true, 0)
+    end
   end
 
   return false
