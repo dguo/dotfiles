@@ -21,6 +21,22 @@ currentKey = nil
 currentTree = hyperKeys or {}
 hyperTime = nil
 
+--[[
+  Thanks to
+  https://aaronlasseigne.com/2016/02/16/switching-from-slate-to-hammerspoon/
+  for some tips here.
+--]]
+windowPositions = {
+  centerHalf = {x = 0.25, y = 0, w = 0.5, h = 1},
+  centerThird = {x = 0.33, y = 0, w = 0.33, h = 1},
+  leftHalf = hs.layout.left50,
+  leftThird = {x = 0, y = 0, w = 0.33, h = 1},
+  leftTwoThirds = {x = 0, y = 0, w = 0.66, h = 1},
+  rightHalf = hs.layout.right50,
+  rightThird = {x = 0.66, y = 0, w = 0.34, h = 1},
+  rightTwoThirds = {x = 0.33, y = 0, w = 0.67, h = 1}
+}
+
 -- Return true if it's definitely a terminating action
 function executeHyperAction (tree)
   if tree["action"] == "type" then
@@ -42,6 +58,26 @@ function executeHyperAction (tree)
     hs.eventtap.keyStroke(nil, tree["direction"], 0)
   elseif tree["action"] == "make-window-full-screen" then
     hs.window.focusedWindow():maximize(0)
+  elseif tree["action"] == "center-window" then
+    hs.window.focusedWindow():centerOnScreen(nil, true, 0)
+  elseif tree["action"] == "lay-out-window" then
+    if tree["layout"] == "center-half" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["centerHalf"], 0)
+    elseif tree["layout"] == "center-third" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["centerThird"], 0)
+    elseif tree["layout"] == "left-half" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["leftHalf"], 0)
+    elseif tree["layout"] == "left-third" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["leftThird"], 0)
+    elseif tree["layout"] == "left-two-thirds" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["leftTwoThirds"], 0)
+    elseif tree["layout"] == "right-half" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["rightHalf"], 0)
+    elseif tree["layout"] == "right-third" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["rightThird"], 0)
+    elseif tree["layout"] == "right-two-thirds" then
+      hs.window.focusedWindow():moveToUnit(windowPositions["rightTwoThirds"], 0)
+    end
   elseif tree["action"] == "minimize-window" then
     hs.window.focusedWindow():minimize(0)
   elseif tree["action"] == "move-window" then
