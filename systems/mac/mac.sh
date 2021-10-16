@@ -66,6 +66,7 @@ defaults write com.apple.screencapture location ~/Downloads
 sudo nvram AutoBoot=%00
 
 # Symlink configurations
+ln -sf $DOTFILES/programs/asdf/.tool-versions ~/.tool-versions
 ln -sf $DOTFILES/programs/sh/.profile ~/.profile
 ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
 ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
