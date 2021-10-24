@@ -70,5 +70,6 @@
   },
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.inlineSuggest.enabled": true
 }
