@@ -8,8 +8,7 @@ brew "ruby"
 brew "rustup"
 
 # tools
-tap "getantibody/tap"
-brew "getantibody/tap/antibody"
+brew "antibody"
 brew "asdf"
 brew "awscli"
 brew "bash"
