@@ -1,39 +1,100 @@
 # Mac
 
-## Setup
+## Set up macOS
 
 * Create an account
     * Set the account (and home folder) name to "dguo"
-    * Set a dark theme
 * Do a system update
-* Remove everything from the dock
-* Sign in with Apple ID
-    * Only let these apps use iCloud
-        * iCloud Drive
-        * Keychain
-        * Find My Mac
-        * News
-    * Remove Game Center account in Internet Accounts
 * Log in to the App Store and install XCode
 * Install [Homebrew](https://brew.sh/)
-* Run the initial setup through the terminal
-* Set up programs and system preferences
+* Go through System Preferences
+    * Apple Id
+        * Set the account picture
+        * iCloud
+            * Keychain
+            * iCloud Drive
+            * Find My Mac
+            * News
+            * Siri
+    * Desktop & Screen Saver
+        * Set the desktop
+        * Set the screen saver
+    * Dock & Menu Bar
+        * Dock & Menu Bar
+            * Make it smaller
+            * Change "Double-click a window's title bar" to minimize
+            * Turn on "Minimize windows into application icon"
+            * Turn on "Automatically hide and show the dock"
+            * Turn off "Show recent applications in Dock"
+        * Bluetooth
+            * Turn on "Show in Menu Bar"
+        * Sound
+            * Set "Show in Menu Bar" to "always"
+        * Clock
+            * Change "Time Options" to "Analog"
+        * Spotlight
+            * Turn off "Show in Menu Bar"
+    * Mission Control
+        * Hot corners
+            * Top left: Mission Control
+            * Top right: Desktop
+    * Siri
+        * Turn off "Enable Ask Siri"
+    * Language & Region
+        * Add Chinese, Simplified
+            * Use the "Pinyin - Simplified" input source
+    * Internet Accounts
+        * Remove the Game Center account
+    * Security & Privacy
+        * Require password 5 seconds after sleep or screen saver
+        * Turn on FileVault
+    * Touch ID
+        * Register fingerprints
+    * Keyboard
+        * Fastest key repeat speed
+        * Shortest delay until repeat
+        * Make caps lock function as control
+        * Swap option and command on external keyboards
+    * Trackpad
+        * Point & Click
+            * Look up & data detectors: tap with three fingers
+            * Tap to click: tap with one finger
+            * Second fastest tracking speed
+        * Scroll & Zoom
+            * Turn off natural scroll direction
+        * More Gestures
+            * Swipe between pages: swipe with three fingers
+            * Turn on App Expose
+    * Displays
+        * Night Shift
+            * Turn on Night Shift from 9 PM to 5 AM
+    * Battery
+        * Battery
+            * Turn display off after 5 min.
+            * Turn off "Slightly dim the display while on battery power"
+            * Turn off "Optimized battery charging"
+            * Turn off "Show battery status in menu bar"
+        * Power Adapter
+            * Turn off "Wake for network access"
+    * Sharing
+        * Set the computer name
 
 ### Terminal
 
 ```sh
 # Set the default shell to the Homebrew zsh
-brew install zsh
+/opt/homebrew/bin/brew install zsh
 sudo -s
-echo /usr/local/bin/zsh >> /etc/shells
+echo /opt/homebrew/bin/zsh >> /etc/shells
 exit
-chsh -s /usr/local/bin/zsh
+chsh -s /opt/homebrew/bin/zsh
 
 # Clone the dotfiles repo and run its script
 mkdir -p code/dguo
 cd code/dguo
 git clone https://github.com/dguo/dotfiles.git
 cd dotfiles
+export PATH=/opt/homebrew/bin:$PATH
 ./configure.sh
 ```
 
@@ -182,73 +243,10 @@ cd dotfiles
     * Turn off "Show warning before emptying the trash"
     * Turn on "Remove items from the Trash after 30 days"
 * macOS Settings
-    * General
-        * Turn on dark mode
-   * Desktop & Screen Saver
-        * Desktop
-            * Dynamic
-        * Screen Saver
-            * "Ken Burns"
-    * Dock
-        * Make it smaller
-        * Turn on "Minimize windows into application icon"
-        * Change "Double-click a window's title bar" to minimize
-        * Turn on "Automatically hide and show the dock"
-        * Turn off "Show recent applications in Dock"
-    * Mission Control
-        * Hot corners
-            * Top left: Mission Control
-            * Top right: Desktop
-    * Siri
-        * Turn off "Enable Ask Siri"
-    * Language & Region
-        * Add Chinese, Simplified
-            * Use the "Pinyin - Simplified" input source
-    * Internet accounts
-        * iCloud accounts (for 2FA)
-    * Touch ID
-        * Register fingerprints
     * Users & Groups
         * Login items
             * Hammerspoon
             * Backup and Sync
-    * Security & Privacy
-        * Require password 5 seconds after sleep or screen saver
-        * Turn on FileVault
-    * Bluetooth
-        * Turn on "Show Bluetooth in menu bar"
-    * Sound
-        * Turn on "Show volume in menu bar"
-    * Keyboard
-        * Fastest key repeat speed
-        * Shortest delay until repeat
-        * Change Touch Bar to show "Expanded Control Strip"
-        * Make caps lock function as control
-        * Swap option and command on external keyboards
-    * Trackpad
-        * Point & Click
-            * Look up & data detectors: tap with three fingers
-            * Tap to click: tap with one finger
-            * Second fastest tracking speed
-        * Scroll & Zoom
-            * Turn off natural scroll direction
-        * More Gestures
-            * Swipe between pages: swipe with three fingers
-            * Turn on App Expose
-    * Displays
-        * Turn off True Tone
-        * Turn off "show mirroring options in the menu bar when available"
-        * Night Shift
-            * Turn on Night Shift from 9 PM to 5 AM
-    * Energy Saver
-        * Battery
-            * Turn display off after 5 min.
-            * Turn off "Slightly dim the display while on battery power"
-        * Turn off "Show battery status in menu bar"
-    * Date & Time
-        * Turn off "Show date and time in menu bar"
-    * Sharing
-        * Set computer name
 * fzf-marks
     * `cd ~/code/dguo/dotfiles && mark dotfiles`
     * `cd ~/Google\ Drive && mark gdrive`

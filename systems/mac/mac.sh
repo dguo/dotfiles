@@ -27,14 +27,9 @@ hash brew 2>/dev/null || {
     exit 1;
 }
 
-if [ "$(command -v zsh)" != "/usr/local/bin/zsh" ]; then
-    echo >&2 "Please change the system shell to the homebrew managed Zsh:";
-    echo >&2 "See https://johndjameson.com/blog/updating-your-shell-with-homebrew/";
-    # brew install zsh
-    # sudo -s
-    # echo /usr/local/bin/zsh >> /etc/shells
-    # exit
-    # chsh -s /usr/local/bin/zsh
+if [ "$(command -v zsh)" != "/opt/homebrew/bin/zsh" ]; then
+    echo >&2 "Please change the system shell to the Homebrew managed Zsh:";
+    echo >&2 "See the Mac README for instructions";
     exit 1;
 fi
 
@@ -46,10 +41,6 @@ brew bundle
 brew cleanup
 
 pip3 install --upgrade pip setuptools
-
-# fzf-marks
-curl -fLo /usr/local/etc/fzf-marks/fzf-marks.bash --create-dirs \
-    https://raw.githubusercontent.com/urbainvaes/fzf-marks/master/fzf-marks.plugin.bash
 
 # Global node modules
 npm install -g clipboard-cli diff2html-cli instant-markdown-d live-server opn-cli
@@ -68,8 +59,6 @@ sudo nvram AutoBoot=%00
 # Symlink configurations
 ln -sf $DOTFILES/programs/asdf/.tool-versions ~/.tool-versions
 ln -sf $DOTFILES/programs/sh/.profile ~/.profile
-ln -sf $DOTFILES/programs/bash/.bash_profile ~/.bash_profile
-ln -sf $DOTFILES/programs/bash/.bashrc ~/.bashrc
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc
 ln -sf $DOTFILES/programs/git/mac.gitconfig ~/.gitconfig
 ln -sf $DOTFILES/.gitignore ~/.gitignore
