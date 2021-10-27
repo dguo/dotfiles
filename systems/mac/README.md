@@ -7,6 +7,11 @@
 * Do a system update
 * Log in to the App Store and install XCode
 * Install [Homebrew](https://brew.sh/)
+* Install the Source Code Pro font directly from
+    [GitHub](https://github.com/adobe-fonts/source-code-pro)
+    * The Homebrew version needs SVN and uses an [outdated/broken Google Fonts
+      version](https://github.com/Homebrew/homebrew-cask-fonts/issues/3972)
+    * Add the files to Font Book
 * Go through System Preferences
     * Apple Id
         * Set the account picture
