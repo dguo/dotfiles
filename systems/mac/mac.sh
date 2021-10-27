@@ -82,6 +82,7 @@ vim +PlugUpdate +qall
 vim +PlugClean +qall
 
 # Visual Studio Code
+mkdir -p ~/Library/Application\ Support/Code/User
 ln -sf $DOTFILES/programs/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 source "$PROGRAMS_DIR/vscode/sync-extensions.sh"
 
