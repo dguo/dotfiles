@@ -27,15 +27,21 @@ hash brew 2>/dev/null || {
     exit 1;
 }
 
-if [ "$(command -v zsh)" != "/opt/homebrew/bin/zsh" ]; then
+if [ "$(command -v zsh)" == "/bin/zsh"  ]; then
     echo >&2 "Please change the system shell to the Homebrew managed Zsh:";
     echo >&2 "See the Mac README for instructions";
     exit 1;
 fi
 
-# TODO: skip this for Intel Macs or if Rosetta is already installed
+# Install Rosetta on Apple Silicon machines that don't already have it.
 # https://derflounder.wordpress.com/2020/11/17/installing-rosetta-2-on-apple-silicon-macs/
-softwareupdate --install-rosetta --agree-to-license
+if [[ $(uname -p) == 'arm' ]]; then
+    if /usr/bin/pgrep oahd >/dev/null 2>&1; then
+        echo "Rosetta is already installed."
+    else
+        softwareupdate --install-rosetta --agree-to-license
+    fi
+fi
 
 # to pick up the Brewfile
 cd $DOTFILES/systems/mac
