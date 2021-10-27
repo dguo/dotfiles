@@ -5,7 +5,10 @@
 * Create an account
     * Set the account (and home folder) name to "dguo"
 * Do a system update
-* Log in to the App Store and install XCode
+* Log in to the App Store
+    * Install XCode
+    * Install Bitwarden
+        * The Homebrew version doesn't support "Enable browser integration"
 * Install [Homebrew](https://brew.sh/)
 * Install the Source Code Pro font directly from
     [GitHub](https://github.com/adobe-fonts/source-code-pro)
@@ -105,6 +108,18 @@ export PATH=/opt/homebrew/bin:$PATH
 
 ### Programs
 
+* 1Password
+    * Sign in
+    * Turn off "Open 1Password in the background when you log in"
+    * Don't enable the extension helper when prompted
+* Bitwarden
+    * Sign in
+    * Turn on "Unlock with Touch ID"
+    * Turn on "Enable browser integration"
+    * Turn on "Enable menu bar icon"
+    * Turn on "Close to menu bar"
+    * Turn on "Start to menu bar"
+    * Turn on "Start automatically on login"
 * Git
     * Create a [new personal token](https://github.com/settings/tokens/new)
     * Run `git push` in the dotfiles repo and enter the token as the password
@@ -117,12 +132,6 @@ export PATH=/opt/homebrew/bin:$PATH
     * Turn off "Snap windows by dragging"
     * Turn off "Cycle across displays on repeated left or right commands"
     * Turn on "Check for updates automatically"
-* 1Password
-    * Sign in
-    * Turn off "Open 1Password in the background when you log in"
-    * Don't enable the extension helper when prompted
-* Bitwarden
-    * Sign in
 * Docker
     * Sign in
     * Set resource limits
