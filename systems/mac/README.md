@@ -110,8 +110,16 @@ export PATH=/opt/homebrew/bin:$PATH
 
 * 1Password
     * Sign in
-    * Turn off "Open 1Password in the background when you log in"
-    * Don't enable the extension helper when prompted
+    * General
+        * Turn on "Show item count in sidebar"
+    * Security
+        * Change "Require Master Password" to every 2 weeks
+        * Turn off "Lock on sleep"
+        * Turn off "Lock when screen saver is activated"
+        * Turn off "Lock after computer is idle"
+    * Watchtower
+        * Turn off "Check for two-factor authentication"
+        * Turn off "Ask before checking for a secure connection"
 * Bitwarden
     * Sign in
     * Turn on "Unlock with Touch ID"
@@ -120,81 +128,75 @@ export PATH=/opt/homebrew/bin:$PATH
     * Turn on "Close to menu bar"
     * Turn on "Start to menu bar"
     * Turn on "Start automatically on login"
-* Git
-    * Create a [new personal token](https://github.com/settings/tokens/new)
-    * Run `git push` in the dotfiles repo and enter the token as the password
 * iTerm
     * Set the path for "Load preferences from a custom folder or URL"
-* Rectangle
-    * Give accessibility permission
-    * Choose "Spectacle" shortcuts and behavior
-    * Turn on "Launch on login"
-    * Turn off "Snap windows by dragging"
-    * Turn off "Cycle across displays on repeated left or right commands"
-    * Turn on "Check for updates automatically"
 * Docker
     * Sign in
+    * Turn on "Start Docker Desktop when you log in"
     * Set resource limits
-* Dropbox
+* Anki
     * Sign in
-    * Turn on selective sync
-    * Disable camera uploads
 * Firefox
     * Sign in
-    * Go through preferences
+    * Preferences
         * Set Firefox as the default browser
     * Make the bookmarks toolbar visible (View > Toolbars)
+        * Remove the default bookmarks
     * Configure extensions
-        * 1Password
-            * Sign in
-            * Set "Lock after system is idle for" to 900 minutes
-            * Turn off "Lock when devices goes to sleep"
         * Bitwarden
             * Sign in
-            * Turn on "Disable Add Login Notification"
+            * Turn on "Unlock with biometrics"
+            * Turn on Options > "Disable Add Login Notification"
         * Web Scrobbler
             * Sign in to Last.fm
-            * Turn off "Use now playing notifications"
-            * Turn on "Disable Google Analytics"
-            * Turn off "Scrobble podcasts"
         * Allow some extensions in private windows
             * 1Password
             * Bitwarden
-            * Google search link fix
-            * HTTPS Everywhere
             * PawBlock
-            * Picture Paint
             * React Developer Tools
             * uBlock Origin
             * View Image
             * Vimium
         * Pin items to the overflow menu, except for these
+            * Pocket
             * Developer
             * Library
-            * Picture Paint
-            * PawBlock
+            * Screenshot
+            * Session Sync
             * 1Password
             * Bitwarden
-            * Session Sync
             * uBlock Origin
+            * Picture Paint
             * React Developer Tools
-* Google Backup and Sync
+            * PawBlock
+* Google Drive
     * Sign in
-    * Don't backup macOS folders
-    * Change photo and video upload size to high quality
-    * Turn on selective sync
+    * Turn off "Prompt me to back up devices"
+    * Make these folders available offline
+        * programs
 * Hammerspoon
     * Turn on "Launch Hammerspoon at login"
-* Notion
-    * Sign in
-* iStat Menus
-    * Enter the license
-    * Import the settings backup in Google Drive
-* Anki
-    * Sign in
 * Duet
     * Allow accessibility permissions
     * Turn off "Open app at login"
+* Notion
+    * Sign in
+* Spotify
+    * Sign in
+    * Turn off "See what your friends are playing"
+* Slack
+    * Sign in
+    * Set the theme to "Light"
+* Git
+    * Create a [new personal token](https://github.com/settings/tokens/new)
+    * Run `git push` in the dotfiles repo and enter the token as the password
+* Dropbox
+    * Sign in
+    * Turn on selective sync
+    * Disable camera uploads
+* iStat Menus
+    * Enter the license
+    * Import the settings backup in Google Drive
 * Zoom
     * Sign in
     * Change settings
@@ -206,10 +208,6 @@ export PATH=/opt/homebrew/bin:$PATH
             * Turn on "Always display participant name on their videos"
         * Recording
             * Switch the recordings location to the Downloads folder
-* Spotify
-    * Sign in
-    * Hide friend activity sidebar
-    * Limit the cache size
 * TablePlus
     * Enter the license
     * Import connections
@@ -217,9 +215,6 @@ export PATH=/opt/homebrew/bin:$PATH
     * Sign in
     * Turn off idle detection
     * Turn off reminders
-* Slack
-    * Sign in
-    * Set the theme to "Light"
 * macOS Dock
     * Set show in dock apps
         * Anki
@@ -256,11 +251,6 @@ export PATH=/opt/homebrew/bin:$PATH
     * Turn off "Show warning before changing an extension"
     * Turn off "Show warning before emptying the trash"
     * Turn on "Remove items from the Trash after 30 days"
-* macOS Settings
-    * Users & Groups
-        * Login items
-            * Hammerspoon
-            * Backup and Sync
 * fzf-marks
     * `cd ~/code/dguo/dotfiles && mark dotfiles`
     * `cd ~/Google\ Drive && mark gdrive`
