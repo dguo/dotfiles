@@ -87,7 +87,6 @@ cask "steam"
 cask "sublime-text"
 cask "tableplus"
 cask "toggl-track"
-mas 'Todoist', id: 585829637
 cask "homebrew/cask-drivers/uhk-agent"
 cask "visual-studio-code"
 cask "vlc"
