@@ -184,6 +184,7 @@ export PATH=/opt/homebrew/bin:$PATH
 * Spotify
     * Sign in
     * Turn off "See what your friends are playing"
+    * Turn off "Open Spotify automatically after you log into the computer"
 * Slack
     * Sign in
     * Set the theme to "Light"
@@ -194,9 +195,6 @@ export PATH=/opt/homebrew/bin:$PATH
 * iStat Menus
     * Enter the license
     * Import the settings backup in Google Drive
-* Git
-    * Create a [new personal token](https://github.com/settings/tokens/new)
-    * Run `git push` in the dotfiles repo and enter the token as the password
 * Login items
     * Remove Logitech Gaming Software
 * Bartender
@@ -213,60 +211,9 @@ export PATH=/opt/homebrew/bin:$PATH
             * sound
             * Bluetooth
             * Wi-Fi
-* Dropbox
-    * Sign in
-    * Turn on selective sync
-    * Disable camera uploads
-* Zoom
-    * Sign in
-    * Change settings
-        * General
-            * Change the reaction skin tone
-            * Turn on "Copy invite link when starting a meeting"
-        * Video
-            * Turn on HD
-            * Turn on "Always display participant name on their videos"
-        * Recording
-            * Switch the recordings location to the Downloads folder
-* TablePlus
-    * Enter the license
-    * Import connections
-* macOS Dock
-    * Set show in dock apps
-        * Anki
-        * Todoist
-        * Notion
-        * Firefox
-        * Docker
-        * iTerm
-        * Postman
-        * TablePlus
-        * Visual Studio Code
-        * OBS
-        * Spotify
-        * Slack
-        * Zoom
-        * Toggl
-* macOS Finder
-    * Turn off showing external disks on the desktop
-    * Set new finder windows to show downloads
-    * Set sidebar items
-        * AirDrop
-        * Applications
-        * code
-        * Downloads
-        * dguo
-        * Google Drive
-        * Dropbox
-        * iCloud Drive
-        * External disks
-        * CDs, DVDs, and iOS Devices
-        * Bonjour computers
-        * Connected servers
-    * Turn on "Show all filename extensions"
-    * Turn off "Show warning before changing an extension"
-    * Turn off "Show warning before emptying the trash"
-    * Turn on "Remove items from the Trash after 30 days"
+* Git
+    * Create a [new personal token](https://github.com/settings/tokens/new)
+    * Run `git push` in the dotfiles repo and enter the token as the password
 * fzf-marks
     * `cd ~/code/dguo/dotfiles && mark dotfiles`
     * `cd ~/Google\ Drive && mark gdrive`
@@ -274,10 +221,79 @@ export PATH=/opt/homebrew/bin:$PATH
     * `mkdir -p ~/code/scratch && cd ~/code/scratch && mark scratch`
     * `cd ~/Downloads && mark downloads`
     * `cd ~/code/dguo && mark dguo`
+* macOS Finder
+    * Turn off showing external disks on the desktop
+    * Set new finder windows to show downloads
+    * Set sidebar items
+        * AirDrop
+        * Google Drive
+        * Dropbox
+        * Applications
+        * code
+        * dguo
+        * Downloads
+        * iCloud Drive
+        * Show all "Locations"
+        * Hide "Tags"
+    * Turn on "Show all filename extensions"
+    * Turn off "Show warning before changing an extension"
+    * Turn off "Show warning before emptying the trash"
+    * Turn on "Remove items from the Trash after 30 days"
+* macOS Dock
+    * Set show in dock apps
+        * Anki
+        * Notion
+        * Firefox
+        * Docker
+        * iTerm
+        * Postman
+        * TablePlus
+        * Visual Studio Code
+        * Spotify
+        * Slack
+        * Zoom
+        * Toggl
+* TablePlus
+    * Import connections
+    * Settings
+        * General
+            * Change "indent with" to "Spaces"
+        * Fonts & Colors
+            * Use the dark theme
+            * Change the font to Source Code Pro for both the editor and data
+        * Safe Mode
+            * Turn on using touch id to unlock safe mode
+    * Enter the license
+* Zoom
+    * Sign in
+    * Change settings
+        * General
+            * Turn on "Use dual monitors"
+            * Turn on "Copy invite link when starting a meeting"
+            * Turn on "Show my meeting duration"
+            * Change the reaction skin tone
+        * Video
+            * Turn on HD
+            * Turn on "Always display participant name on their videos"
+        * Recording
+            * Switch the recordings location to the Downloads folder
+* SSH
+    * Run the setup script in Google Drive
+* Dropbox
+    * Sign in
+    * Turn on selective sync
+    * Disable camera uploads
 * GPG
     * Create a `~/.gnupg` directory and
         [give it the right permissions](https://superuser.com/a/954536/922801)
     * [Import](https://www.phildev.net/pgp/gpg_moving_keys.html) the private and public keys
     * Add ultimate trust for the key
-* SSH
-    * Run the setup script in Google Drive
+
+## Deprovisioning
+
+* Log out of programs
+* Remove the license
+    * Alfred
+    * Bartender
+    * iStat Menus
+    * TablePlus
