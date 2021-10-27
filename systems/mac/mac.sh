@@ -47,7 +47,7 @@ brew cleanup
 pip3 install --upgrade pip setuptools
 
 # Global node modules
-npm install -g clipboard-cli diff2html-cli instant-markdown-d live-server opn-cli
+npm install -g clipboard-cli diff2html-cli instant-markdown-d live-server open-cli
 
 # Make keys repeat when held down
 # https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
