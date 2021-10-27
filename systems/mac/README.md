@@ -187,16 +187,36 @@ export PATH=/opt/homebrew/bin:$PATH
 * Slack
     * Sign in
     * Set the theme to "Light"
+* Toggl
+    * Sign in
+    * Turn off idle detection
+    * Turn off reminders
+* iStat Menus
+    * Enter the license
+    * Import the settings backup in Google Drive
 * Git
     * Create a [new personal token](https://github.com/settings/tokens/new)
     * Run `git push` in the dotfiles repo and enter the token as the password
+* Login items
+    * Remove Logitech Gaming Software
+* Bartender
+    * Enter the license
+    * General
+        * Turn on "Launch Bartender at login"
+        * Turn off "Moving the mouse into the menu bar..."
+    * Menu Bar Layout
+        * Shown menu bar items
+            * iStat time
+            * iStat CPU
+            * iStat memory
+            * iStat battery
+            * sound
+            * Bluetooth
+            * Wi-Fi
 * Dropbox
     * Sign in
     * Turn on selective sync
     * Disable camera uploads
-* iStat Menus
-    * Enter the license
-    * Import the settings backup in Google Drive
 * Zoom
     * Sign in
     * Change settings
@@ -211,10 +231,6 @@ export PATH=/opt/homebrew/bin:$PATH
 * TablePlus
     * Enter the license
     * Import connections
-* Toggl
-    * Sign in
-    * Turn off idle detection
-    * Turn off reminders
 * macOS Dock
     * Set show in dock apps
         * Anki
@@ -263,7 +279,5 @@ export PATH=/opt/homebrew/bin:$PATH
         [give it the right permissions](https://superuser.com/a/954536/922801)
     * [Import](https://www.phildev.net/pgp/gpg_moving_keys.html) the private and public keys
     * Add ultimate trust for the key
-* Leo
-    * Follow Notion instructions
 * SSH
     * Run the setup script in Google Drive
