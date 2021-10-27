@@ -33,6 +33,10 @@ if [ "$(command -v zsh)" != "/opt/homebrew/bin/zsh" ]; then
     exit 1;
 fi
 
+# TODO: skip this for Intel Macs or if Rosetta is already installed
+# https://derflounder.wordpress.com/2020/11/17/installing-rosetta-2-on-apple-silicon-macs/
+softwareupdate --install-rosetta --agree-to-license
+
 # to pick up the Brewfile
 cd $DOTFILES/systems/mac
 
