@@ -23,6 +23,8 @@ unsetopt PROMPT_SP
 # https://unix.stackexchange.com/q/33994/280976
 setopt INTERACTIVE_COMMENTS
 
+export PATH="/opt/homebrew/bin:$PATH"
+
 ###############################################################################
 # Prompt
 ###############################################################################
@@ -257,4 +259,8 @@ bindkey "^R" history-incremental-pattern-search-backward
 
 
 # asdf
-. /usr/local/opt/asdf/asdf.sh
+if [[ $(uname -p) == 'arm' ]]; then
+    . /opt/homebrew/opt/asdf/asdf.sh
+else
+    . /usr/local/opt/asdf/asdf.sh
+fi
