@@ -35,8 +35,13 @@ if [ -f /usr/share/git/completion/git-prompt.sh ]; then
 fi
 
 # Mac
+# Intel machines
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     source /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+# Apple Silicon machines
+if [ -f /opt/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
+    source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
 fi
 
 # Termux
