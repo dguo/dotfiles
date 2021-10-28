@@ -112,6 +112,7 @@ export PATH=/opt/homebrew/bin:$PATH
     * Sign in
     * General
         * Turn on "Show item count in sidebar"
+        * Clear the keyboard shortcut for "Fill Login or Show 1Password"
     * Security
         * Change "Require Master Password" to every 2 weeks
         * Turn off "Lock on sleep"
