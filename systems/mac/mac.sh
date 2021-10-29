@@ -76,7 +76,11 @@ mkdir -p ~/.hammerspoon
 ln -sf $DOTFILES/programs/hammerspoon/init.lua ~/.hammerspoon/init.lua
 ln -sf $DOTFILES/programs/tmux/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.gnupg
-ln -sf $DOTFILES/programs/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+if [[ $(uname -p) == 'arm' ]]; then
+    ln -sf $DOTFILES/programs/gpg/gpg-agent-apple-silicon.conf ~/.gnupg/gpg-agent.conf
+else
+    ln -sf $DOTFILES/programs/gpg/gpg-agent-intel.conf ~/.gnupg/gpg-agent.conf
+fi
 # Suppress the new window message
 ln -sf $DOTFILES/systems/mac/.hushlogin ~/.hushlogin
 

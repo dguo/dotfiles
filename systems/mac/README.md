@@ -288,6 +288,8 @@ export PATH=/opt/homebrew/bin:$PATH
     * Create a `~/.gnupg` directory and
         [give it the right permissions](https://superuser.com/a/954536/922801)
     * [Import](https://www.phildev.net/pgp/gpg_moving_keys.html) the private and public keys
+        * `gpg --import gpg-public-key.asc`
+        * `gpg --batch --import gpg-private-key.asc`
     * Add ultimate trust for the key
 
 ## Deprovisioning
