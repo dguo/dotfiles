@@ -293,8 +293,10 @@ export PATH=/opt/homebrew/bin:$PATH
 ## Deprovisioning
 
 * Log out of programs
-* Remove the license
+* Remove licenses
     * Alfred
     * Bartender
     * iStat Menus
     * TablePlus
+* Remove GPG keys
+* Follow [Apple's instructions](https://support.apple.com/en-us/HT201065)
