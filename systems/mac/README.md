@@ -291,6 +291,9 @@ export PATH=/opt/homebrew/bin:$PATH
         * `gpg --import gpg-public-key.asc`
         * `gpg --batch --import gpg-private-key.asc`
     * Add ultimate trust for the key
+* Leo
+    * Sign in to Slack
+    * Install the browser extension
 
 ## Deprovisioning
 
