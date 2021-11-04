@@ -276,6 +276,8 @@ export PATH=/opt/homebrew/bin:$PATH
         * Video
             * Turn on HD
             * Turn on "Always display participant name on their videos"
+        * Screen share
+            * Change "Window size when screen sharing" to "Maximize window"
         * Recording
             * Switch the recordings location to the Downloads folder
 * SSH
