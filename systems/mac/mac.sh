@@ -52,8 +52,6 @@ brew cleanup
 
 pip3 install --upgrade pip setuptools
 
-# Global node modules
-npm install -g --no-audit --no-fund clipboard-cli diff2html-cli instant-markdown-d live-server open-cli
 
 # Make keys repeat when held down
 # https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
@@ -68,6 +66,8 @@ sudo nvram AutoBoot=%00
 
 # Symlink configurations
 ln -sf $DOTFILES/programs/asdf/.tool-versions ~/.tool-versions
+cd
+asdf install
 ln -sf $DOTFILES/programs/sh/.profile ~/.profile
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc
 ln -sf $DOTFILES/programs/git/mac.gitconfig ~/.gitconfig
@@ -83,6 +83,9 @@ else
 fi
 # Suppress the new window message
 ln -sf $DOTFILES/systems/mac/.hushlogin ~/.hushlogin
+
+# Global node modules
+npm install -g --no-audit --no-fund clipboard-cli diff2html-cli instant-markdown-d live-server open-cli
 
 # Vim
 ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
