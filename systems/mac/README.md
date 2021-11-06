@@ -175,6 +175,7 @@ export PATH=/opt/homebrew/bin:$PATH
     * Turn off "Prompt me to back up devices"
     * Make these folders available offline
         * programs
+    * Create a `google-drive-personal` symlink
 * Hammerspoon
     * Turn on "Launch Hammerspoon at login"
 * Duet

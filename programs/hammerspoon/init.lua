@@ -15,8 +15,7 @@ hs.hotkey.bind({"cmd", "shift"}, "V", function()
 end)
 
 -- Set up a hyper key tree
-
-hyperKeys = hs.json.read("~/Google Drive/programs/hammerspoon/hyper-keys.json")
+hyperKeys = hs.json.read("~/google-drive-personal/programs/hammerspoon/hyper-keys.json")
 currentKey = nil
 currentTree = hyperKeys or {}
 hyperTime = nil
