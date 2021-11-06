@@ -297,6 +297,8 @@ export PATH=/opt/homebrew/bin:$PATH
 * Leo
     * Sign in to Slack
     * Install the browser extension
+* Notification Center
+    * Allow notifications from programs
 
 ## Deprovisioning
 
