@@ -290,3 +290,13 @@ end
 
 other_tap = hs.eventtap.new({hs.eventtap.event.types.keyDown}, other_handler)
 other_tap:start()
+
+-- Maximize the screen brightness when switching to AC power.
+power_source = hs.battery.powerSource()
+hs.battery.watcher.new(function ()
+  local current_power_source = hs.battery.powerSource()
+  if power_source ~= "AC Power" and current_power_source == "AC Power" then
+    hs.brightness.set(100)
+  end
+  power_source = current_power_source
+end):start()
