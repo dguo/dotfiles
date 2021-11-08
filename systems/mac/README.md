@@ -73,6 +73,8 @@
         * More Gestures
             * Swipe between pages: swipe with three fingers
             * Turn on App Expose
+    * Mouse
+            * Second fastest tracking speed
     * Displays
         * Night Shift
             * Turn on Night Shift from 9 PM to 5 AM
