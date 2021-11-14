@@ -301,10 +301,11 @@ otherTap:start()
 
 -- Maximize the screen brightness when switching to AC power.
 powerSource = hs.battery.powerSource()
-hs.battery.watcher.new(function ()
+powerSourceWatcher = hs.battery.watcher.new(function ()
   local currentPowerSource = hs.battery.powerSource()
   if powerSource ~= "AC Power" and currentPowerSource == "AC Power" then
     hs.brightness.set(100)
   end
   powerSource = currentPowerSource
-end):start()
+end)
+powerSourceWatcher:start()
