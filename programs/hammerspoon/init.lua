@@ -36,12 +36,6 @@ windowPositions = {
   rightTwoThirds = {x = 0.33, y = 0, w = 0.67, h = 1}
 }
 
-exposeInstance = hs.expose.new(nil, {
-  fitWindowsMaxIterations = 15,
-  minimizeModeModifier = "cmd",
-  showTitles = false
-})
-
 -- Return true if it's definitely a terminating action
 function executeHyperAction (tree)
   if tree["action"] == "type" then
@@ -62,7 +56,8 @@ function executeHyperAction (tree)
   elseif tree["action"] == "direction" then
     hs.eventtap.keyStroke(nil, tree["direction"], 0)
   elseif tree["action"] == "expose" then
-    exposeInstance:toggleShow()
+    -- TODO: figure out how to trigger this
+    -- hs.eventtap.keyStroke({"ctrl"}, "up", 0)
   elseif tree["action"] == "make-window-full-screen" then
     hs.window.focusedWindow():maximize(0)
   elseif tree["action"] == "center-window" then
