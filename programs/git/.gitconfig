@@ -31,6 +31,8 @@
     syntax-theme = Monokai Extended
 [diff]
     colorMoved = default
+[help]
+    autoCorrect = prompt
 [init]
     defaultBranch = main
 [interactive]
