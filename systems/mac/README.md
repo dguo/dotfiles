@@ -208,6 +208,8 @@ export PATH=/opt/homebrew/bin:$PATH
         * Turn off "Moving the mouse into the menu bar..."
     * Menu Bar Layout
         * Shown menu bar items
+            * Amphetamine
+            * Docker
             * iStat time
             * iStat CPU
             * iStat memory
