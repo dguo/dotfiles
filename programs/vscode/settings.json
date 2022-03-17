@@ -8,10 +8,7 @@
   "editor.minimap.renderCharacters": false,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "explorer.confirmDelete": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -72,5 +69,11 @@
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.inlineSuggest.enabled": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  }
 }
