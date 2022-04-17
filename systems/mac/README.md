@@ -206,6 +206,7 @@ export PATH=/opt/homebrew/bin:$PATH
     * General
         * Turn on "Launch Bartender at login"
         * Turn off "Moving the mouse into the menu bar..."
+        * Turn on "Show all hidden items if active screen is bigger than"
     * Menu Bar Layout
         * Shown menu bar items
             * Amphetamine
