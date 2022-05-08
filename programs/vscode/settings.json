@@ -6,7 +6,6 @@
   "editor.fontFamily": "Source Code Pro, monospace",
   "editor.formatOnSave": true,
   "editor.minimap.renderCharacters": false,
-  "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [80, 120],
   "explorer.confirmDelete": false,
@@ -75,5 +74,6 @@
     "yaml": true,
     "plaintext": false,
     "markdown": false
-  }
+  },
+  "editor.guides.indentation": false
 }
