@@ -3,6 +3,7 @@ GitHub.copilot
 GrapeCity.gc-excelviewer
 Prisma.prisma
 alefragnani.project-manager
+astro-build.astro-vscode
 bradymholt.pgformatter
 bungcip.better-toml
 codezombiech.gitignore
