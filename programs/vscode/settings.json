@@ -38,7 +38,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "extensions.ignoreRecommendations": true,
   "pgFormatter.keywordCase": "lowercase",
-  "window.zoomLevel": 0,
   "editor.autoClosingBrackets": "never",
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
