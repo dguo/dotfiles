@@ -61,7 +61,8 @@
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "files.associations": {
-    ".parcelrc": "json"
+    ".parcelrc": "json",
+    "*.mdx": "markdown"
   },
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
