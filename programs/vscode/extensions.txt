@@ -1,5 +1,4 @@
 EditorConfig.EditorConfig
-GitHub.copilot
 GrapeCity.gc-excelviewer
 Prisma.prisma
 alefragnani.project-manager
