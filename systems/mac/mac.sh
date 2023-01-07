@@ -97,6 +97,7 @@ vim +PlugClean +qall
 # Visual Studio Code
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -sf $DOTFILES/programs/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+# shellcheck disable=SC1091
 source "$PROGRAMS_DIR/vscode/sync-extensions.sh"
 
 # Zsh
