@@ -262,10 +262,9 @@ bindkey '^ ' autosuggest-execute
 # Override fzf-history-widget because it doesn't seem to work
 bindkey "^R" history-incremental-pattern-search-backward
 
-
 # asdf
 if [[ $(uname -p) == 'arm' ]]; then
-    . /opt/homebrew/opt/asdf/asdf.sh
+    . $(brew --prefix asdf)/libexec/asdf.sh
 else
     . /usr/local/opt/asdf/asdf.sh
 fi
