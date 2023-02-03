@@ -15,79 +15,88 @@
     * The Homebrew version needs SVN and uses an [outdated/broken Google Fonts
       version](https://github.com/Homebrew/homebrew-cask-fonts/issues/3972)
     * Add the files to Font Book
-* Go through System Preferences
+* Go through System Settings
     * Apple Id
         * Set the account picture
         * iCloud
-            * Keychain
             * iCloud Drive
             * Find My Mac
+            * Password & Keychain
             * News
             * Siri
-    * Desktop & Screen Saver
-        * Set the desktop
-        * Set the screen saver
-    * Dock & Menu Bar
-        * Dock & Menu Bar
+    * Notifications
+        * Turn off "Allow notifications when the screen is locked"
+    * Screen Time
+        * Turn it on
+    * General
+        * Software Update
+            * Turn off "Install macOS updates"
+        * Language & Region
+            * Change "Date format" to ISO-8601
+        * Sharing
+            * Set the computer name
+    * Control Center
+        * Change Bluetooth to "Show in Menu Bar"
+        * Change Sound to "Always Show in Menu Bar"
+        * Battery
+            * Turn on "Show in Control Center"
+        * Keyboard Brightness
+            * Turn on "Show in Control Center"
+        * Menu Bar Only
+            * Clock Options
+                * Change "Style" to "Analog" if using iStat Menus
+            * Change Spotlight to "Don't Show in Menu Bar"
+    * Siri & Spotlight
+        * Turn off "Ask Siri"
+    * Privacy & Security
+        * Turn on FileVault
+    * Desktop & Dock
+        * Dock
             * Make it smaller
-            * Change "Double-click a window's title bar" to minimize
-            * Turn on "Minimize windows into application icon"
-            * Turn on "Automatically hide and show the dock"
-            * Turn off "Show recent applications in Dock"
-        * Bluetooth
-            * Turn on "Show in Menu Bar"
-        * Sound
-            * Set "Show in Menu Bar" to "always"
-        * Clock
-            * Change "Time Options" to "Analog"
-        * Spotlight
-            * Turn off "Show in Menu Bar"
-    * Mission Control
+        * Change "Double-click a window's title bar to" to "Minimize"
+        * Turn on "Minimize windows into application icon"
+        * Turn off "Show recent applications in Dock"
         * Hot corners
             * Top left: Mission Control
             * Top right: Desktop
-    * Siri
-        * Turn off "Enable Ask Siri"
-    * Language & Region
-        * Add Chinese, Simplified
-            * Use the "Pinyin - Simplified" input source
-    * Internet Accounts
-        * Remove the Game Center account
-    * Security & Privacy
-        * Require password 5 seconds after sleep or screen saver
-        * Turn on FileVault
-    * Touch ID
+    * Disploys
+        * Advanced
+            * Battery & Energy
+                * Turn off "Slightly dim the display on battery"
+        * Night Shift
+            * Turn on Night Shift from 9 PM to 5 AM
+    * Wallpaper
+        * Change it
+    * Battery
+        * Battery Health
+            * Turn off "Optimized Battery Charging"
+        * Options
+            * Change "Wake for network access" to "Only on Power Adapter"
+    * Lock Screen
+        * Change "Turn display off on battery when inactive" to "For 2 minutes"
+    * Touch ID & Password
         * Register fingerprints
     * Keyboard
         * Fastest key repeat speed
         * Shortest delay until repeat
         * Make caps lock function as control
         * Swap option and command on external keyboards
+        * Text Input
+            * Turn on "show Input menu in menu bar"
+            * Add Chinese, Simplified
+                * Use the "Pinyin - Simplified" input source
     * Trackpad
         * Point & Click
+            * Second fastest tracking speed
             * Look up & data detectors: tap with three fingers
-            * Tap to click: tap with one finger
-            * Second fastest tracking speed
+            * Turn on "Tap to click"
         * Scroll & Zoom
-            * Turn off natural scroll direction
+            * Turn off "Natural scrolling"
         * More Gestures
-            * Swipe between pages: swipe with three fingers
-            * Turn on App Expose
+            * Change "Swipe between pages" to "Swipe with Three Fingers"
+            * Change "App Exposé" to "Swipe Down with Three Fingers"
     * Mouse
-            * Second fastest tracking speed
-    * Displays
-        * Night Shift
-            * Turn on Night Shift from 9 PM to 5 AM
-    * Battery
-        * Battery
-            * Turn display off after 5 min.
-            * Turn off "Slightly dim the display while on battery power"
-            * Turn off "Optimized battery charging"
-            * Turn off "Show battery status in menu bar"
-        * Power Adapter
-            * Turn off "Wake for network access"
-    * Sharing
-        * Set the computer name
+        * Second fastest tracking speed
 
 ### Terminal
 
