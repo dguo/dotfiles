@@ -73,7 +73,8 @@
     "*": true,
     "yaml": true,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "properties": false
   },
   "editor.guides.indentation": false
 }
