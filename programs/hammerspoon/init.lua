@@ -55,9 +55,12 @@ function executeHyperAction (tree)
     return true
   elseif tree["action"] == "direction" then
     hs.eventtap.keyStroke(nil, tree["direction"], 0)
-  elseif tree["action"] == "expose" then
-    -- TODO: figure out how to trigger this
-    -- hs.eventtap.keyStroke({"ctrl"}, "up", 0)
+  elseif tree["action"] == "mission-control" then
+    --[[
+      The "fn" shouldn't be necessary, but this doesn't work without it. See
+      https://github.com/Hammerspoon/hammerspoon/issues/1946#issuecomment-449604954
+    ]]
+    hs.eventtap.keyStroke({"fn", "ctrl"}, "up", 0)
   elseif tree["action"] == "make-window-full-screen" then
     hs.window.focusedWindow():maximize(0)
   elseif tree["action"] == "center-window" then
