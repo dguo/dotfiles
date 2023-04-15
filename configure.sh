@@ -22,9 +22,6 @@ elif [ -f /etc/os-release ]; then
         echo Failed to detect the Linux distribution
         exit 1
     fi
-elif [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
-    echo Updating Termux
-    ./systems/termux/termux.sh
 else
     echo Failed to detect the OS
     exit 1

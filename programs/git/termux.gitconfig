@@ -1,4 +1,0 @@
-[include]
-    path = ~/code/dguo/dotfiles/programs/git/.gitconfig
-[credential]
-    helper = cache --timeout=2592000
