@@ -52,7 +52,6 @@ brew cleanup
 
 pip3 install --upgrade pip setuptools
 
-
 # Make keys repeat when held down
 # https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -86,6 +85,11 @@ ln -sf $DOTFILES/systems/mac/.hushlogin ~/.hushlogin
 
 # Global node modules
 npm install -g --no-audit --no-fund clipboard-cli diff2html-cli instant-markdown-d live-server open-cli
+
+# Neovim
+mkdir -p ~/.config/nvim
+ln -sf $DOTFILES/programs/neovim/init.lua ~/.config/nvim/init.lua
+nvim --headless "+Lazy! sync" +qa
 
 # Vim
 ln -sf $DOTFILES/programs/vim/.vimrc ~/.vimrc
