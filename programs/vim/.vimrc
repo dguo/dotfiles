@@ -52,7 +52,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
                                      \ && b:NERDTree.isTabTree()) | q | endif
 
 " shortcut to open/close NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -207,10 +207,10 @@ nnoremap <C-t>     :tabnew<CR>
 nnoremap H gT
 " next tab
 nnoremap L gt
-" use S (normally equivalent to cc) to save
-nnoremap S :w<CR>
-" use Q (normally goes into ex mode) to quit
-nnoremap Q :q<CR>
+" use leader and w to save
+nnoremap <Leader>w :w<CR>
+" use leader and q to quit
+nnoremap <Leader>q :q<CR>
 " Ctrl-P for fzf (assume we're in a git repo)
 noremap <silent> <C-p> :GitFiles -co --exclude-standard<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
