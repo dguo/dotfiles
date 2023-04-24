@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+-- Emit "true" (24-bit) colors
 vim.opt.termguicolors = true
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -90,8 +91,8 @@ require("lazy").setup({
       }
 
       local builtin = require("telescope.builtin")
-      vim.keymap.set("n", "<leader>ff", builtin.git_files, {})
-      vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+      vim.keymap.set("n", "<leader>f", builtin.git_files, {})
+      vim.keymap.set("n", "<leader>g", builtin.live_grep, {})
     end
   },
   {
@@ -114,6 +115,9 @@ require("lazy").setup({
   }
 })
 
+-- TODO: figure out syntax highlighting
+-- TODO: figure out Prettier, linting, etc.
+
 vim.opt.clipboard:prepend({"unnamed", "unnamedplus"})
 
 -- TODO: automatically wrap lines for Markdown?
@@ -122,5 +126,13 @@ vim.opt.clipboard:prepend({"unnamed", "unnamedplus"})
 vim.opt.number = true
 -- Show the file name in the title bar
 vim.opt.title = true
--- Raise a dialogue for unsaved changes when quitting
+-- Raise a prompt for unsaved changes when quitting
 vim.opt.confirm = true
+-- Make searches case insensitive unless there's an uppercase letter
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+-- The number of context lines above/below the cursor
+vim.opt.scrolloff = 5
+-- Show a column for when a line is getting too long
+vim.opt.colorcolumn = "80"
+-- TODO: decide on tab settings
