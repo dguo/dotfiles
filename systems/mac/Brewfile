@@ -79,6 +79,8 @@ cask "iterm2"
 cask "kap"
 cask "homebrew/cask-drivers/elgato-control-center"
 cask "homebrew/cask-drivers/logitech-camera-settings"
+# For the G600 mouse
+cask "logitech-g-hub"
 cask "homebrew/cask-drivers/logitech-gaming-software"
 cask "notion"
 cask "ngrok"
