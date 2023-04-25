@@ -22,7 +22,6 @@
     pl = pull
 [core]
     autocrlf = input
-    editor = vim
     # Use delta for all diff output
     # To bypass delta, run $ git --no-pager diff
     pager = "delta"

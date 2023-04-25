@@ -60,15 +60,15 @@ require("lazy").setup({
     end
   },
   {"cappyzawa/trim.nvim", config = true},
-  {
-    "dguo/blood-moon",
-    lazy = false,
-    priority = 1000,
-    config = function(plugin)
-      vim.opt.rtp:append(plugin.dir .. "/applications/vim")
-      vim.cmd([[colorscheme blood-moon]])
-    end
-  },
+  -- {
+  --   "dguo/blood-moon",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function(plugin)
+  --     vim.opt.rtp:append(plugin.dir .. "/applications/vim")
+  --     vim.cmd([[colorscheme blood-moon]])
+  --   end
+  -- },
   "github/copilot.vim",
     {
     "ggandor/leap.nvim",
@@ -98,7 +98,6 @@ require("lazy").setup({
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
-    dependencies = {"nvim-tree/nvim-web-devicons"},
     config = function()
       require("nvim-tree").setup{}
       vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<cr>", {})
@@ -112,10 +111,29 @@ require("lazy").setup({
       -- TODO: figure out why this doesn't work
       vim.keymap.set("n", "<leader>p", "<Plug>MarkdownPreview", {noremap = false})
     end
+  },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    build = function()
+        require("nvim-treesitter.install").update({ with_sync = true })
+    end,
+    config = function()
+      require("nvim-treesitter.configs").setup{
+        auto_install = true,
+        highlight = {
+          enable = true
+        },
+        additional_vim_regex_highlighting = false
+      }
+    end
+  },
+  {
+    "sainnhe/gruvbox-material",
+    dependencies = {"nvim-treesitter/nvim-treesitter"},
+    priority = 1000 -- Ensure it loads first
   }
 })
 
--- TODO: figure out syntax highlighting
 -- TODO: figure out Prettier, linting, etc.
 
 vim.opt.clipboard:prepend({"unnamed", "unnamedplus"})
@@ -135,4 +153,26 @@ vim.opt.smartcase = true
 vim.opt.scrolloff = 5
 -- Show a column for when a line is getting too long
 vim.opt.colorcolumn = "80"
--- TODO: decide on tab settings
+
+-- Quit
+vim.keymap.set("n", "<leader>q", ":q<cr>")
+-- Save
+vim.keymap.set("n", "<leader>w", ":w<cr>")
+-- Save and quit
+vim.keymap.set("n", "<leader>e", ":wq<cr>")
+-- Clear search highlights
+vim.keymap.set("n", "<leader>/", ":noh<cr>")
+
+vim.g.gruvbox_material_transparent_background = 1
+vim.g.gruvbox_material_foreground = "original"
+vim.g.gruvbox_material_background = "hard"
+vim.cmd("colorscheme gruvbox-material")
+
+--[[
+  Reset the cursor so that it doesn't persist as a solid block in iTerm. See:
+  https://gitlab.com/gnachman/iterm2/-/issues/8885
+--]]
+vim.api.nvim_create_autocmd({"VimLeave"}, {
+  pattern = {"*"},
+  command = "set guicursor=a:ver10-blinkon1",
+})

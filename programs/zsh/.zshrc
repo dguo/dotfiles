@@ -5,8 +5,8 @@
 ###############################################################################
 
 # https://wiki.archlinux.org/index.php/environment_variables#Default_programs
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 
 # Use vi style key bindings instead of emacs
 bindkey -v
@@ -161,7 +161,7 @@ alias r="rm -i"
 # infrastructure as code
 alias tf="terraform"
 # text editor of choice
-alias v="vim"
+alias v="nvim"
 
 ###############################################################################
 # fzf
@@ -184,7 +184,7 @@ fe() {
     else
         files=($(fzf --query="$1" --select-1 --exit-0))
     fi
-    [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+    [[ -n "$files" ]] && ${EDITOR:-nvim} "${files[@]}"
     unset IFS
 }
 
@@ -203,7 +203,7 @@ fo() {
     key=$(head -1 <<< "$out")
     file=$(head -2 <<< "$out" | tail -1)
     if [ -n "$file" ]; then
-        [ "$key" = ctrl-o ] && opn "$file" || ${EDITOR:-vim} "$file"
+        [ "$key" = ctrl-o ] && opn "$file" || ${EDITOR:-nvim} "$file"
     fi
 }
 
