@@ -18,8 +18,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 " faster editing
 Plug 'scrooloose/nerdcommenter'
-" use --system-libclang for Apple Silicon machines
-Plug 'Valloric/YouCompleteMe', {'do': 'python3 ./install.py --ts-completer --rust-completer --clang-completer --system-libclang'}
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-speeddating'
