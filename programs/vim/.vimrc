@@ -148,6 +148,8 @@ set visualbell        " flash command on error
 set autochdir         " working directory should always be the same as the file
 set confirm           " raise dialogue for unsaved changes when quitting
 set hidden            " hide buffers with unsaved changes
+" Mouse
+set mouse=a           " enable mouse support
 " Rendering
 set ttyfast           " more chars sent to screen for redrawing
 " Search
