@@ -136,10 +136,8 @@ require("lazy").setup({
 
 -- TODO: figure out Prettier, linting, etc.
 
+-- Use the system clipboard
 vim.opt.clipboard:prepend({"unnamed", "unnamedplus"})
-
--- TODO: automatically wrap lines for Markdown?
-
 -- Show line numbers
 vim.opt.number = true
 -- Show the file name in the title bar
@@ -173,6 +171,12 @@ vim.cmd("colorscheme gruvbox-material")
   https://gitlab.com/gnachman/iterm2/-/issues/8885
 --]]
 vim.api.nvim_create_autocmd({"VimLeave"}, {
-  pattern = {"*"},
+  pattern = "*",
   command = "set guicursor=a:ver10-blinkon1",
+})
+
+-- Automatically wrap lines for Markdown
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = "*.md",
+  command = "setlocal textwidth=80"
 })
