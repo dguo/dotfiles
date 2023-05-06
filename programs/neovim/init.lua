@@ -69,17 +69,31 @@ require("lazy").setup({
   --     vim.cmd([[colorscheme blood-moon]])
   --   end
   -- },
-  "github/copilot.vim",
-    {
+  {
+    "github/copilot.vim",
+    enabled = function()
+      return not vim.g.vscode
+    end
+  },
+  {
     "ggandor/leap.nvim",
     config = function()
       require('leap').add_default_mappings()
     end
   },
-  {"lewis6991/gitsigns.nvim", config = true},
+  {
+    "lewis6991/gitsigns.nvim",
+    enabled = function()
+      return not vim.g.vscode
+    end,
+    config = true
+  },
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
+    enabled = function()
+      return not vim.g.vscode
+    end,
     dependencies = {"nvim-lua/plenary.nvim"},
     config = function()
       require("telescope").setup{
@@ -98,6 +112,9 @@ require("lazy").setup({
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
+    enabled = function()
+      return not vim.g.vscode
+    end,
     config = function()
       require("nvim-tree").setup{}
       vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<cr>", {})
@@ -106,6 +123,9 @@ require("lazy").setup({
   {
     "iamcco/markdown-preview.nvim",
     ft = "markdown",
+    enabled = function()
+      return not vim.g.vscode
+    end,
     build = function()
       vim.fn["mkdp#util#install"]()
       -- TODO: figure out why this doesn't work
@@ -114,6 +134,9 @@ require("lazy").setup({
   },
   {
     'nvim-treesitter/nvim-treesitter',
+    enabled = function()
+      return not vim.g.vscode
+    end,
     build = function()
         require("nvim-treesitter.install").update({ with_sync = true })
     end,
@@ -129,6 +152,9 @@ require("lazy").setup({
   },
   {
     "sainnhe/gruvbox-material",
+    enabled = function()
+      return not vim.g.vscode
+    end,
     dependencies = {"nvim-treesitter/nvim-treesitter"},
     priority = 1000 -- Ensure it loads first
   }
@@ -161,10 +187,12 @@ vim.keymap.set("n", "<leader>e", ":wq<cr>")
 -- Clear search highlights
 vim.keymap.set("n", "<leader>/", ":noh<cr>")
 
-vim.g.gruvbox_material_transparent_background = 1
-vim.g.gruvbox_material_foreground = "original"
-vim.g.gruvbox_material_background = "hard"
-vim.cmd("colorscheme gruvbox-material")
+if not vim.g.vscode then
+  vim.g.gruvbox_material_transparent_background = 1
+  vim.g.gruvbox_material_foreground = "original"
+  vim.g.gruvbox_material_background = "hard"
+  vim.cmd("colorscheme gruvbox-material")
+end
 
 --[[
   Reset the cursor so that it doesn't persist as a solid block in iTerm. See:

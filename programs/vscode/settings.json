@@ -24,11 +24,6 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.external.osxExec": "iTerm.app",
-  "vim.easymotion": true,
-  "vim.easymotionMarkerFontFamily": "Source Code Pro, monospace",
-  "vim.easymotionMarkerFontSize": "10",
-  "vim.leader": "<space>",
-  "vim.useSystemClipboard": true,
   "window.restoreWindows": "all",
   "window.restoreFullscreen": true,
   "workbench.editor.enablePreview": false,
@@ -76,5 +71,24 @@
     "markdown": false,
     "properties": false
   },
-  "editor.guides.indentation": false
+  "editor.guides.indentation": false,
+  "vscode-neovim.highlightGroups.highlights": {
+    "Directory": "vim",
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground",
+      "borderColor": "theme.editor.findMatchHighlightBorder"
+    },
+    "Visual": {
+      "backgroundColor": "theme.editor.selectionBackground"
+    },
+    "Conceal": "vim",
+    "Substitute": "vim"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }

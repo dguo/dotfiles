@@ -4,6 +4,7 @@ GrapeCity.gc-excelviewer
 Prisma.prisma
 alefragnani.project-manager
 astro-build.astro-vscode
+asvetliakov.vscode-neovim
 bradymholt.pgformatter
 bungcip.better-toml
 codezombiech.gitignore
@@ -21,4 +22,3 @@ ms-python.python
 ms-toolsai.jupyter
 ms-vsliveshare.vsliveshare
 rust-lang.rust-analyzer
-vscodevim.vim
