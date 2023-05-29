@@ -66,9 +66,8 @@
   "editor.minimap.enabled": false,
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
     "plaintext": false,
-    "markdown": false,
+    "scminput": false,
     "properties": false
   },
   "editor.guides.indentation": false,
