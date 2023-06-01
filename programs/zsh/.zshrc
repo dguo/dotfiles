@@ -263,8 +263,4 @@ bindkey '^ ' autosuggest-execute
 bindkey "^R" history-incremental-pattern-search-backward
 
 # asdf
-if [[ $(uname -p) == 'arm' ]]; then
-    . $(brew --prefix asdf)/libexec/asdf.sh
-else
-    . /usr/local/opt/asdf/asdf.sh
-fi
+. $(brew --prefix asdf)/libexec/asdf.sh
