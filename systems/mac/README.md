@@ -10,11 +10,6 @@
     * Install Bitwarden
         * The Homebrew version doesn't support "Enable browser integration"
 * Install [Homebrew](https://brew.sh/)
-* Install the Source Code Pro font directly from
-    [GitHub](https://github.com/adobe-fonts/source-code-pro)
-    * The Homebrew version needs SVN and uses an [outdated/broken Google Fonts
-      version](https://github.com/Homebrew/homebrew-cask-fonts/issues/3972)
-    * Add the files to Font Book
 * Go through System Settings
     * Apple Id
         * Set the account picture
