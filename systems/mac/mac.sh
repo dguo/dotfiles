@@ -66,6 +66,12 @@ sudo nvram AutoBoot=%00
 # Symlink configurations
 ln -sf $DOTFILES/programs/asdf/.tool-versions ~/.tool-versions
 cd
+if ! asdf plugin list | grep -q 'nodejs'; then
+    asdf plugin add nodejs
+fi
+if ! asdf plugin list | grep -q 'yarn'; then
+    asdf plugin add yarn
+fi
 asdf install
 ln -sf $DOTFILES/programs/sh/.profile ~/.profile
 ln -sf $DOTFILES/programs/zsh/.zshrc ~/.zshrc
