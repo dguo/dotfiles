@@ -105,5 +105,5 @@ ln -sf $DOTFILES/programs/vscode/settings.json ~/Library/Application\ Support/Co
 source "$PROGRAMS_DIR/vscode/sync-extensions.sh"
 
 # Zsh
-antibody bundle < $DOTFILES/programs/zsh/zsh_plugins.txt > ~/.zsh_plugins.sh
-antibody update
+ln -sf $DOTFILES/programs/zsh/zsh_plugins.txt ~/.zsh_plugins.txt
+antidote update

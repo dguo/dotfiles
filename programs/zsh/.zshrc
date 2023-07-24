@@ -255,7 +255,8 @@ fi
 ###############################################################################
 # Plugins
 ###############################################################################
-[[ -a ~/.zsh_plugins.sh ]] && source ~/.zsh_plugins.sh
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+antidote load
 # Accept and execute the current suggestion with ctrl + space
 bindkey '^ ' autosuggest-execute
 # Search command history with ctrl-r

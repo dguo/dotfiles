@@ -1,8 +1,8 @@
 # Zsh
 
-I use [Antibody](https://getantibody.github.io/) to manage plugins.
+I use [Antidote](https://getantidote.github.io/) to manage plugins.
 
 ## Adding a new plugin
 
 * Add it to `zsh_plugins.txt`
-* Run `update_plugins.sh`
+* Start a new shell session
