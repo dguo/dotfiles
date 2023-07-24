@@ -18,19 +18,11 @@
 * Go through System Settings
     * Apple Id
         * Set the account picture
-        * iCloud
-            * iCloud Drive
-            * Find My Mac
-            * Password & Keychain
-            * News
-            * Siri
     * Notifications
         * Turn off "Allow notifications when the screen is locked"
     * Screen Time
         * Turn it on
     * General
-        * Software Update
-            * Turn off "Install macOS updates"
         * Language & Region
             * Change "Date format" to ISO-8601
         * Sharing
@@ -70,21 +62,24 @@
     * Battery
         * Battery Health
             * Turn off "Optimized Battery Charging"
-        * Options
-            * Change "Wake for network access" to "Only on Power Adapter"
     * Lock Screen
         * Change "Turn display off on battery when inactive" to "For 2 minutes"
+        * Turn on "Show message when locked"
+            * Show a phone number to found if lost and found
     * Touch ID & Password
         * Register fingerprints
     * Keyboard
         * Fastest key repeat speed
         * Shortest delay until repeat
-        * Make caps lock function as control
-        * Swap option and command on external keyboards
+        * Keyboard Shortcuts
+            * Make caps lock function as control
+            * Swap option and command on external keyboards
         * Text Input
             * Turn on "show Input menu in menu bar"
             * Add Chinese, Simplified
                 * Use the "Pinyin - Simplified" input source
+    * Mouse
+        * Second fastest tracking speed
     * Trackpad
         * Point & Click
             * Second fastest tracking speed
@@ -95,8 +90,6 @@
         * More Gestures
             * Change "Swipe between pages" to "Swipe with Three Fingers"
             * Change "App Exposé" to "Swipe Down with Three Fingers"
-    * Mouse
-        * Second fastest tracking speed
 
 ### Terminal
 
@@ -297,10 +290,6 @@ export PATH=/opt/homebrew/bin:$PATH
             * Switch the recordings location to the Downloads folder
 * SSH
     * Run the setup script in Google Drive
-* Dropbox
-    * Sign in
-    * Turn on selective sync
-    * Disable camera uploads
 * GPG
     * Create a `~/.gnupg` directory and
         [give it the right permissions](https://superuser.com/a/954536/922801)
