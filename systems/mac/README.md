@@ -42,6 +42,7 @@
             * Make it smaller
         * Change "Double-click a window's title bar to" to "Minimize"
         * Turn on "Minimize windows into application icon"
+        * Turn on "Automatically hide and show the Dock"
         * Turn off "Show recent applications in Dock"
         * Hot corners
             * Top left: Mission Control
@@ -67,8 +68,12 @@
         * Fastest key repeat speed
         * Shortest delay until repeat
         * Keyboard Shortcuts
-            * Make caps lock function as control
-            * Swap option and command on external keyboards
+            * Input Sources
+                * Turn off shortcuts for changing the input source
+                    * It collides with executing the suggestion in zsh
+            * Modifier Keys
+                * Make caps lock function as control
+                * Swap option and command on external keyboards
         * Text Input
             * Turn on "show Input menu in menu bar"
             * Add Chinese, Simplified
@@ -110,30 +115,34 @@ export PATH=/opt/homebrew/bin:$PATH
 * 1Password
     * Sign in
     * General
-        * Turn on "Show item count in sidebar"
-        * Clear the keyboard shortcut for "Fill Login or Show 1Password"
+        * Clear the keyboard shortcuts for "Show 1Password" and "Autofill"
     * Security
-        * Change "Require Master Password" to every 2 weeks
-        * Turn off "Lock on sleep"
-        * Turn off "Lock when screen saver is activated"
-        * Turn off "Lock after computer is idle"
+        * Change "Require password" to every 30 days
+        * Turn off "Lock on sleep, screensaver, or switching users"
+        * Change "Lock after the computer is idle for" to 8 hours
     * Watchtower
         * Turn off "Check for two-factor authentication"
-        * Turn off "Ask before checking for a secure connection"
 * Bitwarden
     * Sign in
-    * Turn on "Unlock with Touch ID"
-    * Turn on "Enable browser integration"
-    * Turn on "Enable menu bar icon"
-    * Turn on "Close to menu bar"
-    * Turn on "Start to menu bar"
-    * Turn on "Start automatically on login"
+    * Security
+        * Turn on "Unlock with Touch ID"
+    * App Settings
+        * Turn on "Show menu bar icon"
+        * Turn on "Minimize to menu bar"
+        * Turn on "Close to menu bar"
+        * Turn on "Start to menu bar"
+        * Turn on "Start automatically on login"
+        * Turn on "Allow browser integration"
 * iTerm
-    * Set the path for "Load preferences from a custom folder or URL"
+    * General
+        * Preferences
+            * Set the path for "Load preferences from a custom folder or URL"
 * Docker
     * Sign in
-    * Turn on "Start Docker Desktop when you log in"
-    * Set resource limits
+    * General
+        * Turn on "Start Docker Desktop when you log in"
+    * Resources
+        * Set limits
 * Anki
     * Sign in
 * Firefox
@@ -145,8 +154,11 @@ export PATH=/opt/homebrew/bin:$PATH
     * Configure extensions
         * Bitwarden
             * Sign in
-            * Turn on "Unlock with biometrics"
-            * Turn on Options > "Disable Add Login Notification"
+            * Security
+                * Turn on "Unlock with biometrics"
+            * Other
+                * Options
+                    * Turn off "Ask to add login"
         * Web Scrobbler
             * Sign in to Last.fm
         * Allow some extensions in private windows
@@ -157,29 +169,39 @@ export PATH=/opt/homebrew/bin:$PATH
             * uBlock Origin
             * View Image
             * Vimium
-        * Pin items to the overflow menu, except for these
+        * Set the toolbar
             * Pocket
-            * Developer
-            * Library
             * Screenshot
-            * Session Sync
+            * Library
+            * Developer
             * 1Password
             * Bitwarden
             * uBlock Origin
-            * Picture Paint
             * React Developer Tools
-            * PawBlock
+            * Session Sync
+            * Extensions
+        * Log in and pin sites
+            * Gmail
+            * Google Calendar
+            * Google Voice
+            * Messenger
+            * WhatsApp
+            * Leo
+            * Todoist
 * Google Drive
     * Sign in
     * Turn off "Prompt me to back up devices"
     * Make these folders available offline
         * programs
     * Create a `google-drive-personal` symlink
+        * `ln -s Google\ Drive/My\ Drive google-drive-personal`
 * Hammerspoon
     * Turn on "Launch Hammerspoon at login"
+    * Enable accessiblity
 * Duet
-    * Allow accessibility permissions
-    * Turn off "Open app at login"
+    * Allow permissions
+    * Sign in
+    * Turn off "Open App at Login"
 * Notion
     * Sign in
 * Spotify
@@ -188,16 +210,11 @@ export PATH=/opt/homebrew/bin:$PATH
     * Turn off "Open Spotify automatically after you log into the computer"
 * Slack
     * Sign in
-    * Set the theme to "Light"
-* Toggl
-    * Sign in
-    * Turn off idle detection
-    * Turn off reminders
+    * Themes
+        * Set the theme to "Light"
 * iStat Menus
     * Enter the license
     * Import the settings backup in Google Drive
-* Login items
-    * Remove Logitech Gaming Software
 * Bartender
     * Enter the license
     * General
@@ -226,23 +243,24 @@ export PATH=/opt/homebrew/bin:$PATH
     * `cd ~/Downloads && mark downloads`
     * `cd ~/code/dguo && mark dguo`
 * macOS Finder
-    * Turn off showing external disks on the desktop
+    * Turn off showing items on the desktop
     * Set new finder windows to show downloads
-    * Set sidebar items
+    * Sidebar
         * AirDrop
-        * Google Drive
-        * Dropbox
         * Applications
         * code
         * dguo
         * Downloads
-        * iCloud Drive
+        * My Drive
+        * Google Drive
         * Show all "Locations"
+        * iCloud Drive
         * Hide "Tags"
-    * Turn on "Show all filename extensions"
-    * Turn off "Show warning before changing an extension"
-    * Turn off "Show warning before emptying the trash"
-    * Turn on "Remove items from the Trash after 30 days"
+    * Advanced
+        * Turn on "Show all filename extensions"
+        * Turn off "Show warning before changing an extension"
+        * Turn off "Show warning before emptying the trash"
+        * Turn on "Remove items from the Trash after 30 days"
 * macOS Dock
     * Set show in dock apps
         * Anki
@@ -255,8 +273,8 @@ export PATH=/opt/homebrew/bin:$PATH
         * Visual Studio Code
         * Spotify
         * Slack
+        * FaceTime
         * Zoom
-        * Toggl
 * TablePlus
     * Import connections
     * Settings
@@ -265,22 +283,28 @@ export PATH=/opt/homebrew/bin:$PATH
         * Fonts & Colors
             * Use the dark theme
             * Change the font to Source Code Pro for both the editor and data
-        * Safe Mode
-            * Turn on using touch id to unlock safe mode
+        * Security
+            * Turn on "Unlock Safe Mode with Touch ID"
     * Enter the license
 * Zoom
     * Sign in
     * Change settings
         * General
             * Turn on "Use dual monitors"
+            * Turn off "Enter full screen when starting or joining a meeting"
+            * Turn on "Always show meeting controls"
             * Turn on "Copy invite link when starting a meeting"
-            * Turn on "Show my meeting duration"
+            * Turn on "Show meeting timers"
             * Change the reaction skin tone
         * Video
             * Turn on HD
             * Turn on "Always display participant name on their videos"
-        * Screen share
+            * Change "Maximum participants displayed per screen in Gallery View"
+              to 49
+        * Share Screen
             * Change "Window size when screen sharing" to "Maximize window"
+            * Change "When I share directly to a Zoom Room" to "Show all sharing
+              options"
         * Recording
             * Switch the recordings location to the Downloads folder
 * SSH
