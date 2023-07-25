@@ -6,7 +6,6 @@ alefragnani.project-manager
 astro-build.astro-vscode
 asvetliakov.vscode-neovim
 bradymholt.pgformatter
-bungcip.better-toml
 codezombiech.gitignore
 coolbear.systemd-unit-file
 dbaeumer.vscode-eslint
@@ -22,3 +21,4 @@ ms-python.python
 ms-toolsai.jupyter
 ms-vsliveshare.vsliveshare
 rust-lang.rust-analyzer
+tamasfe.even-better-toml
