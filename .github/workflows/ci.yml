@@ -11,4 +11,7 @@ jobs:
       - name: Run ShellCheck
         run: |
             shopt -s globstar
-            shellcheck -e SC1090 **/*.sh
+            # SC1071 is for:
+            # "ShellCheck only supports sh/bash/dash/ksh scripts. Sorry!"
+            # But mac.sh is a Zsh script
+            shellcheck -e SC1090 -e SC1071 **/*.sh

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # This is a setup script for my personal Mac. It handles both setting up a
 # machine from scratch and keeping the machine up to date and clean, which means
@@ -12,9 +12,6 @@
 # Exit immediately if any command fails
 set -e
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-PROGRAMS_DIR="$SCRIPT_DIR/../../programs"
-
 DOTFILES=~/code/dguo/dotfiles
 
 hash gcc 2>/dev/null || {
@@ -27,7 +24,7 @@ hash brew 2>/dev/null || {
     exit 1;
 }
 
-if [ "$(command -v zsh)" == "/bin/zsh"  ]; then
+if [ "$(command -v zsh)" = "/bin/zsh"  ]; then
     echo >&2 "Please change the system shell to the Homebrew managed Zsh:";
     echo >&2 "See the Mac README for instructions";
     exit 1;
@@ -108,8 +105,9 @@ vim +PlugClean +qall
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -sf $DOTFILES/programs/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 # shellcheck disable=SC1091
-source "$PROGRAMS_DIR/vscode/sync-extensions.sh"
+bash "$DOTFILES/programs/vscode/sync-extensions.sh"
 
 # Zsh
 ln -sf $DOTFILES/programs/zsh/zsh_plugins.txt ~/.zsh_plugins.txt
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 antidote update
