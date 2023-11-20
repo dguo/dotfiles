@@ -29,7 +29,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.swipeToNavigate": true,
   "workbench.colorTheme": "Gruvbox Dark Hard",
-  "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "extensions.ignoreRecommendations": true,
   "pgFormatter.keywordCase": "lowercase",
