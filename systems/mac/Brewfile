@@ -5,7 +5,7 @@ cask_args appdir: "/Applications"
 # languages
 brew "python"
 brew "ruby"
-brew "rustup"
+brew "rustup-init"
 
 # tools
 brew "antidote"
