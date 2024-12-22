@@ -16,8 +16,6 @@ brew "bat"
 brew "borgbackup"
 tap "cloudflare/cloudflare"
 brew "cloudflare/cloudflare/cloudflared"
-# For YouCompleteMe
-brew "cmake"
 brew "ctop"
 tap "MisterTea/et"
 brew "MisterTea/et/et"
