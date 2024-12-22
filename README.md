@@ -42,7 +42,7 @@ how to do it.
 ### Replacements for [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
 
 * [bat](https://github.com/sharkdp/bat) for replacing `cat`
-* [exa](https://the.exa.website/) for replacing `ls`
+* [eza](https://eza.rocks/) for replacing `ls`
 * [fd](https://github.com/sharkdp/fd) for replacing `find`
 * [fzf](https://github.com/junegunn/fzf) for a general purpose fuzzy finder
     * Jump to directories (making `cd` somewhat obsolete) with [fzf-marks](https://github.com/urbainvaes/fzf-marks)
