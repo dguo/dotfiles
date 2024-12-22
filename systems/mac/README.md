@@ -53,7 +53,7 @@
     * Screen Time
         * Turn it on
     * Lock Screen
-        * Change "Require password after screen saver begins or display is 
+        * Change "Require password after screen saver begins or display is
           turned off" to "Immediately"
         * Turn on "Show message when locked"
             * Show a phone number to call if lost and found
@@ -115,11 +115,15 @@ export PATH=/opt/homebrew/bin:$PATH
     * General
         * Clear the keyboard shortcuts for "Show 1Password" and "Autofill"
     * Security
-        * Change "Require password" to every 30 days
-        * Turn off "Lock on sleep, screensaver, or switching users"
-        * Change "Lock after the computer is idle for" to 8 hours
-    * Watchtower
-        * Turn off "Check for two-factor authentication"
+        * Unlock
+            * Change "Confirm my account password" to every 30 days
+        * Auto-lock
+            * Change "Lock after the computer is idle for" to 8 hours
+            * Turn off "Lock on sleep, screensaver, or switching users"
+    * Privacy
+        * Watchtower
+            * Turn off "Check for two-factor authentication"
+            * Turn off "Check for passkeys"
 * Bitwarden
     * Sign in
     * Security
@@ -133,12 +137,10 @@ export PATH=/opt/homebrew/bin:$PATH
         * Turn on "Allow browser integration"
 * iTerm
     * General
-        * Preferences
-            * Set the path for "Load preferences from a custom folder or URL"
+        * Settings
+            * Set the path for "Load settings from a custom folder or URL"
 * Docker
     * Sign in
-    * General
-        * Turn on "Start Docker Desktop when you log in"
     * Resources
         * Set limits
 * Anki
@@ -150,13 +152,16 @@ export PATH=/opt/homebrew/bin:$PATH
     * Make the bookmarks toolbar visible (View > Toolbars)
         * Remove the default bookmarks
     * Configure extensions
+        * 1Password
+            * Autofill & save
+                * Turn off "Sign in automatically after autofill"
         * Bitwarden
             * Sign in
-            * Security
+            * Account security
                 * Turn on "Unlock with biometrics"
-            * Other
-                * Options
-                    * Turn off "Ask to add login"
+            * Notifications
+                * Turn off "Ask to save and use passkeys"
+                * Turn off "Ask to add login"
         * Web Scrobbler
             * Sign in to Last.fm
         * Allow some extensions in private windows
@@ -178,10 +183,11 @@ export PATH=/opt/homebrew/bin:$PATH
             * React Developer Tools
             * Session Sync
             * Extensions
+            * Account
         * Log in and pin sites
             * Gmail
             * Google Calendar
-            * Google Voice
+            * Google Messages
             * Messenger
             * WhatsApp
             * Leo
