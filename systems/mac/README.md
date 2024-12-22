@@ -210,7 +210,9 @@ export PATH=/opt/homebrew/bin:$PATH
     * Sign in
 * Spotify
     * Sign in
-    * Turn off "See what your friends are playing"
+    * Audio quality
+        * Change "Streaming quality" to "Very high"
+        * Change "Download" to "Very high"
     * Turn off "Open Spotify automatically after you log into the computer"
 * Slack
     * Sign in
@@ -236,6 +238,8 @@ export PATH=/opt/homebrew/bin:$PATH
             * sound
             * Bluetooth
             * Wi-Fi
+* Discord
+    * Sign in
 * Git
     * Create a [new personal token](https://github.com/settings/tokens/new)
     * Run `git push` in the dotfiles repo and enter the token as the password
@@ -277,6 +281,7 @@ export PATH=/opt/homebrew/bin:$PATH
         * Visual Studio Code
         * Spotify
         * Slack
+        * Discord
         * FaceTime
         * Zoom
 * TablePlus
@@ -295,14 +300,12 @@ export PATH=/opt/homebrew/bin:$PATH
     * Change settings
         * General
             * Turn on "Use dual monitors"
-            * Turn off "Enter full screen when starting or joining a meeting"
             * Turn on "Always show meeting controls"
             * Turn on "Copy invite link when starting a meeting"
             * Turn on "Show meeting timers"
             * Change the reaction skin tone
         * Video
             * Turn on HD
-            * Turn on "Always display participant name on their videos"
             * Change "Maximum participants displayed per screen in Gallery View"
               to 49
         * Share Screen
@@ -320,6 +323,7 @@ export PATH=/opt/homebrew/bin:$PATH
         * `gpg --import gpg-public-key.asc`
         * `gpg --batch --import gpg-private-key.asc`
     * Add ultimate trust for the key
+        * `gpg --edit-key <key-id>` and run the `trust` command
 * Leo
     * Sign in to Slack
     * Install the browser extension
