@@ -11,17 +11,17 @@
         * The Homebrew version doesn't support "Enable browser integration"
 * Install [Homebrew](https://brew.sh/)
 * Go through System Settings
-    * Apple Id
+    * Apple Account
         * Set the account picture
-    * Notifications
-        * Turn off "Allow notifications when the screen is locked"
-    * Screen Time
-        * Turn it on
     * General
         * Language & Region
             * Change "Date format" to ISO-8601
         * Sharing
             * Set the computer name
+    * Apple Intelligence & Siri
+        * Turn them on
+        * Siri Requests
+            * Turn "Listn for" off
     * Control Center
         * Change Bluetooth to "Show in Menu Bar"
         * Change Sound to "Always Show in Menu Bar"
@@ -33,37 +33,34 @@
             * Clock Options
                 * Change "Style" to "Analog" if using iStat Menus
             * Change Spotlight to "Don't Show in Menu Bar"
-    * Siri & Spotlight
-        * Turn off "Ask Siri"
-    * Privacy & Security
-        * Turn on FileVault
     * Desktop & Dock
         * Dock
             * Make it smaller
         * Change "Double-click a window's title bar to" to "Minimize"
         * Turn on "Minimize windows into application icon"
         * Turn on "Automatically hide and show the Dock"
-        * Turn off "Show recent applications in Dock"
+        * Turn off "Show suggested and recent applications in Dock"
         * Hot corners
             * Top left: Mission Control
             * Top right: Desktop
-    * Disploys
-        * Advanced
-            * Battery & Energy
-                * Turn off "Slightly dim the display on battery"
+    * Displays
         * Night Shift
             * Turn on Night Shift from 9 PM to 5 AM
     * Wallpaper
         * Change it
-    * Battery
-        * Battery Health
-            * Turn off "Optimized Battery Charging"
+    * Notifications
+        * Turn off "Allow notifications when the screen is locked"
+    * Screen Time
+        * Turn it on
     * Lock Screen
-        * Change "Turn display off on battery when inactive" to "For 2 minutes"
+        * Change "Require password after screen saver begins or display is 
+          turned off" to "Immediately"
         * Turn on "Show message when locked"
-            * Show a phone number to found if lost and found
+            * Show a phone number to call if lost and found
     * Touch ID & Password
         * Register fingerprints
+    * Wallet & Apple Pay
+        * Allow notifications
     * Keyboard
         * Fastest key repeat speed
         * Shortest delay until repeat
@@ -71,11 +68,12 @@
             * Input Sources
                 * Turn off shortcuts for changing the input source
                     * It collides with executing the suggestion in zsh
+                    * Do this after adding Chinese below
             * Modifier Keys
                 * Make caps lock function as control
                 * Swap option and command on external keyboards
         * Text Input
-            * Turn on "show Input menu in menu bar"
+            * Turn on "Show Input menu in menu bar"
             * Add Chinese, Simplified
                 * Use the "Pinyin - Simplified" input source
     * Mouse
