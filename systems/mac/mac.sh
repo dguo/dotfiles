@@ -47,8 +47,6 @@ brew update
 brew bundle
 brew cleanup
 
-pip3 install --upgrade pip setuptools
-
 # Make keys repeat when held down
 # https://lifehacker.com/5826055/make-your-keyboard-keys-repeat-properly-when-held-down-in-mac-os-x-lion
 defaults write -g ApplePressAndHoldEnabled -bool false
