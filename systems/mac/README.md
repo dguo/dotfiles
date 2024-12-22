@@ -286,6 +286,7 @@ export PATH=/opt/homebrew/bin:$PATH
         * Zoom
 * TablePlus
     * Import connections
+        * May have to reselect the SSH private key
     * Settings
         * General
             * Change "indent with" to "Spaces"
@@ -333,8 +334,14 @@ export PATH=/opt/homebrew/bin:$PATH
 ## Deprovisioning
 
 * Check the downloads folder
-* Check Git repos for branches and stashes
+* Check Git repos for uncommitted changes, branches, and stashes
+* Check shell history
 * Deregister licenses
+    * Bartender
+    * DevUtils
+    * iStat Menus
+    * Soulver
+    * TablePlus
 * Log out of programs
-* Remove GPG keys
+* Remove GPG and SSH keys
 * Follow [Apple's instructions](https://support.apple.com/en-us/HT201065)
