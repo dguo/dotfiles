@@ -24,6 +24,7 @@ unsetopt PROMPT_SP
 setopt INTERACTIVE_COMMENTS
 
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 ###############################################################################
 # Prompt
@@ -262,6 +263,3 @@ bindkey '^ ' autosuggest-execute
 # Search command history with ctrl-r
 # Override fzf-history-widget because it doesn't seem to work
 bindkey "^R" history-incremental-pattern-search-backward
-
-# asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
