@@ -85,7 +85,7 @@ fi
 ln -sf $DOTFILES/systems/mac/.hushlogin ~/.hushlogin
 
 # Global node modules
-npm install -g --no-audit --no-fund clipboard-cli diff2html-cli instant-markdown-d live-server open-cli
+# npm install -g --no-audit --no-fund clipboard-cli diff2html-cli instant-markdown-d live-server open-cli
 
 # Neovim
 mkdir -p ~/.config/nvim
