@@ -221,12 +221,11 @@ export PATH=/opt/homebrew/bin:$PATH
 * iStat Menus
     * Enter the license
     * Import the settings backup in Google Drive
-* Bartender
-    * Enter the license
+    * Allow in the Menu Bar
+* Thaw
     * General
-        * Turn on "Launch Bartender at login"
-        * Turn off "Moving the mouse into the menu bar..."
-        * Turn on "Show all hidden items if active screen is bigger than"
+        * Turn on "Launch at Login"
+        * Change the Thaw icon to "Chevron (Down)"
     * Menu Bar Layout
         * Shown menu bar items
             * Amphetamine
